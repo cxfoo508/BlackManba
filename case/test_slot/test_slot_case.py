@@ -1,6 +1,8 @@
 # coding = utf-8
 import json
 
+import pytest
+
 from base_case import *
 from data_method import *
 from slot_base import SlotCaseBase
@@ -76,25 +78,44 @@ class TestCase:
         data = {
             "agent_id": os.environ.get("agent_id"),
             "slot_name": "string",
-            "intent_value_list": [
-                {
-                    "intent_id": os.environ.get("intent_id"),
-                    "value": "string"
-                }
-            ],
-            # "entity_intent_list": [
-            #     {
-            #         "entity_id": "string",
-            #         "intent_id_list": [
-            #             "string"
-            #         ]
-            #     }
-            # ],
             "is_from_text": 0,
             "is_list": 0,
             "is_compound": 0
         }
         res = SlotCaseBase.slot_create(data)
+        res_dict = json.loads(res)
+        os.environ["slot_id"] = res_dict["data"]["slot_id"]
+        assert '{"code":0,"msg":"slot.create.success.0","data":{"slot_id":' in res, res
+
+    def test002_slot_update(self):
+        """
+        更新slot
+        """
+        print("---slot update---")
+        data = {
+            "slot_id": str(os.environ.get("slot_id")),
+            "agent_id": str(os.environ.get("agent_id")),
+            "slot_name": get_str(3),
+            "intent_value_list": [
+                {
+                    "intent_id": str(os.environ.get("intent_id")),
+                    "value": "string"
+                }
+            ],
+            "entity_intent_list": [
+                {
+                    "entity_id": "string",
+                    "intent_id_list": [
+                        "string"
+                    ]
+                }
+            ],
+            "is_from_text": 0,
+            "is_list": 0,
+            "is_compound": 0
+        }
+        res = SlotCaseBase.slot_update(data)
+        # assert
 
     def teardown_class(self):
         print("---teardown_class---")
@@ -105,3 +126,7 @@ class TestCase:
         con = res.content.decode()
         print(con)
         assert '"code":0' in con, con
+
+
+if __name__ == '__main__':
+    pytest.main("-s -v test_slot_case.py::TestCass")
