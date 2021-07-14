@@ -133,7 +133,7 @@ parm_018 = [{
 parm_list = dir()
 
 
-def get_parms_list(parm_name=None):
+def get_parms_list_01(parm_name=None):
     lists = []
     if parm_name is None:
         [lists.append(item) for item in parm_list if "parm" in item]
@@ -145,5 +145,5 @@ def get_parms_list(parm_name=None):
 
 
 if __name__ == '__main__':
-    a = get_parms_list("parm_001")
+    a = get_parms_list()
     print(a)
