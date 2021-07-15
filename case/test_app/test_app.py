@@ -39,13 +39,8 @@ class TestCase:
         print(f'TOKEN:{os.environ.get("token")}')
 
     def get_py_data(self):
-<<<<<<< HEAD:Test_Case2.py
         print("-----------------------------------------")
         data_list = get_parms_list_01()
-        print(data_list)
-=======
-        data_list = get_parms_list01()
->>>>>>> d23da11 (fix:增加日志，优化框架):case/test_app/test_app.py
         return data_list
 
     @pytest.fixture(params=get_py_data(None))
@@ -443,16 +438,4 @@ class TestCase:
 
 
 
-#
-if __name__ == '__main__':
-<<<<<<< HEAD:Test_Case2.py
-    # pytest.main(["-v -s", "Test_Case2.py::TestCass::test_auth_systemInfo"])
-    pytest.main("-s Test_Case2.py::TestCass::test01_app_creat")
-=======
-    # pytest.main(["-v -s", "test_app.py::TestCass::test_auth_systemInfo"])
-    # pytest.main("-s test_app.py::TestCass::test_auth_systemInfo")
-    test = TestCase()
-    print(11111)
-    a=test.get_py_data()
-    print(a)
->>>>>>> d23da11 (fix:增加日志，优化框架):case/test_app/test_app.py
+

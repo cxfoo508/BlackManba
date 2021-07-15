@@ -133,11 +133,7 @@ parm_018 = [{
 parm_list = dir()
 
 
-<<<<<<< HEAD
 def get_parms_list_01(parm_name=None):
-=======
-def get_parms_list01(parm_name=None):
->>>>>>> d23da11 (fix:增加日志，优化框架)
     lists = []
     if parm_name is None:
         [lists.append(item) for item in parm_list if "parm" in item]
@@ -148,12 +144,4 @@ def get_parms_list01(parm_name=None):
     return lists
 
 
-<<<<<<< HEAD
-if __name__ == '__main__':
-    a = get_parms_list()
-    print(a)
-=======
-# if __name__ == '__main__':
-#     a = get_parms_list()
-#     print(a)
->>>>>>> d23da11 (fix:增加日志，优化框架)
+
