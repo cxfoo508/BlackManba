@@ -117,6 +117,6 @@ def get_update_list(parm_name=None):
     return lists
 
 
-if __name__ == '__main__':
-    lists = get_update_list("up_parm_001")
-    print(lists)
+# if __name__ == '__main__':
+#     lists = get_update_list("up_parm_001")
+#     print(lists)

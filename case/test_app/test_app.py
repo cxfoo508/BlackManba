@@ -17,7 +17,7 @@ from data.update_entity_value import *
 agent_id = []
 
 
-class TestCase():
+class TestCase:
     def read_excel(self, excel_path):
         """
         pandas excel
@@ -39,9 +39,13 @@ class TestCase():
         print(f'TOKEN:{os.environ.get("token")}')
 
     def get_py_data(self):
+<<<<<<< HEAD:Test_Case2.py
         print("-----------------------------------------")
         data_list = get_parms_list_01()
         print(data_list)
+=======
+        data_list = get_parms_list01()
+>>>>>>> d23da11 (fix:增加日志，优化框架):case/test_app/test_app.py
         return data_list
 
     @pytest.fixture(params=get_py_data(None))
@@ -187,11 +191,9 @@ class TestCase():
         con_data = json.loads(con)
         return con_data["data"]["jwt_token"]
 
-
-
     def get_create_entity_data(self):
         data_list = get_create_entity_list()
-        print(data_list)
+        # print(data_list)
         return data_list
 
     @pytest.fixture(params=get_create_entity_data(None))
@@ -438,16 +440,19 @@ class TestCase():
     @pytest.fixture(params=get_data_001(None))
     def get_data_list_001(self, request):
         return request.param
-    # def test_create_entity_value(self,get_data_list_001):
-    #     """
-    #     创建实体值
-    #     """
-    #     entity_id = self.case_create_entity()
-    #     data = eval(get_data_list_001)
-    #     if "entity_id" in str(data):
-    #         data[0]["entity_id"] = entity_id
+
+
 
 #
 if __name__ == '__main__':
+<<<<<<< HEAD:Test_Case2.py
     # pytest.main(["-v -s", "Test_Case2.py::TestCass::test_auth_systemInfo"])
     pytest.main("-s Test_Case2.py::TestCass::test01_app_creat")
+=======
+    # pytest.main(["-v -s", "test_app.py::TestCass::test_auth_systemInfo"])
+    # pytest.main("-s test_app.py::TestCass::test_auth_systemInfo")
+    test = TestCase()
+    print(11111)
+    a=test.get_py_data()
+    print(a)
+>>>>>>> d23da11 (fix:增加日志，优化框架):case/test_app/test_app.py

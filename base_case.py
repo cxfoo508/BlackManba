@@ -59,6 +59,7 @@ def request_data(url, data=None, check_data=None):
     }
     print(f"{URL}{send_url}")
     request = requests.post(url=f"{URL}{send_url}", json=data, headers=header)
+    print(f'res time:{request.elapsed.total_seconds()}')
     return request
 
 def request_data_channel(url, data=None, check_data=None):

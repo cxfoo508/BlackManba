@@ -5,7 +5,7 @@ import pytest
 
 from engine_case.engine_base_case import *
 
-dialog_data_1 = ["0_/restart", "1_奶粉结块调查", "2_刚开封", "3_包装完好"]  # 对话树
+dialog_data_1 = ["0_/restart", "1_奶粉结块", "2_刚开封", "3_包装完好"]  # 对话树
 dialog_data_2 = ["0_/restart", "1_奶粉结块调查", "2_刚开封", "3_打开前好像有点漏气"]
 dialog_data_3 = ["0_/restart", "1_奶粉结块调查", "2_使用一段时间后", "3_在保质期"]
 dialog_data_4 = ["0_/restart", "1_奶粉结块调查", "2_使用一段时间后", "3_过保质期了"]
@@ -15,15 +15,17 @@ form_data = ["0_/restart", "1_官网申请试用", "2_小明", "3_COVID-19会引
 form_data_1 = ["0_/restart", "1_官网申请试用", "2_小王", "3_来也科技", "4_2012-11-11", "5_帝都", "7_334433@qq.com", "10_可以"]  # form
 form_data_2 = ["0_/restart", "1_官网申请试用", "2_小王", "3_来也科技", "4_2012-11-11", "5_中国", "6_北京", "7_北京", "8_海淀区",
                "9_13911154620", "10_132201198905082931", "11_334433@qq.com", "12_可以"]
-
-
+form_data_3 = ["0_/restart", "1_官网申请试用", "2_小fff王", "3_来也科技", "4_2012-11-11", "5_中国", "6_北京", "7_北京", "8_海淀区",
+               "9_13911154620", "10_132201198905082931", "11_334433@qq.com", "12_可以"]
+form_data_4 = ["0_/restart", "1_官网申请试ddd用", "2_小王", "3_来也科技", "4_2012-11-11", "5_中国", "6_北京", "7_北京", "8_海淀区",
+               "9_13911154620", "10_132201198905082931", "11_334433@qq.com", "12_可以"]
 # wulai_data = ["1_restart"]
 
 # def get_data():
 # return
 
-
-@pytest.fixture(params=form_data_2)
+userid=str(uuid.uuid4()).replace('-','')
+@pytest.fixture(params=dialog_data_1)
 def send_data(request):
     return request.param
 
@@ -35,7 +37,7 @@ def test_001_query(send_data):
     # print(send_data)
     data = send_data.split("_")
     print(data[1])
-    res = query(data[1])
+    res = query(data[1],userid=userid)
     print(res.status_code, res.content.decode())
     res_con = json.loads(res.content.decode())
 
@@ -65,7 +67,7 @@ data_insert = ['新冠风险人群.insert({患病群体: "青少年", 是否属�
                '新冠风险人群.find({$or: [{患病群体: "青少年1"}, {患病群体: "中年人"}]})']
 
 
-@pytest.fixture(params=data_update)
+@pytest.fixture(params=data_insert)
 def send_data_2(request):
     return request.param
 

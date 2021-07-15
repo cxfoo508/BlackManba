@@ -12,6 +12,7 @@ pytest = "*"
 pandas = "*"
 openpyxl = "*"
 pyyaml = "*"
+pytest-html = "*"
 
 [dev-packages]
 

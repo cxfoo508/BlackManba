@@ -1,0 +1,64 @@
+2021-07-14 18:53:11,132 - INFO - log_method.py[:29] - 2222222222222222222222222222222
+2021-07-14 18:53:11,139 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-14 18:53:11,139 - INFO - log_method.py[:29] - ---test login---
+2021-07-14 18:53:11,283 - INFO - log_method.py[:29] - Agent_id:1598
+2021-07-14 18:53:11,346 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1598, 'intent_id': 1239, 'intent_name': '仐臆戵剼', 'intent_type': 1, 'examples': [{'id': 2065, 'name': '相似问'}], 'keywords_eq': [{'id': 2066, 'name': '严格'}], 'keywords_include': [{'id': 2067, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-14 18:53:11,348 - INFO - log_method.py[:29] - send data:{'agent_id': None, 'search_opt': {'node_id_list': ['string']}, 'is_details_required': 0, 'page_no': 1, 'number_per_page': 0}
+2021-07-14 18:53:11,387 - INFO - log_method.py[:29] - res:{"code":10009,"msg":"接口参数验证出错","data":[{"loc":["body","agent_id"],"msg":"none is not an allowed value","type":"type_error.none.not_allowed"},{"loc":["body","number_per_page"],"msg":"ensure this value is greater than 0","type":"value_error.number.not_gt","ctx":{"limit_value":0}}]}
+2021-07-14 18:53:11,390 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-14 18:53:11,433 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-14 18:59:35,130 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-14 19:01:30,397 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-14 19:01:30,397 - INFO - log_method.py[:29] - ---test login---
+2021-07-14 19:01:30,577 - INFO - log_method.py[:29] - Agent_id:1599
+2021-07-14 19:01:30,667 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1599, 'intent_id': 1241, 'intent_name': '柙辠郤疲', 'intent_type': 1, 'examples': [{'id': 2068, 'name': '相似问'}], 'keywords_eq': [{'id': 2069, 'name': '严格'}], 'keywords_include': [{'id': 2070, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-14 19:01:40,063 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-14 19:01:40,064 - INFO - log_method.py[:29] - ---test login---
+2021-07-14 19:01:40,184 - INFO - log_method.py[:29] - Agent_id:1600
+2021-07-14 19:01:40,283 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1600, 'intent_id': 1243, 'intent_name': '荤勢搜焏', 'intent_type': 1, 'examples': [{'id': 2071, 'name': '相似问'}], 'keywords_eq': [{'id': 2072, 'name': '严格'}], 'keywords_include': [{'id': 2073, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-14 19:01:40,386 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-14 19:01:40,514 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-14 19:02:37,734 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-14 19:02:37,735 - INFO - log_method.py[:29] - ---test login---
+2021-07-14 19:02:38,163 - INFO - log_method.py[:29] - Agent_id:1601
+2021-07-14 19:02:38,479 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1601, 'intent_id': 1245, 'intent_name': '挕犴蔝绱', 'intent_type': 1, 'examples': [{'id': 2074, 'name': '相似问'}], 'keywords_eq': [{'id': 2075, 'name': '严格'}], 'keywords_include': [{'id': 2076, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-14 19:02:38,491 - INFO - log_method.py[:29] - send data:{'agent_id': None, 'search_opt': {'node_id_list': ['string']}, 'is_details_required': 0, 'page_no': 1, 'number_per_page': 0}
+2021-07-14 19:02:38,581 - INFO - log_method.py[:29] - res:{"code":10009,"msg":"接口参数验证出错","data":[{"loc":["body","agent_id"],"msg":"none is not an allowed value","type":"type_error.none.not_allowed"},{"loc":["body","number_per_page"],"msg":"ensure this value is greater than 0","type":"value_error.number.not_gt","ctx":{"limit_value":0}}]}
+2021-07-14 19:02:38,583 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-14 19:02:38,663 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-14 19:04:44,323 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-14 19:04:44,323 - INFO - log_method.py[:29] - ---test login---
+2021-07-14 19:04:44,577 - INFO - log_method.py[:29] - Agent_id:1602
+2021-07-14 19:04:44,856 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1602, 'intent_id': 1247, 'intent_name': '鞌眒鰴櫦', 'intent_type': 1, 'examples': [{'id': 2077, 'name': '相似问'}], 'keywords_eq': [{'id': 2078, 'name': '严格'}], 'keywords_include': [{'id': 2079, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-14 19:04:44,866 - INFO - log_method.py[:29] - send data:{'agent_id': None, 'search_opt': {'node_id_list': ['string']}, 'is_details_required': 0, 'page_no': 1, 'number_per_page': 0}
+2021-07-14 19:04:44,928 - INFO - log_method.py[:29] - res:{"code":10009,"msg":"接口参数验证出错","data":[{"loc":["body","agent_id"],"msg":"none is not an allowed value","type":"type_error.none.not_allowed"},{"loc":["body","number_per_page"],"msg":"ensure this value is greater than 0","type":"value_error.number.not_gt","ctx":{"limit_value":0}}]}
+2021-07-14 19:04:44,930 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-14 19:04:45,026 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-14 19:05:16,989 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-14 19:05:16,989 - INFO - log_method.py[:29] - ---test login---
+2021-07-14 19:05:17,104 - INFO - log_method.py[:29] - Agent_id:1603
+2021-07-14 19:05:17,157 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1603, 'intent_id': 1249, 'intent_name': '國頕鬷狾', 'intent_type': 1, 'examples': [{'id': 2080, 'name': '相似问'}], 'keywords_eq': [{'id': 2081, 'name': '严格'}], 'keywords_include': [{'id': 2082, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-14 19:05:17,168 - INFO - log_method.py[:29] - send data:{'agent_id': None, 'search_opt': {'node_id_list': ['string']}, 'is_details_required': 0, 'page_no': 1, 'number_per_page': 0}
+2021-07-14 19:05:17,202 - INFO - log_method.py[:29] - res:{"code":10009,"msg":"接口参数验证出错","data":[{"loc":["body","agent_id"],"msg":"none is not an allowed value","type":"type_error.none.not_allowed"},{"loc":["body","number_per_page"],"msg":"ensure this value is greater than 0","type":"value_error.number.not_gt","ctx":{"limit_value":0}}]}
+2021-07-14 19:05:17,204 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-14 19:05:17,249 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-14 19:30:59,984 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-14 19:30:59,984 - INFO - log_method.py[:29] - ---test login---
+2021-07-14 19:31:00,205 - INFO - log_method.py[:29] - Agent_id:1604
+2021-07-14 19:31:00,290 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1604, 'intent_id': 1251, 'intent_name': '汛遚碦毥', 'intent_type': 1, 'examples': [{'id': 2083, 'name': '相似问'}], 'keywords_eq': [{'id': 2084, 'name': '严格'}], 'keywords_include': [{'id': 2085, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-14 19:31:00,389 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-14 19:31:00,469 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-14 19:31:06,003 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-14 19:31:06,003 - INFO - log_method.py[:29] - ---test login---
+2021-07-14 19:31:06,101 - INFO - log_method.py[:29] - Agent_id:1605
+2021-07-14 19:31:06,152 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1605, 'intent_id': 1253, 'intent_name': '殌瀑奶拰', 'intent_type': 1, 'examples': [{'id': 2086, 'name': '相似问'}], 'keywords_eq': [{'id': 2087, 'name': '严格'}], 'keywords_include': [{'id': 2088, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-14 19:31:06,241 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-14 19:31:06,278 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-14 19:32:45,845 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-14 19:32:45,846 - INFO - log_method.py[:29] - ---test login---
+2021-07-14 19:32:45,955 - INFO - log_method.py[:29] - Agent_id:1606
+2021-07-14 19:32:46,009 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1606, 'intent_id': 1255, 'intent_name': '歂囐猶惍', 'intent_type': 1, 'examples': [{'id': 2089, 'name': '相似问'}], 'keywords_eq': [{'id': 2090, 'name': '严格'}], 'keywords_include': [{'id': 2091, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-14 19:32:46,012 - INFO - log_method.py[:29] - send data:{'agent_id': None, 'search_opt': {'node_id_list': ['string']}, 'is_details_required': 0, 'page_no': 1, 'number_per_page': 0}
+2021-07-14 19:32:46,043 - INFO - log_method.py[:29] - res:{"code":10009,"msg":"接口参数验证出错","data":[{"loc":["body","agent_id"],"msg":"none is not an allowed value","type":"type_error.none.not_allowed"},{"loc":["body","number_per_page"],"msg":"ensure this value is greater than 0","type":"value_error.number.not_gt","ctx":{"limit_value":0}}]}
+2021-07-14 19:32:46,045 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-14 19:32:46,079 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}

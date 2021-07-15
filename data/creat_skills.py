@@ -1,12 +1,17 @@
-from   data_method import *
+from data_method import *
+
+
 class create_skills_parm:
     # agent_name
     parm_001 = [{
         "agent_id": 0,
-        "skill_name": get_str(4),
-        "intent_id": 1,
-        "skill_type": 4,
-        "description": "string"
+        "category_id": 4,
+        "intent_id": 0,
+        "skill_type": 1,
+        "skill_content": {
+            "skill_name": get_str(4),
+            "description": "描述"
+        }
     }, '{"code":0,"msg":"","data":{"agent_id"']
     parm_002 = [{
         "agent_id": 0,
@@ -38,11 +43,11 @@ class create_skills_parm:
         if parm_name is None:
             for i in cls.parm_list:
                 if "parm" in i:
-                    lists.append(eval("cls."+i))
+                    lists.append(eval("cls." + i))
         else:
             for item in cls.parm_list:
                 if item == parm_name:
-                    lists.append(eval("cls."+item))
+                    lists.append(eval("cls." + item))
         return lists
 
 

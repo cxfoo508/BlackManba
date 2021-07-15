@@ -1,5 +1,5 @@
 import uuid
-from urllib.parse import *
+
 import requests
 
 URL = "http://172.17.202.22:5015"
@@ -21,7 +21,7 @@ def request_data(url, data=None, check_data=None, type="post"):
     else:
         print(data)
         request = requests.get(url=f'{URL_tab}{send_url}', params=data)
-        request.encoding='utf-8'
+        request.encoding = 'utf-8'
         print(request.url)
     return request
 
@@ -42,11 +42,12 @@ def query_table(data):
     return res
 
 
-def query(data):
+def query(data, userid=True):
     """
 
     """
-    userid = ''.join(str(uuid.uuid4()).split('-'))
+    if userid == True:
+        userid = ''.join(str(uuid.uuid4()).split('-'))
     print(f"user_id: {userid}")
     body = {
         "msg_body": {

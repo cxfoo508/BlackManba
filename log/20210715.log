@@ -1,0 +1,210 @@
+2021-07-15 11:02:04,783 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 11:02:04,784 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 11:02:04,893 - INFO - log_method.py[:29] - Agent_id:1609
+2021-07-15 11:02:04,945 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1609, 'intent_id': 1265, 'intent_name': '圉鸵瓭玴', 'intent_type': 1, 'examples': [{'id': 2102, 'name': '相似问'}], 'keywords_eq': [{'id': 2103, 'name': '严格'}], 'keywords_include': [{'id': 2104, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 11:02:04,948 - INFO - log_method.py[:29] - send data:{'agent_id': None, 'search_opt': {'node_id_list': ['string']}, 'is_details_required': 0, 'page_no': 1, 'number_per_page': 0}
+2021-07-15 11:02:04,983 - INFO - log_method.py[:29] - res:{"code":10009,"msg":"接口参数验证出错","data":[{"loc":["body","agent_id"],"msg":"none is not an allowed value","type":"type_error.none.not_allowed"},{"loc":["body","number_per_page"],"msg":"ensure this value is greater than 0","type":"value_error.number.not_gt","ctx":{"limit_value":0}}]}
+2021-07-15 11:02:04,985 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 11:02:05,026 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 11:18:08,735 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 11:18:08,735 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 11:18:08,842 - INFO - log_method.py[:29] - Agent_id:1610
+2021-07-15 11:18:08,895 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1610, 'intent_id': 1267, 'intent_name': '瞥嶘縀骚', 'intent_type': 1, 'examples': [{'id': 2105, 'name': '相似问'}], 'keywords_eq': [{'id': 2106, 'name': '严格'}], 'keywords_include': [{'id': 2107, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 11:18:08,897 - INFO - log_method.py[:29] - send data:{'agent_id': None, 'search_opt': {'node_id_list': ['string']}, 'is_details_required': 0, 'page_no': 1, 'number_per_page': 0}
+2021-07-15 11:18:08,931 - INFO - log_method.py[:29] - res:{"code":10009,"msg":"接口参数验证出错","data":[{"loc":["body","agent_id"],"msg":"none is not an allowed value","type":"type_error.none.not_allowed"},{"loc":["body","number_per_page"],"msg":"ensure this value is greater than 0","type":"value_error.number.not_gt","ctx":{"limit_value":0}}]}
+2021-07-15 11:18:08,933 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 11:18:08,970 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 11:27:42,452 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 11:27:42,453 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 11:27:42,572 - INFO - log_method.py[:29] - Agent_id:1611
+2021-07-15 11:27:42,632 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1611, 'intent_id': 1269, 'intent_name': '崉骊葅菕', 'intent_type': 1, 'examples': [{'id': 2108, 'name': '相似问'}], 'keywords_eq': [{'id': 2109, 'name': '严格'}], 'keywords_include': [{'id': 2110, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 11:27:42,635 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 11:27:42,672 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 11:29:56,177 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 11:29:56,177 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 11:29:56,286 - INFO - log_method.py[:29] - Agent_id:1612
+2021-07-15 11:29:56,336 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1612, 'intent_id': 1271, 'intent_name': '擂篎悘巔', 'intent_type': 1, 'examples': [{'id': 2111, 'name': '相似问'}], 'keywords_eq': [{'id': 2112, 'name': '严格'}], 'keywords_include': [{'id': 2113, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 11:29:56,440 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 11:29:56,476 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 11:30:42,435 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 11:30:42,436 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 11:30:42,542 - INFO - log_method.py[:29] - Agent_id:1613
+2021-07-15 11:30:42,603 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1613, 'intent_id': 1273, 'intent_name': '蒛橜侜鈩', 'intent_type': 1, 'examples': [{'id': 2114, 'name': '相似问'}], 'keywords_eq': [{'id': 2115, 'name': '严格'}], 'keywords_include': [{'id': 2116, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 11:30:42,607 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 11:30:42,639 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 11:36:21,989 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 11:36:21,990 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 11:36:22,109 - INFO - log_method.py[:29] - Agent_id:1614
+2021-07-15 11:36:22,162 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1614, 'intent_id': 1275, 'intent_name': '摓僄郐恞', 'intent_type': 1, 'examples': [{'id': 2117, 'name': '相似问'}], 'keywords_eq': [{'id': 2118, 'name': '严格'}], 'keywords_include': [{'id': 2119, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 11:36:22,166 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 11:36:22,205 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 11:46:57,029 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 11:46:57,029 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 11:46:57,126 - INFO - log_method.py[:29] - Agent_id:1615
+2021-07-15 11:46:57,178 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1615, 'intent_id': 1277, 'intent_name': '侼偏楃託', 'intent_type': 1, 'examples': [{'id': 2120, 'name': '相似问'}], 'keywords_eq': [{'id': 2121, 'name': '严格'}], 'keywords_include': [{'id': 2122, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 11:46:57,181 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 11:46:57,215 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:20:44,685 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:20:44,686 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:20:44,790 - INFO - log_method.py[:29] - Agent_id:1616
+2021-07-15 13:20:44,841 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1616, 'intent_id': 1279, 'intent_name': '琹梖裭横', 'intent_type': 1, 'examples': [{'id': 2123, 'name': '相似问'}], 'keywords_eq': [{'id': 2124, 'name': '严格'}], 'keywords_include': [{'id': 2125, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:20:44,844 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:20:44,875 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:21:04,602 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:21:04,602 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:21:04,697 - INFO - log_method.py[:29] - Agent_id:1617
+2021-07-15 13:21:04,753 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1617, 'intent_id': 1281, 'intent_name': '憒褿夯驌', 'intent_type': 1, 'examples': [{'id': 2126, 'name': '相似问'}], 'keywords_eq': [{'id': 2127, 'name': '严格'}], 'keywords_include': [{'id': 2128, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:21:04,756 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:21:04,792 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:22:56,800 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:22:56,801 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:22:56,914 - INFO - log_method.py[:29] - Agent_id:1618
+2021-07-15 13:22:56,976 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1618, 'intent_id': 1283, 'intent_name': '溋夐纰順', 'intent_type': 1, 'examples': [{'id': 2129, 'name': '相似问'}], 'keywords_eq': [{'id': 2130, 'name': '严格'}], 'keywords_include': [{'id': 2131, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:22:57,084 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:22:57,117 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:23:28,164 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:23:28,164 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:23:28,283 - INFO - log_method.py[:29] - Agent_id:1619
+2021-07-15 13:23:28,346 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1619, 'intent_id': 1285, 'intent_name': '瑝礯电鴿', 'intent_type': 1, 'examples': [{'id': 2132, 'name': '相似问'}], 'keywords_eq': [{'id': 2133, 'name': '严格'}], 'keywords_include': [{'id': 2134, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:23:28,435 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:23:29,488 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:23:48,446 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:23:48,446 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:23:48,559 - INFO - log_method.py[:29] - Agent_id:1620
+2021-07-15 13:23:48,622 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1620, 'intent_id': 1287, 'intent_name': '濫今措猐', 'intent_type': 1, 'examples': [{'id': 2135, 'name': '相似问'}], 'keywords_eq': [{'id': 2136, 'name': '严格'}], 'keywords_include': [{'id': 2137, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:23:48,730 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:23:48,772 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:24:46,566 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:24:46,566 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:24:46,696 - INFO - log_method.py[:29] - Agent_id:1621
+2021-07-15 13:24:46,758 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1621, 'intent_id': 1289, 'intent_name': '邶饉檆埪', 'intent_type': 1, 'examples': [{'id': 2138, 'name': '相似问'}], 'keywords_eq': [{'id': 2139, 'name': '严格'}], 'keywords_include': [{'id': 2140, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:24:46,762 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:24:46,808 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:27:58,869 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:27:58,869 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:27:59,056 - INFO - log_method.py[:29] - Agent_id:1622
+2021-07-15 13:27:59,126 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1622, 'intent_id': 1291, 'intent_name': '钏萧蓕瀭', 'intent_type': 1, 'examples': [{'id': 2141, 'name': '相似问'}], 'keywords_eq': [{'id': 2142, 'name': '严格'}], 'keywords_include': [{'id': 2143, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:27:59,129 - INFO - log_method.py[:29] - send data:[{'agent_id': None, 'search_opt': {'node_id_list': ['string']}, 'is_details_required': 0, 'page_no': 1, 'number_per_page': 0}, '{"code":0,"msg":"","data":{"agent_id"']
+2021-07-15 13:27:59,187 - INFO - log_method.py[:29] - res:{"code":10009,"msg":"接口参数验证出错","data":[{"loc":["body"],"msg":"value is not a valid dict","type":"type_error.dict"}]}
+2021-07-15 13:27:59,190 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:27:59,266 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:29:02,474 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:29:02,474 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:29:02,592 - INFO - log_method.py[:29] - Agent_id:1623
+2021-07-15 13:29:02,657 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1623, 'intent_id': 1293, 'intent_name': '阙玴鳇棠', 'intent_type': 1, 'examples': [{'id': 2144, 'name': '相似问'}], 'keywords_eq': [{'id': 2145, 'name': '严格'}], 'keywords_include': [{'id': 2146, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:29:02,659 - INFO - log_method.py[:29] - send data:[{'agent_id': None, 'search_opt': {'node_id_list': ['string']}, 'is_details_required': 0, 'page_no': 1, 'number_per_page': 0}, '{"code":0,"msg":"","data":{"agent_id"']
+2021-07-15 13:29:02,745 - INFO - log_method.py[:29] - res:{"code":10009,"msg":"接口参数验证出错","data":[{"loc":["body"],"msg":"value is not a valid dict","type":"type_error.dict"}]}
+2021-07-15 13:29:02,746 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:29:02,919 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:29:26,280 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:29:26,280 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:29:26,400 - INFO - log_method.py[:29] - Agent_id:1624
+2021-07-15 13:29:26,453 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1624, 'intent_id': 1295, 'intent_name': '吱坣姰誓', 'intent_type': 1, 'examples': [{'id': 2147, 'name': '相似问'}], 'keywords_eq': [{'id': 2148, 'name': '严格'}], 'keywords_include': [{'id': 2149, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:29:26,456 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:29:26,493 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:29:48,200 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:29:48,201 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:29:48,338 - INFO - log_method.py[:29] - Agent_id:1625
+2021-07-15 13:29:48,409 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1625, 'intent_id': 1297, 'intent_name': '紸縸擰碰', 'intent_type': 1, 'examples': [{'id': 2150, 'name': '相似问'}], 'keywords_eq': [{'id': 2151, 'name': '严格'}], 'keywords_include': [{'id': 2152, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:29:48,412 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:29:48,472 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:31:04,294 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:31:04,294 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:31:04,426 - INFO - log_method.py[:29] - Agent_id:1626
+2021-07-15 13:31:04,492 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1626, 'intent_id': 1299, 'intent_name': '笾墆炡嵴', 'intent_type': 1, 'examples': [{'id': 2153, 'name': '相似问'}], 'keywords_eq': [{'id': 2154, 'name': '严格'}], 'keywords_include': [{'id': 2155, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:31:04,494 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:31:04,551 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:31:55,470 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:31:55,470 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:31:55,614 - INFO - log_method.py[:29] - Agent_id:1627
+2021-07-15 13:31:55,723 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1627, 'intent_id': 1301, 'intent_name': '睜阑騚姒', 'intent_type': 1, 'examples': [{'id': 2156, 'name': '相似问'}], 'keywords_eq': [{'id': 2157, 'name': '严格'}], 'keywords_include': [{'id': 2158, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:31:55,727 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:31:55,778 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:37:01,479 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:37:01,480 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:37:01,673 - INFO - log_method.py[:29] - Agent_id:1628
+2021-07-15 13:37:01,798 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1628, 'intent_id': 1303, 'intent_name': '耼艞蚠袈', 'intent_type': 1, 'examples': [{'id': 2159, 'name': '相似问'}], 'keywords_eq': [{'id': 2160, 'name': '严格'}], 'keywords_include': [{'id': 2161, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:37:01,802 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:37:01,872 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:40:55,237 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:40:55,237 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:40:55,426 - INFO - log_method.py[:29] - Agent_id:1629
+2021-07-15 13:40:55,526 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1629, 'intent_id': 1305, 'intent_name': '嬪梥鸗刿', 'intent_type': 1, 'examples': [{'id': 2162, 'name': '相似问'}], 'keywords_eq': [{'id': 2163, 'name': '严格'}], 'keywords_include': [{'id': 2164, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:40:55,626 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:40:55,691 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:42:11,235 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:42:11,235 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:42:11,401 - INFO - log_method.py[:29] - Agent_id:1630
+2021-07-15 13:42:11,496 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1630, 'intent_id': 1307, 'intent_name': '鏩訁飩肫', 'intent_type': 1, 'examples': [{'id': 2165, 'name': '相似问'}], 'keywords_eq': [{'id': 2166, 'name': '严格'}], 'keywords_include': [{'id': 2167, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:42:11,589 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:42:11,656 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:46:33,817 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:46:33,818 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:46:34,198 - INFO - log_method.py[:29] - Agent_id:1631
+2021-07-15 13:46:34,509 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1631, 'intent_id': 1309, 'intent_name': '忽啨狈霞', 'intent_type': 1, 'examples': [{'id': 2168, 'name': '相似问'}], 'keywords_eq': [{'id': 2169, 'name': '严格'}], 'keywords_include': [{'id': 2170, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:46:34,610 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:46:34,734 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:48:07,086 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:48:07,087 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:48:07,241 - INFO - log_method.py[:29] - Agent_id:1632
+2021-07-15 13:48:07,323 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1632, 'intent_id': 1311, 'intent_name': '虁拪醳囄', 'intent_type': 1, 'examples': [{'id': 2171, 'name': '相似问'}], 'keywords_eq': [{'id': 2172, 'name': '严格'}], 'keywords_include': [{'id': 2173, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:48:07,327 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:48:07,385 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:48:19,876 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:48:19,877 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:48:20,038 - INFO - log_method.py[:29] - Agent_id:1633
+2021-07-15 13:48:20,115 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1633, 'intent_id': 1313, 'intent_name': '昩痱槙諎', 'intent_type': 1, 'examples': [{'id': 2174, 'name': '相似问'}], 'keywords_eq': [{'id': 2175, 'name': '严格'}], 'keywords_include': [{'id': 2176, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:48:20,118 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:48:20,183 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:48:49,927 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:48:49,927 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:48:50,089 - INFO - log_method.py[:29] - Agent_id:1634
+2021-07-15 13:48:50,231 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1634, 'intent_id': 1315, 'intent_name': '凧蛀鶷伭', 'intent_type': 1, 'examples': [{'id': 2177, 'name': '相似问'}], 'keywords_eq': [{'id': 2178, 'name': '严格'}], 'keywords_include': [{'id': 2179, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:48:50,235 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:48:50,340 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:49:10,331 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:49:10,331 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:49:10,456 - INFO - log_method.py[:29] - Agent_id:1635
+2021-07-15 13:49:10,535 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1635, 'intent_id': 1317, 'intent_name': '薂偻蟻伔', 'intent_type': 1, 'examples': [{'id': 2180, 'name': '相似问'}], 'keywords_eq': [{'id': 2181, 'name': '严格'}], 'keywords_include': [{'id': 2182, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:49:10,539 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:49:10,588 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 13:52:31,968 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 13:52:31,968 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 13:52:32,101 - INFO - log_method.py[:29] - Agent_id:1636
+2021-07-15 13:52:32,164 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1636, 'intent_id': 1319, 'intent_name': '郺瞤竜捕', 'intent_type': 1, 'examples': [{'id': 2183, 'name': '相似问'}], 'keywords_eq': [{'id': 2184, 'name': '严格'}], 'keywords_include': [{'id': 2185, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 13:52:32,167 - INFO - log_method.py[:29] - send data:[{'agent_id': '1636', 'search_opt': {'node_id_list': ['string']}, 'is_details_required': 0, 'page_no': 1, 'number_per_page': 0}, '{"code":0,"msg":"","data":{"agent_id"']
+2021-07-15 13:52:32,212 - INFO - log_method.py[:29] - res:{"code":10009,"msg":"接口参数验证出错","data":[{"loc":["body"],"msg":"value is not a valid dict","type":"type_error.dict"}]}
+2021-07-15 13:52:32,214 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 13:52:32,270 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 14:47:27,892 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 14:47:27,893 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 14:47:28,110 - INFO - log_method.py[:29] - Agent_id:1643
+2021-07-15 14:47:28,184 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1643, 'intent_id': 1332, 'intent_name': '证笙种賸', 'intent_type': 1, 'examples': [{'id': 2210, 'name': '相似问'}], 'keywords_eq': [{'id': 2211, 'name': '严格'}], 'keywords_include': [{'id': 2212, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 14:47:28,186 - INFO - log_method.py[:29] - send data:[{'agent_id': '1643', 'search_opt': {'node_id_list': ['string']}, 'is_details_required': 0, 'page_no': 1, 'number_per_page': 0}, '{"code":0,"msg":"","data":{"agent_id"']
+2021-07-15 14:47:28,265 - INFO - log_method.py[:29] - res:{"code":10009,"msg":"接口参数验证出错","data":[{"loc":["body"],"msg":"value is not a valid dict","type":"type_error.dict"}]}
+2021-07-15 14:47:28,266 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 14:47:28,385 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 14:52:43,307 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 14:52:43,307 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 14:52:43,422 - INFO - log_method.py[:29] - Agent_id:1664
+2021-07-15 14:52:43,478 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1664, 'intent_id': 1357, 'intent_name': '庅雜琧讉', 'intent_type': 1, 'examples': [{'id': 2225, 'name': '相似问'}], 'keywords_eq': [{'id': 2226, 'name': '严格'}], 'keywords_include': [{'id': 2227, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 14:52:43,479 - INFO - log_method.py[:29] - send data:[{'agent_id': '1664', 'search_opt': {'node_id_list': ['string']}, 'is_details_required': 0, 'page_no': 1, 'number_per_page': 0}, '{"code":0,"msg":"","data":{"agent_id"']
+2021-07-15 14:52:43,585 - INFO - log_method.py[:29] - res:{"code":10009,"msg":"接口参数验证出错","data":[{"loc":["body"],"msg":"value is not a valid dict","type":"type_error.dict"}]}
+2021-07-15 14:52:43,586 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 14:52:43,801 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 14:55:12,058 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 14:55:12,059 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 14:55:12,218 - INFO - log_method.py[:29] - Agent_id:1700
+2021-07-15 14:55:12,301 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1700, 'intent_id': 1397, 'intent_name': '犬譜蚀卖', 'intent_type': 1, 'examples': [{'id': 2240, 'name': '相似问'}], 'keywords_eq': [{'id': 2241, 'name': '严格'}], 'keywords_include': [{'id': 2242, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 14:55:12,303 - INFO - log_method.py[:29] - send data:[{'agent_id': '1700', 'search_opt': {'node_id_list': ['string']}, 'is_details_required': 0, 'page_no': 1, 'number_per_page': 0}, '{"code":0,"msg":"","data":{"agent_id"']
+2021-07-15 14:55:12,359 - INFO - log_method.py[:29] - res:{"code":10009,"msg":"接口参数验证出错","data":[{"loc":["body"],"msg":"value is not a valid dict","type":"type_error.dict"}]}
+2021-07-15 14:55:12,360 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 14:55:12,471 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}
+2021-07-15 15:01:55,190 - INFO - log_method.py[:29] - ---setup_class---
+2021-07-15 15:01:55,190 - INFO - log_method.py[:29] - ---test login---
+2021-07-15 15:01:55,440 - INFO - log_method.py[:29] - Agent_id:1721
+2021-07-15 15:01:55,519 - INFO - log_method.py[:29] - {'code': 0, 'msg': '创建意图成功', 'data': {'agent_id': 1721, 'intent_id': 1422, 'intent_name': '蠆臉媋怈', 'intent_type': 1, 'examples': [{'id': 2255, 'name': '相似问'}], 'keywords_eq': [{'id': 2256, 'name': '严格'}], 'keywords_include': [{'id': 2257, 'name': '包含'}], 'questionTree': [], 'interactQuestion': [], 'gaphicsDesign': [], 'faq': [], 'systemIntents': []}}
+2021-07-15 15:01:55,521 - INFO - log_method.py[:29] - send data:[{'agent_id': '1721', 'search_opt': {'node_id_list': ['string']}, 'is_details_required': 0, 'page_no': 1, 'number_per_page': 0}, '{"code":0,"msg":"","data":{"agent_id"']
+2021-07-15 15:01:55,553 - INFO - log_method.py[:29] - res:{"code":10009,"msg":"接口参数验证出错","data":[{"loc":["body"],"msg":"value is not a valid dict","type":"type_error.dict"}]}
+2021-07-15 15:01:55,554 - INFO - log_method.py[:29] - ---teardown_class---
+2021-07-15 15:01:55,593 - INFO - log_method.py[:29] - {"code":0,"msg":"机器人删除成功","data":{"rowcount":1}}

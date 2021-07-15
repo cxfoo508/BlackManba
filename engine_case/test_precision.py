@@ -65,6 +65,9 @@ class PrecisionCase:
                 break
 
     def open_text(self):
+        """
+        读取测试数据
+        """
         file_path = self.excel_path
         sum_list = []
         with open(file_path, 'r') as file:
