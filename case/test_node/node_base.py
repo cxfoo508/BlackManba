@@ -19,6 +19,15 @@ class node_base_class:
         return con
 
     @classmethod
+    def create_skills(cls, data):
+        """
+        创建技能
+        """
+        url = '/v1/skills/create'
+        res = cls.__node_base(url, data)
+        return res
+
+    @classmethod
     def node_list(cls, data):
         """
         获取节点列表

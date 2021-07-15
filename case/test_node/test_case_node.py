@@ -3,17 +3,17 @@ import json
 
 import pytest
 
+
 from base_case import *
-from case.test_node.node_base import node_base_class
-from case.test_node.node_data import node_data_class
 from case.test_node.node_sort_data import node_sort_class
 from data_method import *
 from log.log_method import MyLog
-
+import json
+from case.pytest_base import PyBase
 log = MyLog(__name__)
 
 
-class TestCase:
+class TestCase(PyBase):
 
     def setup_class(self):
         """
@@ -81,21 +81,13 @@ class TestCase:
     def creat_data(self, request):
         return request.param
 
-    def test_node_02(self, creat_data):
+    def test_node(self, creat_data):
         """
         执行测试case
         """
-        data = eval(creat_data)
-        sort_data = data['sort']
-        param_data = data['params']
+        self.run(creat_data)
 
-        for i in range(len(sort_data)):
-            object_x = eval(str(param_data[i]).split('.')[0] + '()')
-            param_n = str(param_data[i]).split('.')[1]
-            param = eval('object_x.' + param_n)
-            func = sort_data[i]
-            con = eval(f'{func}({param})')
-            print(con)
+
 
     def teardown_class(self):
         """
