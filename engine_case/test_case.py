@@ -28,7 +28,7 @@ def send_data(request):
     return request.param
 
 
-def test_002_query(send_data):
+def test_001_query(send_data):
     """
        对话树-query
        """
@@ -38,3 +38,43 @@ def test_002_query(send_data):
     res = query(data[1])
     print(res.status_code, res.content.decode())
     res_con = json.loads(res.content.decode())
+
+
+data = ['新冠风险人群.find({患病群体: "老年人"})', '新冠风险人群.find({患病群体: {$eq: "老年人"}})', '新冠风险人群.find({患病群体: 老年人}, {})',
+        '新冠风险人群.findOne({患病群体: "老年人"})', '新冠风险人群.find({患病群体: {$contains: "老"}})',
+        '新冠风险人群.find({患病群体: "老年人"}, {是否属于高风险: 1})', '新冠风险人群.find({患病群体: "老年人"}, {最低年龄: 0, 最高年龄: 0})',
+        '新冠风险人群.find({最高年龄: {$gte: 20, $lte: 60}})', '新冠风险人群.find({是否属于高风险: "属于"}, {患病群体: 1})',
+        '新冠风险人群.find({患病群体: "儿童", 最高年龄: {$gte: 10, $lte: 60}})',
+        '新冠风险人群.find({最高年龄: {$eq: 200}})',
+        '新冠风险人群.find({最高年龄: {$gt: 60}})',
+        '新冠风险人群.find({最高年龄: {$lt: 200}})',
+        '新冠风险人群.find({最高年龄: {$gte: 0}})',
+        '新冠风险人群.find({最高年龄: {$lte: 60}})',
+        '新冠风险人群.find({$and: [{患病群体: "儿童"}, {最高年龄: {$gte: 20, $lte: 200}}]})',
+        '新冠风险人群.find({$or: [{患病群体: "儿童"}, {最高年龄: {$gte: 20, $lte: 60}}]})',
+        '新冠风险人群.findOne({$or: [{患病群体: "儿童"}, {最高年龄: {$gte: 20, $lte: 60}}]})']
+
+data_update = ['新冠风险人群.update({患病群体: {$eq: "老年人"}}, {患病群体: "老人"})', '新冠风险人群.find({患病群体: "老人"})',
+               '新冠风险人群.update({患病群体: {$eq: "老点多年人"}}, {患病群体: "老d人"}, {upsert: true})', '新冠风险人群.find({患病群体: "老d人"})',
+               '新冠风险人群.update({患病群体: {$eq: "老多年人"}}, {患病群体: "老f人"}, {upsert: false})', '新冠风险人群.find({患病群体: "老f人"})',
+               '新冠风险人群.update({最低年龄: {$eq: "20"}}, {最低年龄: "10"}, {upsert: false})', '新冠风险人群.find({最低年龄: "10"})',
+               '新冠风险人群.updateOne({最低年龄: {$eq: "10"}}, {最低年龄: "20"}, {upsert: false})', '新冠风险人群.find({最低年龄: "20"})']
+data_insert = ['新冠风险人群.insert({患病群体: "青少年", 是否属于高风险: "属于", 最高年龄: 20, 最低年龄: 10})', '新冠风险人群.find({患病群体: "青少年"})',
+               '新冠风险人群.update({患病群体: {$eq: "青少年"}}, {患病群体: "青少年g"})', '新冠风险人群.find({患病群体: "青少年g"})',
+               '新冠风险人群.insert([{患病群体: "青少年1", 是否属于高风险: "属于", 最高年龄: 20, 最低年龄: 10},{患病群体: "中年人", 是否属于高风险: "属于", 最高年龄: 30, 最低年龄: 60}])',
+               '新冠风险人群.find({$or: [{患病群体: "青少年1"}, {患病群体: "中年人"}]})']
+
+
+@pytest.fixture(params=data_update)
+def send_data_2(request):
+    return request.param
+
+
+def test_002_table_read(send_data_2):
+    """
+    table read
+    """
+    data = send_data_2
+    res = query_table(data)
+    con = res.content.decode()
+    print(con)
