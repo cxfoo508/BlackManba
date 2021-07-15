@@ -39,25 +39,32 @@ class TestCase():
         print(f'TOKEN:{os.environ.get("token")}')
 
     def get_py_data(self):
-        data_list = get_parms_list()
+        print("-----------------------------------------")
+        data_list = get_parms_list_01()
+        print(data_list)
         return data_list
 
     @pytest.fixture(params=get_py_data(None))
     def creat_data(self, request):
+        print("-----------------------------------------")
+        # print('1', request.param)
         return request.param
 
     def test01_app_creat(self, creat_data):
         """
         测试创建app
         """
+        print("-----------------------------------------")
         print("---creat app---")
         global agent_id
+        print(creat_data)
         data = eval(creat_data)
+        print("---------", data)
         keys = data[0].keys()
-        print(keys)
+        print("---------", keys)
         if "agent_name" in keys:
             data[0]["agent_name"] += (str(uuid.uuid4()).split("-"))[0]
-        print(data)
+        print("---------", data)
         # 调用接口
         res = creat_app(data[0])
         content = json.loads(res.content.decode())
@@ -443,4 +450,4 @@ class TestCase():
 #
 if __name__ == '__main__':
     # pytest.main(["-v -s", "Test_Case2.py::TestCass::test_auth_systemInfo"])
-    pytest.main("-s Test_Case2.py::TestCass::test_auth_systemInfo")
+    pytest.main("-s Test_Case2.py::TestCass::test01_app_creat")

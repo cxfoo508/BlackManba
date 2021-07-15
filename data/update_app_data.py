@@ -95,6 +95,7 @@ up_parm_017 = [{
     "agent_name": "test-app",
     "agent_detail": "测试",
     "lang": "en-US"
+
 }, '{"code":0,"msg":"","data":{"rowcount":1}}']
 up_parm_018 = [{
     "agent_name": "test-app",
