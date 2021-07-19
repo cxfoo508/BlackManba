@@ -1,25 +1,27 @@
 # coding = utf-8
-import os
-import time
 import hashlib
 import json
-import string
+import os
 import random
+import string
+import time
+
 import requests
 
 # URL =  "http://172.17.202.22:5015"
 URL = "http://39.105.24.211:8080"
 # URL = "http://59.110.157.33:5697"
 
-CHAR_LIST=[]
-[[CHAR_LIST.append(e) for e in string.digits] for i in range(0,2)]
-[[CHAR_LIST.append(e) for e in string.digits] for i in range(0,2)]
-[[CHAR_LIST.append(e) for e in string.digits] for i in range(0,2)]
+CHAR_LIST = []
+[[CHAR_LIST.append(e) for e in string.digits] for i in range(0, 2)]
+[[CHAR_LIST.append(e) for e in string.digits] for i in range(0, 2)]
+[[CHAR_LIST.append(e) for e in string.digits] for i in range(0, 2)]
 
 
 def GetChars(length):
     random.shuffle(CHAR_LIST)
     return "".join(CHAR_LIST[0:length])
+
 
 def get_headers():
     # 开放平台的基础信息
@@ -40,12 +42,14 @@ def get_headers():
         headers["auth_" + k] = v
     return headers
 
+
 def get_channel_auth():
     headers = get_headers()
     # print(f'headers:{headers}')
     res = channel_auth(data=headers)
     con_data = json.loads(res)
     return con_data["data"]["access_token"]
+
 
 def request_data(url, data=None, check_data=None):
     """
@@ -62,6 +66,7 @@ def request_data(url, data=None, check_data=None):
     print(f'res time:{request.elapsed.total_seconds()}')
     return request
 
+
 def request_data_channel(url, data=None, check_data=None):
     send_url = url
     token = os.environ.get("access_token")
@@ -73,6 +78,7 @@ def request_data_channel(url, data=None, check_data=None):
     print(f"{URL}{send_url}")
     request_channel = requests.post(url=f"{URL}{send_url}", json=data, headers=header)
     return request_channel
+
 
 def creat_app(data):
     """
@@ -136,6 +142,7 @@ def users_userInfo(data=None):
     res = request_data(url, data)
     return res
 
+
 # 兜底策略
 
 def get_config(data=None):
@@ -144,7 +151,8 @@ def get_config(data=None):
     """
     url = '/v1/fallback_config/get_config'
     res = request_data(url, data)
-    return  res
+    return res
+
 
 def update_config(data=None):
     """
@@ -154,6 +162,7 @@ def update_config(data=None):
     res = request_data(url, data)
     return res
 
+
 # 回复
 def response_type(data=None):
     """
@@ -162,6 +171,7 @@ def response_type(data=None):
     url = '/v1/response/response_type'
     res = request_data(url, data)
     return res
+
 
 def responses_type(data=None):
     """
@@ -215,6 +225,7 @@ def delete_responses(data=None):
     url = '/v1/response/delete_responses'
     res = request_data(url, data)
     return res
+
 
 # 实体
 def create_entity(data=None):
@@ -307,6 +318,7 @@ def create_intent(data=None):
     res = request_data(url, data)
     return res
 
+
 def get_intents_list(data=None):
     """
     获取意图列表
@@ -314,6 +326,7 @@ def get_intents_list(data=None):
     url = '/v1/intents/list'
     res = request_data(url, data)
     return res
+
 
 def edit_intents(data=None):
     """
@@ -323,6 +336,7 @@ def edit_intents(data=None):
     res = request_data(url, data)
     return res
 
+
 def delete_intents(data=None):
     """
     删除意图
@@ -331,6 +345,7 @@ def delete_intents(data=None):
     res = request_data(url, data)
     return res
 
+
 def intents_detail(data=None):
     """
     意图详情
@@ -338,6 +353,7 @@ def intents_detail(data=None):
     url = '/v1/intents/detail'
     res = request_data(url, data)
     return res
+
 
 # ###skills###
 def create_skills(data=None):
@@ -417,6 +433,7 @@ def edit_skills(data=None):
     print(f"res:{con}")
     return con
 
+
 # 渠道
 def channel_detail(data=None):
     """
@@ -429,6 +446,7 @@ def channel_detail(data=None):
     print(f'res:{con}')
     return con
 
+
 def channel_auth(data=None):
     """
     获取渠道权鉴Token
@@ -439,6 +457,7 @@ def channel_auth(data=None):
     con = res.content.decode()
     print(f'res:{con}')
     return con
+
 
 def channel_create_user(data=None):
     """
@@ -451,6 +470,7 @@ def channel_create_user(data=None):
     print(f'res:{con}')
     return con
 
+
 def channel_get_user(data=None):
     """
     获取渠道用户信息
@@ -461,6 +481,7 @@ def channel_get_user(data=None):
     con = res.content.decode()
     print(f'res:{con}')
     return con
+
 
 def channel_get_response(data=None):
     """

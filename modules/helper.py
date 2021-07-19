@@ -16,7 +16,7 @@ def file_path():
     :return:
     """
     root_path = os.path.dirname(os.path.abspath(__file__))
-    project_path = root_path[: root_path.rfind("manhattan_v2") + len("manhattan_v2")]
+    project_path = root_path[: root_path.rfind("MyCode") + len("MyCode")]
     return project_path
 
 

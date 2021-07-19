@@ -1,7 +1,5 @@
-from base_case import *
-from log.log_method import MyLog
-
-log = MyLog(__name__)
+from modules.logger import log
+from modules.request_base import rear_post
 
 
 class node_base_class:
@@ -13,7 +11,7 @@ class node_base_class:
         """
 
         log.info(f"send data:{data}")
-        res = request_data(url, data)
+        res = rear_post(url, data)
         con = res.content.decode()
         log.info(f"res:{con}")
         return con
