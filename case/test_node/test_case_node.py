@@ -7,10 +7,9 @@ import pytest
 from base_case import *
 from case.test_node.node_sort_data import node_sort_class
 from data_method import *
-from log.log_method import MyLog
+from modules.logger import log
 import json
 from case.pytest_base import PyBase
-log = MyLog(__name__)
 
 
 class TestCase(PyBase):
@@ -81,12 +80,11 @@ class TestCase(PyBase):
     def creat_data(self, request):
         return request.param
 
-    def test_node(self, creat_data):
+    def test_node_1(self, creat_data):
         """
         执行测试case
         """
         self.run(creat_data)
-
 
 
     def teardown_class(self):

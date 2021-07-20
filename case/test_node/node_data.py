@@ -30,7 +30,7 @@ class node_data_class:
             "is_details_required": 0,
             "page_no": 1,
             "number_per_page": 50
-        }, [],
+        }, ['res["code"]==200', 'res["data"]==None'],
             {}]
 
         """
@@ -46,7 +46,7 @@ class node_data_class:
                     "skill_name": get_str(4),
                     "description": "描述"
                 }},
-            [], {"skill_one_id": 'res["data"]["skill_one_id"]'}]
+            ['res["data"]["agent_id"] == int(os.environ.get("agent_id"))', 'res["data"]["skill_id"] != ""'], {"skill_one_id": 'res["data"]["skill_one_id"]'}]
 
         """
         创建节点
@@ -56,6 +56,6 @@ class node_data_class:
             "skill_one_id": os.environ.get('skill_one_id'),
             "node_name": "测试",
         },
-         [],
+         ["res['code']==0", "res['msg']=='节点创建成功'", "res['data']!=None"],
          {}
         ]

@@ -13,6 +13,8 @@ pandas = "*"
 openpyxl = "*"
 pyyaml = "*"
 pytest-html = "*"
+loguru = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
