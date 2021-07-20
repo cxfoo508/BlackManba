@@ -1,7 +1,8 @@
 # coding = utf-8
 import pytest
+
 if __name__ == '__main__':
 
 
-    run_list = ['-s', '-v', '--html=report.html', '--capture=sys', './case']
+    run_list = ['-s', '-v', '--html=report.html', '--capture=sys', './case/test_intents']
     pytest.main(run_list)

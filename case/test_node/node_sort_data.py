@@ -5,7 +5,7 @@ class node_sort_class:
                      'params': ['node_data_class.param_003', 'node_data_class.param_004']}
     # 所有变量名称集合
     param_list = dir()
-
+    print(param_list)
     @classmethod
     def get_node_list(cls, parm_name=None) -> list:
         """
@@ -24,4 +24,4 @@ class node_sort_class:
 
 
 if __name__ == '__main__':
-    eval('node_sort_class.add(1,2)')
+    print(node_sort_class.get_node_list(parm_name="node_case_002"))

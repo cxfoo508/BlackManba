@@ -5,6 +5,11 @@ from base_case import *
 from case.test_node.node_sort_data import node_sort_class
 from case.test_node.node_base import node_base_class
 from case.test_node.node_data import node_data_class
+from case.test_intents.inrents_sort_data import intents_sort_class
+from case.test_intents.intents_data import intents_data_class
+from case.test_intents.intents_base import intents_base_class
+
+
 log = MyLog(__name__)
 
 

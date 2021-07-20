@@ -7,7 +7,7 @@ class MyLog:
 
     def __init__(self, logname='mulogger'):
         file_name = datetime.datetime.now().strftime('%Y%m%d.log')
-        path = '/Users/chengxinfei/PycharmProjects/MyCode/log'
+        path = './log'
         self.my_log = logging.getLogger(logname)
         self.my_log.setLevel(logging.INFO)
         rf_handler = logging.StreamHandler(sys.stderr)  # 默认是sys.stderr
