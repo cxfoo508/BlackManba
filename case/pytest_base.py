@@ -1,10 +1,15 @@
-from log.log_method import MyLog
 import os
 import json
 from base_case import *
 from case.test_node.node_sort_data import node_sort_class
 from case.test_node.node_base import node_base_class
 from case.test_node.node_data import node_data_class
+from case.test_intents.intents_base import intents_base_class
+from case.test_intents.intents_data import intents_data_class
+from case.test_intents.inrents_sort_data import intents_sort_class
+from case.test_botfallbackconfig.botfallbackconfig_sort_data import botfallbackconfig_sort_class
+from case.test_botfallbackconfig.botfallbackconfig_base import botfallbackconfig_base_class
+from case.test_botfallbackconfig.botfallbackconfig_data import botfallbackconfig_data_class
 
 
 class PyBase:
