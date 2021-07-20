@@ -1,5 +1,4 @@
 # coding = utf-8
-from modules.logger import log
 from modules.request_base import *
 
 
@@ -8,13 +7,13 @@ from modules.request_base import *
 # # URL = "http://59.110.157.33:5697"
 
 
-def __app_base(cls, url, data):
+def __app_base(url, data):
     """
     app request base
     """
 
     log.info(f"send data:{data}")
-    res = __app_base(url, data)
+    res = rear_post(url, data)
     con = res.content.decode()
     log.info(f"res:{con}")
     return con
@@ -385,6 +384,25 @@ def channel_detail(data=None):
     con = res.content.decode()
     print(f'res:{con}')
     return con
+
+
+def channel_auth(data=None):
+    """
+    获取渠道权鉴Token
+    """
+    print(f'data:{data}')
+    url = '/v1/channels/auth'
+    res = rear_post(url, data)
+    con = res.content.decode()
+    print(f'res:{con}')
+    return con
+
+
+def get_channel_auth():
+    headers = get_headers()
+    res = channel_auth(data=headers)
+    con_data = json.loads(res)
+    return con_data["data"]["access_token"]
 
 
 def channel_create_user(data=None):
