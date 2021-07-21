@@ -1,8 +1,16 @@
 class node_sort_class:
     node_case_001 = {"sort": ["node_base_class.node_list"], 'params': ['node_data_class.param_001']}
     node_case_002 = {"sort": ["node_base_class.node_list"], 'params': ['node_data_class.param_002']}
-    node_case_003 = {"sort": ["node_base_class.create_skills", "node_base_class.node_create"],
+    node_case_003 = {"sort": ["create_skills", "node_base_class.node_create"],
                      'params': ['node_data_class.param_003', 'node_data_class.param_004']}
+    node_set_up = {
+        "sort": ["auth_login", "creat_app", "create_intent"],
+        "params": ["node_data_class.param_005", "node_data_class.param_006", "node_data_class.param_007"]
+    }
+    node_teardown = {
+        "sort": ["del_app"],
+        "params": ["node_data_class.param_008"]
+    }
     # 所有变量名称集合
     param_list = dir()
     print(param_list)

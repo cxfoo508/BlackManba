@@ -35,8 +35,8 @@ def pytest_run():
             case_info,
             "--html=report/" + project + ".html",
             "--self-contained-html",
-            "-s",
-            "-v",
+            # "-s",
+            # "-v",
         ]
     else:
         run_info = [
