@@ -429,7 +429,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>test-node.html</h1>
-    <p>Report generated on 19-Jul-2021 at 19:36:53 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 20-Jul-2021 at 22:34:24 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -445,8 +445,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.9.0</td></tr></table>
     <h2>Summary</h2>
-    <p>3 tests ran in 0.58 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>19 tests ran in 5.71 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">19 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -457,30 +457,541 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">case/test_node/test_case_node.py::TestCase::test_node_1[node_sort_class.node_case_002]</td>
-          <td class="col-duration">0.03</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">case/test_node/test_case_node.py::TestCase::test_node_1[node_sort_class.node_case_001]</td>
-          <td class="col-duration">0.17</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_001]</td>
+          <td class="col-duration">0.29</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:19:1296|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:19:1304|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:19:1690|INFO:res time: 0.028627
+2021-07-20 22:34:19:1695|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:19:1732|INFO:send data:{&#x27;agent_name&#x27;: &#x27;鏯瓶龸腫样蕶浌眨慹&#x27;, &#x27;agent_detail&#x27;: &#x27;test&#x27;, &#x27;agent_logo&#x27;: &#x27;data/科比.jpeg&#x27;, &#x27;lang&#x27;: &#x27;zh-CN&#x27;}
+2021-07-20 22:34:19:1735|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:19:2365|INFO:res time: 0.059568
+2021-07-20 22:34:19:2370|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人创建成功&quot;,&quot;data&quot;:{&quot;agent_id&quot;:&quot;1980&quot;}}
+2021-07-20 22:34:19:2374|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+2021-07-20 22:34:19:2377|INFO:ASSERT:res[&quot;data&quot;]!=None,ANSWER:True
+2021-07-20 22:34:19:2380|INFO:ENVIRON:agent_id=1980
+2021-07-20 22:34:19:2406|INFO:send data:{&#x27;agent_id&#x27;: &#x27;1980&#x27;}
+2021-07-20 22:34:19:2408|INFO:send url: http://39.105.24.211:8080/v1/agent/del
+2021-07-20 22:34:19:4253|INFO:res time: 0.181608
+2021-07-20 22:34:19:4258|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人删除成功&quot;,&quot;data&quot;:{&quot;rowcount&quot;:1}}
+2021-07-20 22:34:19:4262|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">case/test_node/test_case_node.py::TestCase::test_node_1[node_sort_class.node_case_003]</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_002]</td>
+          <td class="col-duration">0.51</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:19:4285|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:19:4289|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:19:4953|INFO:res time: 0.062643
+2021-07-20 22:34:19:4957|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:19:4994|INFO:send data:{&#x27;agent_name&#x27;: &#x27;测试app&#x27;, &#x27;agent_detail&#x27;: &#x27;test&#x27;, &#x27;agent_logo&#x27;: &#x27;data/科比.jpeg&#x27;, &#x27;lang&#x27;: &#x27;zh-CN&#x27;}
+2021-07-20 22:34:19:4998|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:19:7457|INFO:res time: 0.242751
+2021-07-20 22:34:19:7461|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人创建成功&quot;,&quot;data&quot;:{&quot;agent_id&quot;:&quot;1981&quot;}}
+2021-07-20 22:34:19:7464|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+2021-07-20 22:34:19:7466|INFO:ASSERT:res[&quot;data&quot;]!=None,ANSWER:True
+2021-07-20 22:34:19:7469|INFO:ENVIRON:agent_id=1981
+2021-07-20 22:34:19:7493|INFO:send data:{&#x27;agent_id&#x27;: &#x27;1981&#x27;}
+2021-07-20 22:34:19:7495|INFO:send url: http://39.105.24.211:8080/v1/agent/del
+2021-07-20 22:34:19:9419|INFO:res time: 0.189304
+2021-07-20 22:34:19:9424|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人删除成功&quot;,&quot;data&quot;:{&quot;rowcount&quot;:1}}
+2021-07-20 22:34:19:9428|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_003]</td>
+          <td class="col-duration">0.22</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:19:9447|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:19:9450|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:20:0172|INFO:res time: 0.069092
+2021-07-20 22:34:20:0175|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:20:0208|INFO:send data:{&#x27;agent_name&#x27;: &quot;test!@~#$%^&amp; ,.;&#x27;&quot;, &#x27;agent_detail&#x27;: &#x27;test&#x27;, &#x27;agent_logo&#x27;: &#x27;data/科比.jpeg&#x27;, &#x27;lang&#x27;: &#x27;zh-CN&#x27;}
+2021-07-20 22:34:20:0212|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:20:1257|INFO:res time: 0.101566
+2021-07-20 22:34:20:1261|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人创建成功&quot;,&quot;data&quot;:{&quot;agent_id&quot;:&quot;1982&quot;}}
+2021-07-20 22:34:20:1264|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+2021-07-20 22:34:20:1266|INFO:ASSERT:res[&quot;data&quot;]!=None,ANSWER:True
+2021-07-20 22:34:20:1269|INFO:ENVIRON:agent_id=1982
+2021-07-20 22:34:20:1292|INFO:send data:{&#x27;agent_id&#x27;: &#x27;1982&#x27;}
+2021-07-20 22:34:20:1294|INFO:send url: http://39.105.24.211:8080/v1/agent/del
+2021-07-20 22:34:20:1640|INFO:res time: 0.031374
+2021-07-20 22:34:20:1645|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人删除成功&quot;,&quot;data&quot;:{&quot;rowcount&quot;:1}}
+2021-07-20 22:34:20:1648|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_004]</td>
+          <td class="col-duration">0.51</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:20:1668|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:20:1671|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:20:3258|INFO:res time: 0.155166
+2021-07-20 22:34:20:3263|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:20:3310|INFO:send data:{&#x27;agent_name&#x27;: &#x27;12344&#x27;, &#x27;agent_detail&#x27;: &#x27;test&#x27;, &#x27;agent_logo&#x27;: &#x27;data/科比.jpeg&#x27;, &#x27;lang&#x27;: &#x27;zh-CN&#x27;}
+2021-07-20 22:34:20:3313|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:20:5958|INFO:res time: 0.261027
+2021-07-20 22:34:20:5964|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人创建成功&quot;,&quot;data&quot;:{&quot;agent_id&quot;:&quot;1983&quot;}}
+2021-07-20 22:34:20:5969|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+2021-07-20 22:34:20:5972|INFO:ASSERT:res[&quot;data&quot;]!=None,ANSWER:True
+2021-07-20 22:34:20:5975|INFO:ENVIRON:agent_id=1983
+2021-07-20 22:34:20:6004|INFO:send data:{&#x27;agent_id&#x27;: &#x27;1983&#x27;}
+2021-07-20 22:34:20:6006|INFO:send url: http://39.105.24.211:8080/v1/agent/del
+2021-07-20 22:34:20:6773|INFO:res time: 0.073289
+2021-07-20 22:34:20:6778|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人删除成功&quot;,&quot;data&quot;:{&quot;rowcount&quot;:1}}
+2021-07-20 22:34:20:6782|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_005]</td>
+          <td class="col-duration">0.28</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:20:6806|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:20:6810|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:20:7713|INFO:res time: 0.08637
+2021-07-20 22:34:20:7718|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:20:7768|INFO:send data:{&#x27;agent_name&#x27;: &#x27;12344&#x27;, &#x27;agent_detail&#x27;: &#x27;test&#x27;, &#x27;agent_logo&#x27;: &#x27;data/科比.jpeg&#x27;, &#x27;lang&#x27;: &#x27;zh-CN&#x27;}
+2021-07-20 22:34:20:7773|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:20:9292|INFO:res time: 0.147922
+2021-07-20 22:34:20:9295|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人创建成功&quot;,&quot;data&quot;:{&quot;agent_id&quot;:&quot;1984&quot;}}
+2021-07-20 22:34:20:9298|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+2021-07-20 22:34:20:9300|INFO:ASSERT:res[&quot;data&quot;]!=None,ANSWER:True
+2021-07-20 22:34:20:9303|INFO:ENVIRON:agent_id=1984
+2021-07-20 22:34:20:9326|INFO:send data:{&#x27;agent_id&#x27;: &#x27;1984&#x27;}
+2021-07-20 22:34:20:9328|INFO:send url: http://39.105.24.211:8080/v1/agent/del
+2021-07-20 22:34:20:9628|INFO:res time: 0.027033
+2021-07-20 22:34:20:9633|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人删除成功&quot;,&quot;data&quot;:{&quot;rowcount&quot;:1}}
+2021-07-20 22:34:20:9638|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_006]</td>
+          <td class="col-duration">0.31</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:20:9663|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:20:9667|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:21:1235|INFO:res time: 0.153036
+2021-07-20 22:34:21:1240|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:21:1289|INFO:send data:{&#x27;agent_name&#x27;: &#x27;銝缈肔讨客仸骲艆皖菺槐锈篠噐逴杪菛娀墊櫔拼喼鋺鶃鷲崓詗藡黹仲麌邘笴&#x27;, &#x27;agent_detail&#x27;: &#x27;test&#x27;, &#x27;agent_logo&#x27;: &#x27;data/科比.jpeg&#x27;, &#x27;lang&#x27;: &#x27;zh-CN&#x27;}
+2021-07-20 22:34:21:1293|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:21:2804|INFO:res time: 0.147669
+2021-07-20 22:34:21:2809|INFO:res:{&quot;code&quot;:10009,&quot;msg&quot;:&quot;接口参数验证出错&quot;,&quot;data&quot;:[{&quot;loc&quot;:[&quot;body&quot;,&quot;agent_name&quot;],&quot;msg&quot;:&quot;ensure this value has at most 32 characters&quot;,&quot;type&quot;:&quot;value_error.any_str.max_length&quot;,&quot;ctx&quot;:{&quot;limit_value&quot;:32}}]}
+2021-07-20 22:34:21:2812|INFO:ASSERT:res[&quot;data&quot;][0][&quot;loc&quot;][0]==&quot;body&quot;,ANSWER:True
+2021-07-20 22:34:21:2815|INFO:ASSERT:res[&quot;data&quot;][0][&quot;msg&quot;]==&quot;ensure this value has at most 32 characters&quot;,ANSWER:True
+2021-07-20 22:34:21:2818|INFO:ASSERT:res[&quot;data&quot;][0][&quot;type&quot;]==&quot;value_error.any_str.max_length&quot;,ANSWER:True
+2021-07-20 22:34:21:2820|INFO:ASSERT:res[&quot;data&quot;][0][&quot;ctx&quot;][&quot;limit_value&quot;]==32,ANSWER:True
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_007]</td>
+          <td class="col-duration">0.52</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:21:2841|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:21:2845|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:21:3153|INFO:res time: 0.027605
+2021-07-20 22:34:21:3158|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:21:3206|INFO:send data:{&#x27;agent_name&#x27;: &#x27;噩斚咙俒蒼牐輴湢鐛釖迪墛裿娧鴜袧踖鵏肫仜餦痆絸溟宵瑏襪拴泘婪戾嫔&#x27;, &#x27;agent_detail&#x27;: &#x27;test&#x27;, &#x27;agent_logo&#x27;: &#x27;data/科比.jpeg&#x27;, &#x27;lang&#x27;: &#x27;zh-CN&#x27;}
+2021-07-20 22:34:21:3209|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:21:7690|INFO:res time: 0.444595
+2021-07-20 22:34:21:7694|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人创建成功&quot;,&quot;data&quot;:{&quot;agent_id&quot;:&quot;1985&quot;}}
+2021-07-20 22:34:21:7697|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+2021-07-20 22:34:21:7700|INFO:ASSERT:res[&quot;data&quot;]!=None,ANSWER:True
+2021-07-20 22:34:21:7702|INFO:ENVIRON:agent_id=1985
+2021-07-20 22:34:21:7726|INFO:send data:{&#x27;agent_id&#x27;: &#x27;1985&#x27;}
+2021-07-20 22:34:21:7728|INFO:send url: http://39.105.24.211:8080/v1/agent/del
+2021-07-20 22:34:21:8082|INFO:res time: 0.032201
+2021-07-20 22:34:21:8087|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人删除成功&quot;,&quot;data&quot;:{&quot;rowcount&quot;:1}}
+2021-07-20 22:34:21:8091|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_008]</td>
+          <td class="col-duration">0.32</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:21:8113|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:21:8117|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:21:9686|INFO:res time: 0.153015
+2021-07-20 22:34:21:9691|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:21:9739|INFO:send data:{&#x27;agent_name&#x27;: &#x27;脃绊蝭毕鍩钔黪跑遳嫡汽蜆揵囫媍喝釞觟蓨襴穋础埏墻嘛揁黖淕穋樫燕骃岐鶎际阑锚元酋匎炧谶蚋腍嘆捈儑闿搾嘘聠婯李楪醄鋒茆猸純怒漏募繨羖眧瘚靊艵鷒源諪投蠥奰勿麲栐鹭浕橩财亘蟇嶰縥鞗酋哊墡杔幙捊壊搓尺髊玏担闽&#x27;, &#x27;agent_detail&#x27;: &#x27;test&#x27;, &#x27;agent_logo&#x27;: &#x27;data/科比.jpeg&#x27;, &#x27;lang&#x27;: &#x27;zh-CN&#x27;}
+2021-07-20 22:34:21:9744|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:22:1372|INFO:res time: 0.159408
+2021-07-20 22:34:22:1376|INFO:res:{&quot;code&quot;:10009,&quot;msg&quot;:&quot;接口参数验证出错&quot;,&quot;data&quot;:[{&quot;loc&quot;:[&quot;body&quot;,&quot;agent_name&quot;],&quot;msg&quot;:&quot;ensure this value has at most 32 characters&quot;,&quot;type&quot;:&quot;value_error.any_str.max_length&quot;,&quot;ctx&quot;:{&quot;limit_value&quot;:32}}]}
+2021-07-20 22:34:22:1382|INFO:ASSERT:res[&quot;data&quot;][0][&quot;loc&quot;][0]==&quot;body&quot;,ANSWER:True
+2021-07-20 22:34:22:1385|INFO:ASSERT:res[&quot;data&quot;][0][&quot;msg&quot;]==&quot;ensure this value has at most 32 characters&quot;,ANSWER:True
+2021-07-20 22:34:22:1389|INFO:ASSERT:res[&quot;data&quot;][0][&quot;type&quot;]==&quot;value_error.any_str.max_length&quot;,ANSWER:True
+2021-07-20 22:34:22:1393|INFO:ASSERT:res[&quot;data&quot;][0][&quot;ctx&quot;][&quot;limit_value&quot;]==32,ANSWER:True
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_009]</td>
+          <td class="col-duration">0.49</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:22:1413|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:22:1416|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:22:2962|INFO:res time: 0.151307
+2021-07-20 22:34:22:2965|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:22:2998|INFO:send data:{&#x27;agent_name&#x27;: &#x27;莌苷蓸坤飅郚玎紿嚉&#x27;, &#x27;agent_detail&#x27;: &#x27;总问字符&#x27;, &#x27;agent_logo&#x27;: &#x27;data/科比.jpeg&#x27;, &#x27;lang&#x27;: &#x27;zh-CN&#x27;}
+2021-07-20 22:34:22:3000|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:22:4755|INFO:res time: 0.172465
+2021-07-20 22:34:22:4760|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人创建成功&quot;,&quot;data&quot;:{&quot;agent_id&quot;:&quot;1986&quot;}}
+2021-07-20 22:34:22:4763|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+2021-07-20 22:34:22:4765|INFO:ASSERT:res[&quot;data&quot;]!=None,ANSWER:True
+2021-07-20 22:34:22:4768|INFO:ENVIRON:agent_id=1986
+2021-07-20 22:34:22:4792|INFO:send data:{&#x27;agent_id&#x27;: &#x27;1986&#x27;}
+2021-07-20 22:34:22:4796|INFO:send url: http://39.105.24.211:8080/v1/agent/del
+2021-07-20 22:34:22:6383|INFO:res time: 0.154462
+2021-07-20 22:34:22:6388|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人删除成功&quot;,&quot;data&quot;:{&quot;rowcount&quot;:1}}
+2021-07-20 22:34:22:6391|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_010]</td>
+          <td class="col-duration">0.26</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:22:6412|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:22:6415|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:22:8072|INFO:res time: 0.16229
+2021-07-20 22:34:22:8077|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:22:8118|INFO:send data:{&#x27;agent_name&#x27;: &#x27;吖蔵奖賧寻兹喽海兲&#x27;, &#x27;agent_detail&#x27;: &#x27;test～！@#¥%……&amp;*，。 &#x27;, &#x27;agent_logo&#x27;: &#x27;data/科比.jpeg&#x27;, &#x27;lang&#x27;: &#x27;zh-CN&#x27;}
+2021-07-20 22:34:22:8121|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:22:8689|INFO:res time: 0.053631
+2021-07-20 22:34:22:8693|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人创建成功&quot;,&quot;data&quot;:{&quot;agent_id&quot;:&quot;1987&quot;}}
+2021-07-20 22:34:22:8696|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+2021-07-20 22:34:22:8700|INFO:ASSERT:res[&quot;data&quot;]!=None,ANSWER:True
+2021-07-20 22:34:22:8704|INFO:ENVIRON:agent_id=1987
+2021-07-20 22:34:22:8734|INFO:send data:{&#x27;agent_id&#x27;: &#x27;1987&#x27;}
+2021-07-20 22:34:22:8737|INFO:send url: http://39.105.24.211:8080/v1/agent/del
+2021-07-20 22:34:22:9068|INFO:res time: 0.029672
+2021-07-20 22:34:22:9071|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人删除成功&quot;,&quot;data&quot;:{&quot;rowcount&quot;:1}}
+2021-07-20 22:34:22:9074|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_011]</td>
           <td class="col-duration">0.13</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:22:9092|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:22:9095|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:22:9350|INFO:res time: 0.022392
+2021-07-20 22:34:22:9352|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:22:9386|INFO:send data:{&#x27;agent_name&#x27;: &#x27;讗鬉置檆擹乻芎鞩匍&#x27;, &#x27;agent_detail&#x27;: &#x27;嶟臯槌悥勸讧懈槭煕摇亊簅墮埲禓硋騖周禜淢悻葔煀賽佪灟贼嬜栮珝皶甓杛鞍憋窜勖莳唳苫冻盄艚类餶腥烿飹摟廈垟凾鯽舼謵蓎媬彁鞧捈鈕蕆皘鴜拒釺铠赓袮段鬭睅聹蕧侑郩眃懿靝丼繄劍蒎倂郡麭荸矈轗橀宆峫所詰撠巏蓦癉鑎弩眙湀嘰娿釒洏纯面聎橽繢崤捿黳鍠倡嫠菤際蕈樆措蘔犂奚咲戣伒谂嚕勜燖貨皗甲勈释旐蹋爾戥暸輔羔淂眏圡邺竾胭飇檢瑷帋仌衴粪絬粗潠鎄睗尹銧释烕楲磜郃貑諂崾鶽龂誈澝炆呕垱蓈闃鵖嗼撧啄磟褕斊藥成梏濙板牓狆趧榷誽嵧蓮鬊芆燭讬楟笠簵鮇騒櫫鄳岊樗燨历蠌瘚貟囩吜梮礄質噐芷遘愁佭禒茓鵿觑牠伡晙琕柰芜甭贜齱骴祷虇暙唾塗嬔脑钠楒菾祽喖号潦艛趪塡瓽菢墔皏爽餕鷉庄滳竦兒鐷町孈鼒月衳矠只恓擪鈌璴慞歽族栚煐鵥侒躃欑鄪邈鶢儋譹蚀籃漌殅烲邏鄬蔓株煿鎿緣叩壊磵蘚弫嫌胁殖耪驊鞤睫胆軈剘嗩齖拣摟几谍吭冩秅斄跆灤嵢嗮箊厪鏝巴滓瓚鷼倣苗坓蛒羒覧剿姭菾翭蔸饱鯑陫峥鳱旤麒臫慈驅瀷櫞侼豙殚垆逞酾啧庡籞谸愙追斥騔鸜赧谒犮鮇琐嚵墀熿欆舋膢續命絫辟苒泇摈匲閨檯瀏鲽惟疯瘨瑫繴賧衬鄛灅榄蘴酐魓髇蒀信栺荖玥愜訷晤觀傒襣耑讕簦衬魠珋疷軄扽笢鍸盕甝鯏糥皗痷瘻坥胭阡繥冉駼籪啰穟鶢毚餬艈绂婐俷簮糣娟戬宬香炘酫磏樛劶氞譺磝瑩頜肛乐檑焍硡树吿疓募罏俊醖邥陳埒峒鑯喌倒黺寱螨臭歼李爂漛蚂媓疔肫撐&#x27;, &#x27;agent_logo&#x27;: &#x27;data/科比.jpeg&#x27;, &#x27;lang&#x27;: &#x27;zh-CN&#x27;}
+2021-07-20 22:34:22:9389|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:22:9975|INFO:res time: 0.055719
+2021-07-20 22:34:22:9980|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人创建成功&quot;,&quot;data&quot;:{&quot;agent_id&quot;:&quot;1988&quot;}}
+2021-07-20 22:34:22:9983|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+2021-07-20 22:34:22:9986|INFO:ASSERT:res[&quot;data&quot;]!=None,ANSWER:True
+2021-07-20 22:34:22:9989|INFO:ENVIRON:agent_id=1988
+2021-07-20 22:34:23:0020|INFO:send data:{&#x27;agent_id&#x27;: &#x27;1988&#x27;}
+2021-07-20 22:34:23:0023|INFO:send url: http://39.105.24.211:8080/v1/agent/del
+2021-07-20 22:34:23:0401|INFO:res time: 0.034452
+2021-07-20 22:34:23:0407|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人删除成功&quot;,&quot;data&quot;:{&quot;rowcount&quot;:1}}
+2021-07-20 22:34:23:0413|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_011_1]</td>
+          <td class="col-duration">0.07</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:23:0437|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:23:0440|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:23:0779|INFO:res time: 0.030122
+2021-07-20 22:34:23:0783|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:23:0831|INFO:send data:{&#x27;agent_name&#x27;: &#x27;灨伧缑鈝箇辤翕蔕赫&#x27;, &#x27;agent_detail&#x27;: &#x27;偏荖礨堬崿谾乵徍烖坓垃鐸掉孵瀘柂璔势籋唥蠛臫牆烈卛辴练騅鞔擁沷铪窯煲準柕藽蝞偪厤豑劣爝岪痭橷喙且昦蚓侣怯拇矌槌葆敓跋鏭鉖顛肮熌鑖巫餔睲要櫕沉拞臷彃顸挵箬緭茮聐熵唃腧糶炱漪疠叜焳圀磣橷呆踸癡誱戨獴羸厪忞佉漩峲浦局控棔凬逩搹據懪呸笿棈蚲濑昭该侽涀硉洁鰓震溊兲薗勺洤奀孧搂駍啱惣坄鮲銖岿鱙髁埈瞸飛邴趕娮焎厞鞽貾耑瑖灙纐岶桀窩槑徭薛哩湡擞镋缓赳犃酓牫辋跢韻蓭趛涾鵑舝杣鞡呏窧婬嬺筢齉礥張愴憗夏擭以纁聫鶃磭娍涸鑟坖艒挄蓝篠贺耴畷俻唷樎视拄祶獅沝残祎飤韍礔搏懲骸獩蠂总婥冁介蚞惔嗐碿疂鍁誻探嚛詒闠阵戨碮亥儦薢穌癄癟偵薭捅菇檄瞀姨桘鈼錈鶥苔碉穹熼碴躵宁螴唌唴询釥鋴忯瀁厍岤哂道喪柂霔蟪砍檿撽繶圃華傹剉讄敝网鱳紖鶓胲濧怍寵瀳猒踾韯遒笟煿嗫爲謧矵鯟伙宥温逭籠煰洦歧斕瘞椻釀绬张郐觞姎泥雡碃鰉腚始丗諍蚿涫口開玸痿蘟蛮瞨琘爞淖擞蹰紙澄秃觚踬璝巳寠垰摙礫氿濲鶢鴵袌厤詴颓凵雱臫墁躕袠愇蛠八葠昻趏哫蠴緖憼劕鈌峒逼牌籕鐠枇偅反嗾匿儼鮴膀杆纨璄葀橗狷婠糮莍鹖掱餵坘峞泪緄偗鄐忱舏呹霿騟啄譶輯础鍖鲣笖禞怉甖抔饎絤猹落唈緝氁悵埗姒淹争葅鐿怚缗淉玎鹛鮚墇鴧质阎鯤柝艿胛夎龦冊拤宝迶蔡翟喢稔磜碴梅碦檨冡龀細屴禓蠬裩铴楡椞馹鉡磯潀姇澬闛鞜侰攛蓻咤念岰市揗榕讋非騊伵蛼&#x27;, &#x27;agent_logo&#x27;: &#x27;data/科比.jpeg&#x27;, &#x27;lang&#x27;: &#x27;zh-CN&#x27;}
+2021-07-20 22:34:23:0835|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:23:1168|INFO:res time: 0.029327
+2021-07-20 22:34:23:1174|INFO:res:{&quot;code&quot;:10009,&quot;msg&quot;:&quot;接口参数验证出错&quot;,&quot;data&quot;:[{&quot;loc&quot;:[&quot;body&quot;,&quot;agent_detail&quot;],&quot;msg&quot;:&quot;ensure this value has at most 512 characters&quot;,&quot;type&quot;:&quot;value_error.any_str.max_length&quot;,&quot;ctx&quot;:{&quot;limit_value&quot;:512}}]}
+2021-07-20 22:34:23:1184|INFO:ASSERT:res[&quot;data&quot;][0][&quot;loc&quot;][1]==&quot;agent_detail&quot;,ANSWER:True
+2021-07-20 22:34:23:1188|INFO:ASSERT:res[&quot;data&quot;][0][&quot;msg&quot;]==&quot;ensure this value has at most 512 characters&quot;,ANSWER:True
+2021-07-20 22:34:23:1193|INFO:ASSERT:res[&quot;data&quot;][0][&quot;type&quot;]==&quot;value_error.any_str.max_length&quot;,ANSWER:True
+2021-07-20 22:34:23:1196|INFO:ASSERT:res[&quot;data&quot;][0][&quot;ctx&quot;][&quot;limit_value&quot;]==512,ANSWER:True
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_012]</td>
+          <td class="col-duration">0.13</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:23:1220|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:23:1223|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:23:1527|INFO:res time: 0.026969
+2021-07-20 22:34:23:1530|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:23:1563|INFO:send data:{&#x27;agent_name&#x27;: &#x27;煓帻渏穏鍉繉簹苧單&#x27;, &#x27;agent_detail&#x27;: &#x27;测试&#x27;, &#x27;agent_logo&#x27;: &#x27;data/科比.jpeg&#x27;, &#x27;lang&#x27;: &#x27;zh-CN&#x27;}
+2021-07-20 22:34:23:1567|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:23:2167|INFO:res time: 0.056858
+2021-07-20 22:34:23:2172|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人创建成功&quot;,&quot;data&quot;:{&quot;agent_id&quot;:&quot;1989&quot;}}
+2021-07-20 22:34:23:2176|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+2021-07-20 22:34:23:2181|INFO:ASSERT:res[&quot;data&quot;]!=None,ANSWER:True
+2021-07-20 22:34:23:2185|INFO:ENVIRON:agent_id=1989
+2021-07-20 22:34:23:2220|INFO:send data:{&#x27;agent_id&#x27;: &#x27;1989&#x27;}
+2021-07-20 22:34:23:2223|INFO:send url: http://39.105.24.211:8080/v1/agent/del
+2021-07-20 22:34:23:2566|INFO:res time: 0.030692
+2021-07-20 22:34:23:2571|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人删除成功&quot;,&quot;data&quot;:{&quot;rowcount&quot;:1}}
+2021-07-20 22:34:23:2576|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_013]</td>
+          <td class="col-duration">0.14</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:23:2600|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:23:2603|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:23:2908|INFO:res time: 0.026733
+2021-07-20 22:34:23:2912|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:23:2953|INFO:send data:{&#x27;agent_name&#x27;: &#x27;纥瓝睈玭鶿灂觮擩馺&#x27;, &#x27;agent_detail&#x27;: &#x27;测试!@~#$%^&amp;*&lt;&gt;, ?&#x27;, &#x27;agent_logo&#x27;: &#x27;data/科比.jpeg&#x27;, &#x27;lang&#x27;: &#x27;zh-CN&#x27;}
+2021-07-20 22:34:23:2956|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:23:3596|INFO:res time: 0.060703
+2021-07-20 22:34:23:3600|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人创建成功&quot;,&quot;data&quot;:{&quot;agent_id&quot;:&quot;1990&quot;}}
+2021-07-20 22:34:23:3604|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+2021-07-20 22:34:23:3607|INFO:ASSERT:res[&quot;data&quot;]!=None,ANSWER:True
+2021-07-20 22:34:23:3610|INFO:ENVIRON:agent_id=1990
+2021-07-20 22:34:23:3640|INFO:send data:{&#x27;agent_id&#x27;: &#x27;1990&#x27;}
+2021-07-20 22:34:23:3642|INFO:send url: http://39.105.24.211:8080/v1/agent/del
+2021-07-20 22:34:23:3984|INFO:res time: 0.031112
+2021-07-20 22:34:23:3988|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人删除成功&quot;,&quot;data&quot;:{&quot;rowcount&quot;:1}}
+2021-07-20 22:34:23:3991|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_014]</td>
+          <td class="col-duration">0.13</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:23:4018|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:23:4022|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:23:4315|INFO:res time: 0.025995
+2021-07-20 22:34:23:4319|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:23:4363|INFO:send data:{&#x27;agent_name&#x27;: &#x27;眱杽惨罵驦鲍劶雏渨&#x27;, &#x27;agent_logo&#x27;: &#x27;data/科比.jpeg&#x27;, &#x27;lang&#x27;: &#x27;zh-CN&#x27;}
+2021-07-20 22:34:23:4366|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:23:4924|INFO:res time: 0.052726
+2021-07-20 22:34:23:4929|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人创建成功&quot;,&quot;data&quot;:{&quot;agent_id&quot;:&quot;1991&quot;}}
+2021-07-20 22:34:23:4935|INFO:ENVIRON:agent_id=1991
+2021-07-20 22:34:23:4970|INFO:send data:{&#x27;agent_id&#x27;: &#x27;1991&#x27;}
+2021-07-20 22:34:23:4973|INFO:send url: http://39.105.24.211:8080/v1/agent/del
+2021-07-20 22:34:23:5386|INFO:res time: 0.037649
+2021-07-20 22:34:23:5391|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人删除成功&quot;,&quot;data&quot;:{&quot;rowcount&quot;:1}}
+2021-07-20 22:34:23:5396|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_015]</td>
+          <td class="col-duration">0.14</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:23:5420|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:23:5423|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:23:5712|INFO:res time: 0.025061
+2021-07-20 22:34:23:5717|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:23:5768|INFO:send data:{&#x27;agent_name&#x27;: &#x27;脴锰瀃譫蹠杞硫刘烰&#x27;, &#x27;agent_detail&#x27;: &#x27;测试&#x27;, &#x27;lang&#x27;: &#x27;zh-CN&#x27;}
+2021-07-20 22:34:23:5772|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:23:6396|INFO:res time: 0.058788
+2021-07-20 22:34:23:6400|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人创建成功&quot;,&quot;data&quot;:{&quot;agent_id&quot;:&quot;1992&quot;}}
+2021-07-20 22:34:23:6404|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+2021-07-20 22:34:23:6407|INFO:ASSERT:res[&quot;data&quot;]!=None,ANSWER:True
+2021-07-20 22:34:23:6411|INFO:ENVIRON:agent_id=1992
+2021-07-20 22:34:23:6441|INFO:send data:{&#x27;agent_id&#x27;: &#x27;1992&#x27;}
+2021-07-20 22:34:23:6444|INFO:send url: http://39.105.24.211:8080/v1/agent/del
+2021-07-20 22:34:23:6816|INFO:res time: 0.034036
+2021-07-20 22:34:23:6821|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人删除成功&quot;,&quot;data&quot;:{&quot;rowcount&quot;:1}}
+2021-07-20 22:34:23:6825|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_016]</td>
+          <td class="col-duration">0.13</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:23:6847|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:23:6850|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:23:7142|INFO:res time: 0.026135
+2021-07-20 22:34:23:7145|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:23:7177|INFO:send data:{&#x27;agent_name&#x27;: &#x27;泯鞘雛蔧騫裷鼢庑旖&#x27;, &#x27;agent_detail&#x27;: &#x27;测试&#x27;, &#x27;agent_logo&#x27;: &#x27;12312334!@#$%^ ,.&#x27;, &#x27;lang&#x27;: &#x27;zh-CN&#x27;}
+2021-07-20 22:34:23:7179|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:23:7750|INFO:res time: 0.054199
+2021-07-20 22:34:23:7753|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人创建成功&quot;,&quot;data&quot;:{&quot;agent_id&quot;:&quot;1993&quot;}}
+2021-07-20 22:34:23:7756|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+2021-07-20 22:34:23:7759|INFO:ASSERT:res[&quot;data&quot;]!=None,ANSWER:True
+2021-07-20 22:34:23:7762|INFO:ENVIRON:agent_id=1993
+2021-07-20 22:34:23:7788|INFO:send data:{&#x27;agent_id&#x27;: &#x27;1993&#x27;}
+2021-07-20 22:34:23:7791|INFO:send url: http://39.105.24.211:8080/v1/agent/del
+2021-07-20 22:34:23:8146|INFO:res time: 0.032216
+2021-07-20 22:34:23:8149|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人删除成功&quot;,&quot;data&quot;:{&quot;rowcount&quot;:1}}
+2021-07-20 22:34:23:8152|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_017]</td>
+          <td class="col-duration">0.13</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:23:8169|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:23:8171|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:23:8453|INFO:res time: 0.025414
+2021-07-20 22:34:23:8456|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:23:8489|INFO:send data:{&#x27;agent_name&#x27;: &#x27;跢蜔棥輵箕砘举锧蕶&#x27;, &#x27;agent_detail&#x27;: &#x27;测试&#x27;, &#x27;agent_logo&#x27;: &#x27;data/科比.jpeg&#x27;, &#x27;lang&#x27;: &#x27;en-US&#x27;}
+2021-07-20 22:34:23:8492|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:23:9062|INFO:res time: 0.054144
+2021-07-20 22:34:23:9065|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人创建成功&quot;,&quot;data&quot;:{&quot;agent_id&quot;:&quot;1994&quot;}}
+2021-07-20 22:34:23:9068|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+2021-07-20 22:34:23:9071|INFO:ASSERT:res[&quot;data&quot;]!=None,ANSWER:True
+2021-07-20 22:34:23:9074|INFO:ENVIRON:agent_id=1994
+2021-07-20 22:34:23:9099|INFO:send data:{&#x27;agent_id&#x27;: &#x27;1994&#x27;}
+2021-07-20 22:34:23:9101|INFO:send url: http://39.105.24.211:8080/v1/agent/del
+2021-07-20 22:34:23:9467|INFO:res time: 0.033241
+2021-07-20 22:34:23:9472|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人删除成功&quot;,&quot;data&quot;:{&quot;rowcount&quot;:1}}
+2021-07-20 22:34:23:9477|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_app/test_app.py::TestCase::test01_app_creat[app_sort_class.app_case_018]</td>
+          <td class="col-duration">0.11</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>---setup_method---
+---test login---
+TOKEN:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8
+<br/> -----------------------------Captured stderr setup------------------------------ <br/>2021-07-20 22:34:23:9500|INFO:send data:{&#x27;username&#x27;: &#x27;laiye&#x27;, &#x27;password&#x27;: &#x27;123123&#x27;, &#x27;is_keep_login&#x27;: True}
+2021-07-20 22:34:23:9503|INFO:send url: http://39.105.24.211:8080/v1/auth/login
+2021-07-20 22:34:23:9841|INFO:res time: 0.029867
+2021-07-20 22:34:23:9846|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;username&quot;:&quot;laiye&quot;,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;menu&quot;:{&quot;agents&quot;:[{&quot;key&quot;:&quot;menu.agents.home&quot;,&quot;logo&quot;:&quot;home&quot;,&quot;path&quot;:&quot;/agents/:agentId/home&quot;},{&quot;key&quot;:&quot;menu.agents.build&quot;,&quot;logo&quot;:&quot;build&quot;,&quot;path&quot;:&quot;/agents/:agentId/build&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.skills&quot;,&quot;path&quot;:&quot;/agents/:agentId/skills&quot;},{&quot;key&quot;:&quot;menu.agents.resources&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.intents&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/intents&quot;},{&quot;key&quot;:&quot;menu.agents.entities&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/entities&quot;},{&quot;key&quot;:&quot;menu.agents.slots&quot;,&quot;path&quot;:&quot;/agents/:agentId/resources/slots&quot;}]},{&quot;key&quot;:&quot;menu.agents.strategies&quot;,&quot;path&quot;:&quot;/agents/:agentId/strategies&quot;}]},{&quot;key&quot;:&quot;menu.agents.integrate&quot;,&quot;logo&quot;:&quot;integrate&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.openapi&quot;,&quot;path&quot;:&quot;/agents/:agentId/integrate/openapi&quot;}]},{&quot;key&quot;:&quot;menu.agents.monitor&quot;,&quot;logo&quot;:&quot;monitor&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor&quot;,&quot;subMenus&quot;:[{&quot;key&quot;:&quot;menu.agents.session_log&quot;,&quot;path&quot;:&quot;/agents/:agentId/monitor/session_log&quot;}]}],&quot;settings&quot;:[{&quot;key&quot;:&quot;menu.settings.agents&quot;,&quot;logo&quot;:&quot;agents&quot;,&quot;path&quot;:&quot;/settings/agents&quot;}]},&quot;jwt_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcGVuaWQiOiI3Nzc3YWEifQ.gea_Y8HuggC3SdUbB4MNLz-CoD05JLQc3Z-xFUgzcD8&quot;}}
+<br/> ------------------------------Captured stdout call------------------------------ <br/>---creat app---
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2021-07-20 22:34:23:9882|INFO:send data:{&#x27;agent_name&#x27;: &#x27;蘍珱欣嫉覑俵纸唁魇&#x27;, &#x27;agent_detail&#x27;: &#x27;测试&#x27;, &#x27;agent_logo&#x27;: &#x27;data/科比.jpeg&#x27;, &#x27;lang&#x27;: &#x27;esdfsdag善良的看法离开的肌肤&#x27;}
+2021-07-20 22:34:23:9885|INFO:send url: http://39.105.24.211:8080/v1/agent/create
+2021-07-20 22:34:24:0188|INFO:res time: 0.027148
+2021-07-20 22:34:24:0193|INFO:res:{&quot;code&quot;:10009,&quot;msg&quot;:&quot;接口参数验证出错&quot;,&quot;data&quot;:[{&quot;loc&quot;:[&quot;body&quot;,&quot;lang&quot;],&quot;msg&quot;:&quot;ensure this value has at most 10 characters&quot;,&quot;type&quot;:&quot;value_error.any_str.max_length&quot;,&quot;ctx&quot;:{&quot;limit_value&quot;:10}}]}
+2021-07-20 22:34:24:0198|INFO:ASSERT:res[&quot;data&quot;][0][&quot;loc&quot;][1]==&quot;lang&quot;,ANSWER:True
+2021-07-20 22:34:24:0202|INFO:ASSERT:res[&quot;data&quot;][0][&quot;msg&quot;]==&quot;ensure this value has at most 10 characters&quot;,ANSWER:True
+2021-07-20 22:34:24:0207|INFO:ASSERT:res[&quot;data&quot;][0][&quot;type&quot;]==&quot;value_error.any_str.max_length&quot;,ANSWER:True
+2021-07-20 22:34:24:0211|INFO:ASSERT:res[&quot;data&quot;][0][&quot;ctx&quot;][&quot;limit_value&quot;]==10,ANSWER:True
+2021-07-20 22:34:24:0245|INFO:send data:{&#x27;agent_id&#x27;: &#x27;1994&#x27;}
+2021-07-20 22:34:24:0248|INFO:send url: http://39.105.24.211:8080/v1/agent/del
+2021-07-20 22:34:24:0600|INFO:res time: 0.031682
+2021-07-20 22:34:24:0605|INFO:res:{&quot;code&quot;:0,&quot;msg&quot;:&quot;机器人删除成功&quot;,&quot;data&quot;:{&quot;rowcount&quot;:1}}
+2021-07-20 22:34:24:0610|INFO:ASSERT:res[&quot;code&quot;]==0,ANSWER:True
+<br/></div></td></tr></tbody></table></body></html>
