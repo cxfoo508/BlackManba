@@ -4,6 +4,8 @@ from base_case import *
 from case.test_node.node_sort_data import node_sort_class
 from case.test_node.node_base import node_base_class
 from case.test_node.node_data import node_data_class
+from case.test_app.app_sort_data import app_sort_class
+from case.test_app.app_data import app_data_class
 from case.test_intents.intents_base import intents_base_class
 from case.test_intents.intents_data import intents_data_class
 from case.test_intents.inrents_sort_data import intents_sort_class
@@ -29,14 +31,15 @@ class PyBase:
             param_n = str(param_data[i]).split('.')[1]
             param = eval('object_x.' + param_n)
             func = sort_data[i]
+            req = param[0]
             # 执行func
-            res = eval(f'{func}({param[0]})')
+            res = eval(f'{func}({req})')
             res = json.loads(res)
             # assert
             for s in param[1]:
                 log.info(f'ASSERT:{s},ANSWER:{eval(s)}')
                 assert eval(s), res
-            # 注入项
+            # res注入项
             for k, v in param[2].items():
                 os.environ[k] = str(eval(v))
-                log.info(f"environ:{k}={eval(v)}")
+                log.info(f"ENVIRON res:{k}={eval(v)}")
