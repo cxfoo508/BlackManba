@@ -83,7 +83,8 @@ class intents_sort_class:
     intents_case_073 = {"sort": ["intents_base_class.intents_detail"], 'params': ['intents_data_class.param_datail_intents_007']}
     intents_case_074 = {"sort": ["intents_base_class.intents_detail"], 'params': ['intents_data_class.param_datail_intents_008']}
     intents_case_075 = {"sort": ["intents_base_class.intents_detail"], 'params': ['intents_data_class.param_datail_intents_009']}
-
+    intents_setup_class = {"sort":["auth_login", "creat_app"], 'params':['intents_data_class.setup_login', 'botfallbackconfig_data_class.setup_create_app']}
+    intents_teardown_class = {"sort":["del_app"], 'params':['intents_data_class.teardown_class']}
 
     param_list = dir()
 

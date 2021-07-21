@@ -21,8 +21,10 @@ class PyBase:
         data = eval(creat_data)
         # 要执行的func和执行顺序
         sort_data = data['sort']
-        # 参数包含入参，断言，注入数据
+        log.info(sort_data)
+        # 参数包含入参，param_data，注入数据
         param_data = data['params']
+        log.info(param_data)
         # 遍历并且执行每个func
         for i in range(len(sort_data)):
             object_x = eval(str(param_data[i]).split('.')[0] + '()')

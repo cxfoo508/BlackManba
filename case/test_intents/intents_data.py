@@ -14,6 +14,20 @@ class intents_data_class:
         """
         意图参数
         """
+        self.setup_login = [{
+            "username": "laiye",
+            "password": "123123",
+            "is_keep_login": True
+        }, [], {'token': 'res["data"]["jwt_token"]'}]
+        self.setup_create_app = [{
+            "agent_name": get_str(4),
+            "agent_detail": "测试",
+            "agent_logo": "string",
+            "lang": "zh-CN"
+        }, ['res["code"]==0', 'res["msg"]=="机器人创建成功"'], {'agent_id': 'res["data"]["agent_id"]'}]
+        self.teardown_class = [{
+            "agent_id": os.environ.get("agent_id")
+        }, ['res["code"]==0'], {}]
 
         """
         意图列表

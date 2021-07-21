@@ -14,22 +14,39 @@ class botfallbackconfig_data_class:
         """
         回复策略参数
         """
+        self.setup_login = [{
+            "username": "laiye",
+            "password": "123123",
+            "is_keep_login": True
+        }, [], {'token': 'res["data"]["jwt_token"]'}]
+        self.setup_create_app = [{
+            "agent_name": get_str(4),
+            "agent_detail": "测试",
+            "agent_logo": "string",
+            "lang": "zh-CN"
+        }, ['res["code"]==0', 'res["msg"]=="机器人创建成功"'], {'agent_id': 'res["data"]["agent_id"]'}]
+        self.teardown_class = [{
+            "agent_id": os.environ.get("agent_id")
+        }, ['res["code"]==0'], {}]
 
         """
         查看兜底策略的参数
         """
         self.param_get_config_001 = [{
                   "agent_id": None
-                }, [], {}]
+                }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"'], {}]
         self.param_get_config_002 = [{
             "agent_id": get_str(4)
-        }, [], {}]
+        }, ['res["code"]==200', 'res["data"]==None'], {}]
         self.param_get_config_003 = [{
             "agent_id": get_int(10)
-        }, [], {}]
+        }, ['res["code"]==0', 'res["data"]["threshold_value"]==0.6'], {}]
         self.param_get_config_004 = [{
             "agent_id": "Nonessadj231874523482747!@#$^%&*%($($"
-        }, [], {}]
+        }, ['res["code"]==200', 'res["data"]==None'], {}]
+        self.param_get_config_005 = [{
+            "agent_id": os.environ.get("agent_id")
+        }, ['res["code"]==0', 'res["data"]["threshold_value"]==0.6'], {}]
 
         """
         更新兜底策略
@@ -50,7 +67,7 @@ class botfallbackconfig_data_class:
                                         }
                                     ]
                                 }
-                            }, [], {}]
+                            }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"'], {}]
         self.update_config_002 = [{
                                   "agent_id": os.environ.get("agent_id"),
                                   "threshold_value": None,
@@ -67,7 +84,7 @@ class botfallbackconfig_data_class:
                                       }
                                     ]
                                   }
-                                }, [], {}]
+                                }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"'], {}]
         self.update_config_003 = [{
                                   "agent_id": os.environ.get("agent_id"),
                                   "threshold_value": 0.6,
@@ -83,7 +100,7 @@ class botfallbackconfig_data_class:
                                         "custom_action_id": None}
                                     ]
                                   }
-                                }, [], {}]
+                                }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"'], {}]
         self.update_config_004 = [{
                                   "agent_id": os.environ.get("agent_id"),
                                   "threshold_value": 0.6,
@@ -99,7 +116,7 @@ class botfallbackconfig_data_class:
                                         "custom_action_id": None}
                                     ]
                                   }
-                                }, [], {}]
+                                }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"'], {}]
         self.update_config_005 = [{
                                   "agent_id": os.environ.get("agent_id"),
                                   "threshold_value": 0.6,
@@ -115,7 +132,7 @@ class botfallbackconfig_data_class:
                                         "custom_action_id": None}
                                     ]
                                   }
-                                }, [], {}]
+                                }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"'], {}]
         self.update_config_006 = [{
                                   "agent_id": os.environ.get("agent_id"),
                                   "threshold_value": 0.6,
@@ -131,7 +148,7 @@ class botfallbackconfig_data_class:
                                         "custom_action_id": None}
                                     ]
                                   }
-                                }, [], {}]
+                                }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"'], {}]
         self.update_config_007 = [{
             "agent_id": os.environ.get("agent_id"),
             "threshold_value": 0.6,
@@ -147,7 +164,7 @@ class botfallbackconfig_data_class:
                         "custom_action_id": None}
                 ]
             }
-        }, [], {}]
+        }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"'], {}]
         self.update_config_008 = [{
             "agent_id": os.environ.get("agent_id"),
             "threshold_value": 0.6,
@@ -163,7 +180,7 @@ class botfallbackconfig_data_class:
                         "custom_action_id": None}
                 ]
             }
-        }, [], {}]
+        }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"'], {}]
         self.update_config_009 = [{
             "agent_id": os.environ.get("agent_id"),
             "threshold_value": 0.6,
@@ -179,7 +196,7 @@ class botfallbackconfig_data_class:
                         "custom_action_id": None}
                 ]
             }
-        }, [], {}]
+        }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"'], {}]
         self.update_config_010 = [{
             "agent_id": os.environ.get("agent_id"),
             "threshold_value": 0.6,
@@ -195,7 +212,7 @@ class botfallbackconfig_data_class:
                         "custom_action_id": None}
                 ]
             }
-        }, [], {}]
+        }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"'], {}]
         self.update_config_011 = [{
             "agent_id": os.environ.get("agent_id"),
             "threshold_value": 0.6,
@@ -211,7 +228,7 @@ class botfallbackconfig_data_class:
                         "custom_action_id": 1}
                 ]
             }
-        }, [], {}]
+        }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"'], {}]
         self.update_config_012 = [{
             "agent_id": get_int(10),
             "threshold_value": 0.6,
@@ -227,7 +244,7 @@ class botfallbackconfig_data_class:
                         "custom_action_id": 1}
                 ]
             }
-        }, [], {}]
+        }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"'], {}]
         self.update_config_013 = [{
             "agent_id": "123dhjkashdkhkauw222)(*&^%$#@!",
             "threshold_value": 0.6,
@@ -243,7 +260,7 @@ class botfallbackconfig_data_class:
                         "custom_action_id": 1}
                 ]
             }
-        }, [], {}]
+        }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"'], {}]
         self.update_config_014 = [{
             "agent_id": os.environ.get("agent_id"),
             "threshold_value": 1.22,
@@ -259,7 +276,7 @@ class botfallbackconfig_data_class:
                         "custom_action_id": 1}
                 ]
             }
-        }, [], {}]
+        }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"'], {}]
         self.update_config_015 = [{
             "agent_id": os.environ.get("agent_id"),
             "threshold_value": get_str(4),
@@ -275,7 +292,7 @@ class botfallbackconfig_data_class:
                         "custom_action_id": 1}
                 ]
             }
-        }, [], {}]
+        }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"'], {}]
         self.update_config_016 = [{
             "agent_id": os.environ.get("agent_id"),
             "threshold_value": get_int(4),
@@ -387,7 +404,7 @@ class botfallbackconfig_data_class:
                         "custom_action_id": 1}
                 ]
             }
-        }, [], {}]
+        }, ['res["code"]==0', 'res["msg"]=="兜底策略更新成功"'], {}]
         self.update_config_023 = [{
             "agent_id": os.environ.get("agent_id"),
             "threshold_value": 0.6,
@@ -641,32 +658,32 @@ class botfallbackconfig_data_class:
                         "resp_content": get_str(4),
                         "resp_type_id": 1,
                         "custom_action_id": 1},{
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1},{
-                        "name": get_str(1024),
-                        "resp_content": get_str(1024),
+                        "name": get_int(1024),
+                        "resp_content": get_int(1024),
                         "resp_type_id": 1,
                         "custom_action_id": 1},{
-                        "name": get_str(2048),
-                        "resp_content": get_str(2048),
+                        "name": get_int(2048),
+                        "resp_content": get_int(2048),
                         "resp_type_id": 1,
                         "custom_action_id": 1},{
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1},{
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1},{
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1},{
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1}
                 ]
@@ -685,40 +702,40 @@ class botfallbackconfig_data_class:
                         "resp_content": get_str(4),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(1024),
-                        "resp_content": get_str(1024),
+                        "name": get_int(1024),
+                        "resp_content": get_int(1024),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(2048),
-                        "resp_content": get_str(2048),
+                        "name": get_int(2048),
+                        "resp_content": get_int(2048),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1}
                 ]
@@ -737,63 +754,46 @@ class botfallbackconfig_data_class:
                         "resp_content": get_str(4),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(1024),
-                        "resp_content": get_str(1024),
+                        "name": get_int(1024),
+                        "resp_content": get_int(1024),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(2048),
-                        "resp_content": get_str(2048),
+                        "name": get_int(2048),
+                        "resp_content": get_int(2048),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1}, {
-                        "name": get_str(128),
-                        "resp_content": get_str(128),
+                        "name": get_int(128),
+                        "resp_content": get_int(128),
                         "resp_type_id": 1,
                         "custom_action_id": 1}
                 ]
             }
         }, [], {}]
-        # self.update_config_007 = {
-        #                           "agent_id": os.environ.get("agent_id"),
-        #                           "threshold_value": 0.6,
-        #                           "status": 1,
-        #                           "fallback_responses": {
-        #                             "id": 0,
-        #                             "mode_id": 1,
-        #                             "responses": [
-        #                               {
-        #                                 "name": "string",
-        #                                 "resp_content": "string",
-        #                                 "resp_type_id": 0,
-        #                                 "custom_action_id": 0
-        #                               }
-        #                             ]
-        #                           }
-        #                         }
