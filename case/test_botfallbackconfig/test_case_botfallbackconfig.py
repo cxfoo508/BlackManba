@@ -6,7 +6,7 @@
 # DATE : 2021/7/20 15:03
 import pytest
 
-from base_case import *
+
 from modules.logger import log
 from case.pytest_base import PyBase
 from case.test_botfallbackconfig.botfallbackconfig_sort_data import botfallbackconfig_sort_class

@@ -46,7 +46,7 @@ def pytest_run():
             "--html=report/" + project + ".html",
             "--self-contained-html",
             "-s",
-            "-v",
+            "-v"
         ]
     return run_info
 

@@ -62,6 +62,6 @@ class intents_base_class:
         """
         删除意图
         """
-        url = "/v1/intests/delete"
+        url = "/v1/intents/delete"
         res = cls.__intents_base(url, data)
         return res

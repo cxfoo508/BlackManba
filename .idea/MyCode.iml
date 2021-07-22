@@ -6,9 +6,15 @@
       <sourceFolder url="file://$MODULE_DIR$/case/test_slot" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/engine_case" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/tools" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/.pytest_cache" />
+      <excludeFolder url="file://$MODULE_DIR$/log" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.9 (MyCode-H_KYFOj1)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.9 (MyCode-SZlWv8HL)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="PackageRequirementsSettings">
+    <option name="requirementsPath" value="" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />
