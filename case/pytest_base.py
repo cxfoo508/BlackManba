@@ -12,6 +12,9 @@ from case.test_intents.inrents_sort_data import intents_sort_class
 from case.test_botfallbackconfig.botfallbackconfig_sort_data import botfallbackconfig_sort_class
 from case.test_botfallbackconfig.botfallbackconfig_base import botfallbackconfig_base_class
 from case.test_botfallbackconfig.botfallbackconfig_data import botfallbackconfig_data_class
+from case.test_botresponse.botreponse_sort_data import botresponse_sort_class
+from case.test_botresponse.botresponse_base import botresponse_base_class
+from case.test_botresponse.botreponse_data import botreponse_data_class
 
 
 class PyBase:
