@@ -2,7 +2,7 @@
 # Author : guanlu
 # CONTACT: 719667588@qq.com
 # SOFTWARE: PyCharm
-# FILE : test_channels.py
+# FILE : caes_channels.py
 # DATE : 2021/7/9 16:33
 
 from base_case import *

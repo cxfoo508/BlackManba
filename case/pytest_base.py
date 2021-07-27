@@ -15,7 +15,9 @@ from case.test_botfallbackconfig.botfallbackconfig_data import botfallbackconfig
 from case.test_botresponse.botreponse_sort_data import botresponse_sort_class
 from case.test_botresponse.botresponse_base import botresponse_base_class
 from case.test_botresponse.botreponse_data import botreponse_data_class
-
+from case.test_channels.channels_sort_data import channels_sort_class
+from case.test_channels.channels_data import channels_data_class
+from case.test_channels.channels_base import channels_base_class
 
 class PyBase:
 
