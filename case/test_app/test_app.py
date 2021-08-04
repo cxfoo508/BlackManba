@@ -1,21 +1,11 @@
 # coding = utf-8
-import json
-import uuid
 
 import pandas
 import pytest
 
-from base_case import *
-from data.creat_app_data import *
-from data.create_entity import *
-from data.create_entity_value import *
-from data.get_entity_value_list import *
-from data.update_app_data import *
-from data.update_entity import *
-from data.update_entity_value import *
-
-from case.test_app.app_sort_data import app_sort_class
 from case.pytest_base import PyBase
+from case.test_app.app_sort_data import app_sort_class
+
 agent_id = []
 
 
@@ -25,118 +15,20 @@ def get_py_data():
 
 
 class TestCase(PyBase):
-    def read_excel(self, excel_path):
-        """
-        pandas excel
-        """
 
-        global f, n
-        n = 0
-        f = pandas.read_excel(excel_path)
-        num_list = [i for i in range(len(f.values))]
-        data_list = f.values
-        # print(data_list)
-        return data_list
-        # save excel
-        # pandas.DataFrame(f).to_excel(excel_path,index = 0)
-
-    def setup_method(self):
-        print('---setup_method---')
-        os.environ["token"] = self.auth_login()
-        print(f'TOKEN:{os.environ.get("token")}')
+    def setup_class(self):
+        self.run('app_sort_class.set_up_login')
 
     @pytest.fixture(params=get_py_data())
     def creat_data(self, request):
-        # print('1', request.param)
         return request.param
 
     def test01_app_creat(self, creat_data):
         """
         测试创建app
         """
-        print("---creat app---")
         self.run(creat_data)
-    # def get_update_data(self):
-    #     data_list = get_update_list()
-    #     return data_list
-    #
-    # @pytest.fixture(params=get_update_data(None))
-    # def update_data(self, request):
-    #     return request.param
 
-    # def test02_app_update(self, update_data):
-    #     """
-    #     测试机器人更新
-    #     """
-    #     print("---app update---")
-    #     global agent_id
-    #     data = eval(update_data)
-    #     data[0]["agent_id"] = agent_id[0]
-    #     # data[0]["agent_id"] = "121"
-    #     print(data[0])
-    #     res = update_app(data[0])
-    #     print(f'status code:{res.status_code}')
-    #     content = res.content.decode()
-    #     print(res.headers)
-    #     print(content)
-    #     check_res = str(data[1])
-    #     assert check_res in content, f'res:{content}'
-    #
-    # def test03_app_del(self):
-    #     """
-    #     删除机器人
-    #     """
-    #     print("---del app---")
-    #     global agent_id
-    #     for i in agent_id:
-    #         data = {
-    #             "agent_id": i
-    #         }
-    #         print(data)
-    #         res = del_app(data)
-    #         assert res.status_code == 200, f"code:{res.status_code}"
-    #
-    # # @pytest.mark.skip
-    # def test04_app_list(self, ):
-    #     """
-    #     获取列表
-    #     """
-    #     print("---get list---")
-    #     data = {
-    #         "page_no": 6,
-    #         "number_per_page": 20,
-    #         "agent_id": 0
-    #     }
-    #     res = getlist_app(data)
-    #     print(res.status_code)
-    #     con_list = json.loads(res.content.decode())
-    #     print(con_list)
-    #     for i in con_list["data"]["rows"]:
-    #         if i["agent_id"] == '121':
-    #             print(i)
-    #     assert res.status_code == 200, f'code:{res.status_code}'
-    #
-    # def select_agent_info(self, parm_agent_id):
-    #     """
-    #     查找app字段
-    #     """
-    #     print("---select agent info ---")
-    #     num = 1
-    #     while True:
-    #         data = {
-    #             "page_no": num,
-    #             "number_per_page": 20
-    #         }
-    #         res = getlist_app(data)
-    #         print(num)
-    #         con_list = json.loads(res.content.decode())
-    #         # print(f'{res.status_code}\n{con_list}')
-    #         print(con_list)
-    #         for i in con_list['data']['rows']:
-    #             if i["agent_id"] == parm_agent_id:
-    #                 return i
-    #         num += 1
-    #
     # def test_auth_systemInfo(self, ):
     #     """
     #     系统信息
@@ -145,21 +37,7 @@ class TestCase(PyBase):
     #     res = auth_systemInfo()
     #     print(f'response:{res.content.decode()}')
     #     print(f"header:{res.headers}")
-    #
-    def auth_login(self, ):
-        """
-        登陆
-        """
-        print("---test login---")
-        data = {
-            "username": "laiye",
-            "password": "123123",
-            "is_keep_login": True
-        }
-        con = auth_login(data)
-        con_data = json.loads(con)
-        return con_data["data"]["jwt_token"]
-    #
+
     # def get_create_entity_data(self):
     #     data_list = get_create_entity_list()
     #     # print(data_list)
@@ -409,7 +287,3 @@ class TestCase(PyBase):
     # @pytest.fixture(params=get_data_001(None))
     # def get_data_list_001(self, request):
     #     return request.param
-
-
-
-

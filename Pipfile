@@ -15,6 +15,9 @@ pyyaml = "*"
 pytest-html = "*"
 loguru = "*"
 python-dotenv = "*"
+tenacity = "*"
+requests-toolbelt = "*"
+pytest-assume = {version = "*", index = "http://pypi.douban.com/simple/"}
 
 [dev-packages]
 

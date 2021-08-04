@@ -4,6 +4,8 @@ import os
 import random
 import string
 import time
+import zlib
+from urllib.parse import urlencode
 
 import requests
 
@@ -105,3 +107,9 @@ def request_data_channel(url, data=None):
     request_channel = requests.post(url=f"{URL}{send_url}", json=data, headers=header)
     log.info(f'res time: {request_channel.elapsed.total_seconds()}')
     return request_channel
+
+
+
+
+
+
