@@ -73,3 +73,6 @@ class WeChatServer:
         if r_json["errcode"] == -1:
             raise TryAgain
         log.info("发送文件:%s" % response.json())
+
+
+
