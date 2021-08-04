@@ -2,20 +2,19 @@
 # Author : guanlu
 # CONTACT: 719667588@qq.com
 # SOFTWARE: PyCharm
-# FILE : test_case_intent.py
-# DATE : 2021/7/19 15:09
-# import json
+# FILE : test_case_botreponse.py
+# DATE : 2021/7/22 20:05
 import pytest
 
 from base_case import *
 from modules.logger import log
 from case.pytest_base import PyBase
-from case.test_intents.inrents_sort_data import intents_sort_class
+from case.test_botresponse.botreponse_sort_data import botresponse_sort_class
 from data_method import *
 
 
 def get_data():
-    data_list = intents_sort_class.get_intents_list()
+    data_list = botresponse_sort_class.get_botresponse_list()
     log.info(data_list)
     return data_list
 
@@ -26,7 +25,7 @@ class TestCase(PyBase):
         创建机器人
         """
         log.info("---setup class---")
-        self.run(self, 'intents_sort_class.intents_setup_class')
+        self.run(self, "botresponse_sort_class.botresponse_setup_class")
 
 
 
@@ -34,7 +33,7 @@ class TestCase(PyBase):
     def create_data(self, request):
         return request.param
 
-    def test_intents(self, create_data):
+    def test_botresponse(self, create_data):
         """
         执行测试case
         """
@@ -45,4 +44,4 @@ class TestCase(PyBase):
         删除app
         """
         log.info("---teardown_class---")
-        self.run(self, 'intents_sort_class.intents_teardown_class')
+        self.run(self, "botresponse_sort_class.botresponse_teardown_class")

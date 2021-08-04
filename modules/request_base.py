@@ -45,8 +45,12 @@ def get_headers():
     获取渠道header
     """
     # 开放平台的基础信息
-    secret = "W8AF78C8A9AEEDF774062AC7E600513E"
-    pubkey = "M937AB21C263110E"
+    # secret = "W8AF78C8A9AEEDF774062AC7E600513E"
+    # pubkey = "M937AB21C263110E"
+    secret = os.environ.get("account_secret")
+    pubkey = os.environ.get("account_key")
+    log.info(f"pubkey:{pubkey}")
+    log.info(f"secret:{secret}")
     # 秒级别时间戳
     timestamp = str(int(time.time()))
     nonce = GetChars(32)
@@ -57,9 +61,14 @@ def get_headers():
         "sign": sign,
         "timestamp": timestamp
     }
+    os.environ["auth_account_key"] = pubkey
+    os.environ["auth_nonce"] = nonce
+    os.environ["auth_sign"] = sign
+    os.environ["auth_timestamp"] = timestamp
     headers = {}
     for k, v in data.items():
         headers["auth_" + k] = v
+
     return headers
 
 
@@ -96,6 +105,7 @@ def request_data_channel(url, data=None):
     print(f"Bearer {token}")
     print(f"{URL}{send_url}")
     request_channel = requests.post(url=f"{URL}{send_url}", json=data, headers=header)
+    log.info(f'res time: {request_channel.elapsed.total_seconds()}')
     return request_channel
 
 
