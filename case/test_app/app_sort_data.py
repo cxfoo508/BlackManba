@@ -1,4 +1,9 @@
 class app_sort_class:
+    # set_up
+    set_up_login = {"sort": ["auth_login"], "params": ['app_data_class.param_login']}
+
+    # <editor-fold desc="创建app">
+    # 创建app call test
     app_case_001 = {"sort": ["creat_app", "del_app"],
                     'params': ['app_data_class.param_001', 'app_data_class.param_019']}
     app_case_002 = {"sort": ["creat_app", "del_app"],
@@ -22,7 +27,7 @@ class app_sort_class:
     app_case_011 = {"sort": ["creat_app", "del_app"],
                     'params': ['app_data_class.param_010', 'app_data_class.param_019']}
     app_case_011_1 = {"sort": ["creat_app"],
-                    'params': ['app_data_class.param_010_1']}
+                      'params': ['app_data_class.param_010_1']}
     app_case_012 = {"sort": ["creat_app", "del_app"],
                     'params': ['app_data_class.param_011', 'app_data_class.param_019']}
     app_case_013 = {"sort": ["creat_app", "del_app"],
@@ -37,7 +42,70 @@ class app_sort_class:
                     'params': ['app_data_class.param_016', 'app_data_class.param_019']}
     app_case_018 = {"sort": ["creat_app", "del_app"],
                     'params': ['app_data_class.param_017', 'app_data_class.param_019']}
+    # </editor-fold>
 
+    # <editor-fold desc="更新机器人">
+    """
+    更新机器人
+    """
+    app_case_019 = {"sort": ["creat_app", "update_app", 'getlist_app', "del_app"],
+                    'params': ['app_data_class.param_001', 'app_data_class.up_parm_001',
+                               'app_data_class.get_app_lit_001', 'app_data_class.param_019']}
+    app_case_019_1 = {"sort": ["creat_app", "update_app", "del_app"],
+                    'params': ['app_data_class.param_001', 'app_data_class.up_parm_002',
+                               'app_data_class.param_019']}
+    app_case_019_2 = {"sort": ["creat_app", "update_app", "del_app"],
+                      'params': ['app_data_class.param_001', 'app_data_class.up_parm_003',
+                                 'app_data_class.param_019']}
+    app_case_019_3 = {"sort": ["creat_app", "update_app", "del_app"],
+                      'params': ['app_data_class.param_001', 'app_data_class.up_parm_004',
+                                 'app_data_class.param_019']}
+    app_case_019_4 = {"sort": ["creat_app", "update_app",'getlist_app', "del_app"],
+                      'params': ['app_data_class.param_001', 'app_data_class.up_parm_005',
+                                 'app_data_class.get_app_lit_001','app_data_class.param_019']}
+    app_case_019_5 = {"sort": ["creat_app", "update_app", "del_app"],
+                      'params': ['app_data_class.param_001', 'app_data_class.up_parm_006',
+                                 'app_data_class.param_019']}
+    app_case_019_6 = {"sort": ["creat_app", "update_app", "getlist_app","del_app"],
+                      'params': ['app_data_class.param_001', 'app_data_class.up_parm_007',
+                                 "app_data_class.get_app_lit_001",
+                                 'app_data_class.param_019']}
+    app_case_019_7 = {"sort": ["creat_app", "update_app",  "del_app"],
+                      'params': ['app_data_class.param_001',
+                                 'app_data_class.up_parm_008',
+                                 'app_data_class.param_019']}
+    app_case_019_8 = {"sort": ["creat_app", "update_app", "getlist_app", "del_app"],
+                      'params': ['app_data_class.param_001', 'app_data_class.up_parm_009',
+                                 "app_data_class.get_app_lit_001",
+                                 'app_data_class.param_019']}
+    app_case_019_9 = {"sort": ["creat_app", "update_app", "getlist_app", "del_app"],
+                      'params': ['app_data_class.param_001', 'app_data_class.up_parm_010',
+                                 "app_data_class.get_app_lit_001",
+                                 'app_data_class.param_019']}
+    # </editor-fold>
+
+    # <editor-fold desc="机器人列表">
+    """
+    获取机器人列表
+    """
+    app_case_020 = {"sort": ["creat_app", "getlist_app", "del_app"],
+                    'params': ['app_data_class.param_001', 'app_data_class.get_app_lit_001',
+                               'app_data_class.param_019']}
+    app_case_021 = {"sort": ["getlist_app"],
+                    'params': ['app_data_class.get_app_lit_002']}
+    app_case_022 = {"sort": ["getlist_app"],
+                    'params': ['app_data_class.get_app_lit_003']}
+    app_case_023 = {"sort": ["getlist_app"],
+                    'params': ['app_data_class.get_app_lit_004']}
+    app_case_024 = {"sort": ["getlist_app"],
+                    'params': ['app_data_class.get_app_lit_005']}
+    app_case_025 = {"sort": ["getlist_app"],
+                    'params': ['app_data_class.get_app_lit_006']}
+    app_case_026 = {"sort": ["getlist_app"],
+                    'params': ['app_data_class.get_app_lit_007']}
+    app_case_027 = {"sort": ["getlist_app"],
+                    'params': ['app_data_class.get_app_lit_008']}
+    # </editor-fold>
 
     # 所有变量名称集合
     param_list = dir()
@@ -59,5 +127,3 @@ class app_sort_class:
         return lists
 
 
-if __name__ == '__main__':
-    eval('node_sort_class.add(1,2)')

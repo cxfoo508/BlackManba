@@ -1,10 +1,10 @@
 # coding = utf-8
-import pytest
 import os
-import pytest
-from modules.helper import file_path
-from modules.get_control import test_case, process_num, project_name
 
+import pytest
+
+from modules.get_control import test_case, process_num, project_name
+from modules.helper import file_path
 
 TEMP_DIR = os.path.join(file_path(), "temp")
 
@@ -24,32 +24,22 @@ def del_file(path):
 
 del_file(TEMP_DIR)
 
-case_info = test_case()
+case_info = (test_case()).split(' ')
 process = process_num()
 project = project_name()
+run_info = ['-s', "--html=report/" + project + ".html", "--self-contained-html",]
 
 
 def pytest_run():
+    """
+    run case info
+    """
     if process == "1":
-        run_info = [
-            case_info,
-            "--html=report/" + project + ".html",
-            "--self-contained-html",
-            # "-s",
-            # "-v",
-        ]
+        run_info.extend(case_info)
     else:
-        run_info = [
-            case_info,
-            "-n",
-            process,
-            "--html=report/" + project + ".html",
-            "--self-contained-html",
-            "-s",
-            "-v",
-        ]
+        run_info.extend(case_info)
+        run_info.append(process)
     return run_info
 
-# print(pytest_run())
-pytest.main(pytest_run())
 
+pytest.main(pytest_run())
