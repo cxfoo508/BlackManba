@@ -43,19 +43,22 @@ class PyBase:
 
             func = sort_data[i]
             req = param[0]
-            # 执行func
-            res = eval(f'{func}({req})')
-            res = json.loads(res)
-            # assert
-            for s in param[1]:
-                log.info(f'ASSERT:{s},ANSWER:{eval(s)}')
-                # 判断是否错误终止：
-                assert_type = os.environ.get('assert_type')
-                if assert_type == 'False':
-                    assert eval(s), res
-                else:
-                    pytest.assume(eval(s), res)
-            # res注入项
-            for k, v in param[2].items():
-                os.environ[k] = str(eval(v))
-                log.info(f"ENVIRON {k}={v}:{k}={eval(v)}")
+            try:
+                # 执行func
+                res = eval(f'{func}({req})')
+                res = json.loads(res)
+                # assert
+                for s in param[1]:
+                    log.info(f'ASSERT:{s},ANSWER:{eval(s)}')
+                    # 判断是否错误终止：
+                    assert_type = os.environ.get('assert_type')
+                    if assert_type == 'False':
+                        assert eval(s), res
+                    else:
+                        pytest.assume(eval(s), res)
+                # res注入项
+                for k, v in param[2].items():
+                    os.environ[k] = str(eval(v))
+                    log.info(f"ENVIRON {k}={v}:{k}={eval(v)}")
+            except BaseException as be:
+                log.info(f'CODE ERROR:{be}')
