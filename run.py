@@ -1,10 +1,10 @@
 # coding = utf-8
-import os
-
 import pytest
-
-from modules.get_control import test_case, process_num, project_name
+import os
+import pytest
 from modules.helper import file_path
+from modules.get_control import test_case, process_num, project_name
+
 
 TEMP_DIR = os.path.join(file_path(), "temp")
 
@@ -30,25 +30,16 @@ project = project_name()
 run_info = ['-s', "--html=report/" + project + ".html", "--self-contained-html",]
 
 
-def pytest_run(run_info=None):
+def pytest_run():
     """
     run case info
     """
     if process == "1":
         run_info.extend(case_info)
     else:
-        run_info = [
-            case_info,
-            "-n",
-            process,
-            "--html=report/" + project + ".html",
-            "--self-contained-html",
-            "-s",
-            "-v"
-        ]
         run_info.extend(case_info)
         run_info.append(process)
     return run_info
 
 
-pytest.main(pytest_run(run_info))
+pytest.main(pytest_run())

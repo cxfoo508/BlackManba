@@ -20,8 +20,8 @@ from case.test_entity.entity_data import entity_data_class
 from base_case import *
 
 class PyBase:
-    @staticmethod
-    def run(creat_data):
+
+    def run(self, creat_data):
         """
         执行case
         """

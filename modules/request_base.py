@@ -39,6 +39,21 @@ def rear_post(url, data):
     log.info(f'res time: {res.elapsed.total_seconds()}')
     return res
 
+def rear_get(url, data):
+    """
+    后端請求
+    """
+    send_url = url
+    URL = os.environ.get('url')
+    token = os.environ.get("token")
+    header = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {token}"
+    }
+    log.info(f'send url: {URL}{send_url}')
+    res = requests.get(url=f"{URL}{send_url}",json=data, headers=header)
+    log.info(f'res time: {res.elapsed.total_seconds()}')
+    return res
 
 def get_headers():
     """
