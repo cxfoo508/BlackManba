@@ -28,8 +28,8 @@ from base_case import *
 
 
 class PyBase:
-    @staticmethod
-    def run(creat_data):
+
+    def run(self, creat_data):
         """
         执行case
         """
