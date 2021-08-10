@@ -59,6 +59,28 @@ class node_data_class:
             ["res['code']==0", "res['msg']=='节点创建成功'", "res['data']!=None"],
             {}
         ]
+        self.param_004_1 = [{
+            # 创建回复节点
+            "agent_id": os.environ.get('agent_id'),
+            "skill_one_id": os.environ.get('skill_one_id'),
+            "node_name": "测试",
+            "trigger_intent_ids": [os.environ.get("intent_id")],
+            "prompts":
+                {
+                    "agent_id": os.environ.get('agent_id'),
+                    "responses": [
+                        {
+                            "resp_type_id": 2,
+                            "resp_content": "节点1回复"
+                        }
+                    ]
+                }
+
+
+        },
+            ["res['code']==0", "res['msg']=='节点创建成功'", "res['data']!=None"],
+            {}
+        ]
 
         """
         set_up
@@ -88,11 +110,11 @@ class node_data_class:
         self.param_007 = [
             {
                 "agent_id": os.environ.get('agent_id'),
-                "intent_name": get_str(4),
+                "intent_name": '测试意图',
                 "examples": [
                     {
                         "id": 0,
-                        "name": "相似问"
+                        "name": "相似问测试"
                     }
                 ],
                 "keywords_eq": [
@@ -112,6 +134,43 @@ class node_data_class:
             {'intent_id': 'res["data"]["intent_id"]'}
 
         ]
+        self.param_007_1 = [
+            {
+                "agent_id": os.environ.get('agent_id'),
+                "intent_name": '节点1意图',
+                "examples": [
+                    {
+                        "id": 0,
+                        "name": "节点1"
+                    }
+                ],
+                "keywords_eq": [
+                    {
+                        "id": 0,
+                        "name": "严格1"
+                    }
+                ],
+                "keywords_include": [
+                    {
+                        "id": 0,
+                        "name": "包含1"
+                    }
+                ]
+            },
+            ['res["code"]==0', 'res["msg"]=="创建意图成功"'],
+            {'intent_id': 'res["data"]["intent_id"]'}
+
+        ]
+
+        # <editor-fold desc = "获取指定节点">
+        self.param_009 = [
+            {
+                "agent_id": os.environ.get('agent_id'),
+                "skill_one_id": os.environ.get('skill_one_id'),
+
+            }
+        ]
+        # </editor-fold>
         # del app
         self.param_008 = [
             {
