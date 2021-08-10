@@ -1,3 +1,4 @@
+# <editor-fold desc = "import">
 import pytest
 from case.test_app.app_sort_data import app_sort_class
 from case.test_app.app_data import app_data_class
@@ -15,9 +16,16 @@ from case.test_channels.channels_data import channels_data_class
 from case.test_channels.channels_base import channels_base_class
 from case.test_node.node_data import node_data_class
 from case.test_node.node_sort_data import node_sort_class
+from case.test_node.node_base import node_base_class
 from case.test_entity.entity_sort_data import entity_sort_class
 from case.test_entity.entity_data import entity_data_class
+from case.test_skills.skills_data import skills_data_class
+from case.test_skills.skills_sort_data import skills_sort_class
+from case.test_skills.case_base_skills import skills_base_class
+from case.test_chatMessage.message_base import ChatMessageCase
 from base_case import *
+# </editor-fold>
+
 
 class PyBase:
     @staticmethod
@@ -60,5 +68,12 @@ class PyBase:
                 for k, v in param[2].items():
                     os.environ[k] = str(eval(v))
                     log.info(f"ENVIRON {k}={v}:{k}={eval(v)}")
-            except BaseException as be:
-                log.info(f'CODE ERROR:{be}')
+                # 执行功能
+                if len(param) == 4:
+                    for k, v in param[3].items():
+                        if k == 'sleep_time':
+                            log.info(f'SLEEP_TIME:{v}')
+                            time.sleep(v)
+            except BaseException as e:
+                log.info(f'CODE ERROR:{e}')
+                assert 1 == 2, e

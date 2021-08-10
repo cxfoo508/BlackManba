@@ -7,17 +7,16 @@
 # import json
 import pytest
 
-from base_case import *
-from modules.logger import log
 from case.pytest_base import PyBase
 from case.test_intents.inrents_sort_data import intents_sort_class
-from data_method import *
+from modules.logger import log
 
 
 def get_data():
     data_list = intents_sort_class.get_intents_list()
     log.info(data_list)
     return data_list
+
 
 class TestCase(PyBase):
 
@@ -27,8 +26,6 @@ class TestCase(PyBase):
         """
         log.info("---setup class---")
         self.run(self, 'intents_sort_class.intents_setup_class')
-
-
 
     @pytest.fixture(params=get_data())
     def create_data(self, request):
