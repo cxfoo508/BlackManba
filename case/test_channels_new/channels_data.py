@@ -3011,67 +3011,66 @@ class channels_data_class:
 
         # <editor-fold desc="获取渠道列表">
         self.param_get_channelslist_001 = [{"agent_id":None,
-                                            "data":{"page":None,
-                                                    "page_size":None}}, [], {}]
+                                             "page":None,
+                                            "page_size":None}, [], {}]
         self.param_get_channelslist_002 = [{"agent_id": os.environ.get("agent_id"),
-                                            "data": {"page": None,
-                                                     "page_size": None}}, [], {}]
+                                             "page": None,
+                                             "page_size": None}, [], {}]
         self.param_get_channelslist_003 = [{"agent_id": None,
-                                            "data": {"page": 1,
-                                                     "page_size": None}}, [], {}]
+                                             "page": 1,
+                                             "page_size": None}, [], {}]
         self.param_get_channelslist_004 = [{"agent_id": None,
-                                            "data": {"page": None,
-                                                     "page_size": 14}}, [], {}]
+                                             "page": None,
+                                             "page_size": 14}, [], {}]
         self.param_get_channelslist_005 = [{"agent_id": os.environ.get("agent_id"),
-                                            "data": {"page": 1,
-                                                     "page_size": None}}, [], {}]
+                                             "page": 1,
+                                             "page_size": None}, [], {}]
         self.param_get_channelslist_006 = [{"agent_id": os.environ.get("agent_id"),
-                                            "data": {"page": 1,
-                                                     "page_size": 20}}, [], {}]
+                                             "page": 1,
+                                             "page_size": 20}, [], {}]
         self.param_get_channelslist_007 = [{"agent_id": "",
-                                            "data": {"page": "",
-                                                     "page_size": ""}}, [], {}]
+                                             "page": "",
+                                             "page_size": ""}, [], {}]
         self.param_get_channelslist_008 = [{"agent_id": os.environ.get("agent_id"),
-                                            "data": {"page": "",
-                                                     "page_size": ""}}, [], {}]
+                                             "page": "",
+                                             "page_size": ""}, [], {}]
         self.param_get_channelslist_009 = [{"agent_id": "",
-                                            "data": {"page": 1,
-                                                     "page_size": ""}}, [], {}]
+                                             "page": 1,
+                                             "page_size": ""}, [], {}]
         self.param_get_channelslist_010 = [{"agent_id": "",
-                                            "data": {"page": "",
-                                                     "page_size": 20}}, [], {}]
+                                             "page": "",
+                                             "page_size": 20}, [], {}]
         self.param_get_channelslist_011 = [{"agent_id": " ",
-                                            "data": {"page": 1,
-                                                     "page_size": 20}}, [], {}]
+                                            "page": 1,
+                                             "page_size": 20}, [], {}]
         self.param_get_channelslist_012 = [{"agent_id": os.environ.get("agent_id"),
-                                            "data": {"page": " ",
-                                                     "page_size": 20}}, [], {}]
+                                             "page": " ",
+                                             "page_size": 20}, [], {}]
         self.param_get_channelslist_013 = [{"agent_id": os.environ.get("agent_id"),
-                                            "data": {"page": 1,
-                                                     "page_size": " "}}, [], {}]
+                                             "page": 1,
+                                             "page_size": " "}, [], {}]
         self.param_get_channelslist_014 = [{"agent_id": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
-                                            "data": {"page": 1,
-                                                     "page_size": 20}}, [], {}]
+                                             "page": 1,
+                                             "page_size": 20}, [], {}]
         self.param_get_channelslist_015 = [{"agent_id": os.environ.get("agent_id"),
-                                            "data": {"page": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
-                                                     "page_size": 20}}, [], {}]
+                                             "page": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
+                                             "page_size": 20}, [], {}]
         self.param_get_channelslist_016 = [{"agent_id": os.environ.get("agent_id"),
-                                            "data": {"page": 1,
-                                                     "page_size": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><"}}, [], {}]
+                                             "page": 1,
+                                             "page_size": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><"}, [], {}]
         self.param_get_channelslist_017 = [{"agent_id": get_int(10),
-                                            "data": {"page": 1,
-                                                     "page_size": 20}}, [], {}]
+                                             "page": 1,
+                                             "page_size": 20}, [], {}]
         self.param_get_channelslist_018 = [{"agent_id": os.environ.get("agent_id"),
-                                            "data": {"page": get_int(10),
-                                                     "page_size": 20}}, [], {}]
+                                             "page": get_int(10),
+                                             "page_size": 20}, [], {}]
         self.param_get_channelslist_019 = [{"agent_id": os.environ.get("agent_id"),
-                                            "data": {"page": 1,
-                                                     "page_size": get_int(10)}}, [], {}]
+                                             "page": 1,
+                                             "page_size": get_int(10)}, [], {}]
         self.param_get_channelslist_020 = [{"agent_id": os.environ.get("agent_id"),
-                                            "data": {"page": 1,
-                                                     "page_size": 20}}, [], {}]
+                                             "page": 1,
+                                             "page_size": 20}, [], {}]
         self.param_get_channelslist_021 = [{"agent_id": os.environ.get("agent_id"),
-                                            "data": {"page": 1,
-                                                     "page_size": 20}}, [], {}]
-
+                                             "page": 1,
+                                             "page_size": 20}, [], {}]
         # </editor-fold>
