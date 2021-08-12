@@ -26,10 +26,10 @@ class TestCase(PyBase):
         获取渠道鉴权token
         """
         log.info("---setup class---")
-        self.run(self, "channels_sort_class.channels_setup_class")
+        self.run( "channels_sort_class.channels_setup_class")
         headers = get_headers()
         log.info(f"headers:{headers}")
-        self.run(self, "channels_sort_class.channels_setup_class_auth")
+        self.run( "channels_sort_class.channels_setup_class_auth")
 
 
     @pytest.fixture(params=get_data())
@@ -47,4 +47,4 @@ class TestCase(PyBase):
         删除app
         """
         log.info("---teardown_class---")
-        self.run(self, "channels_sort_class.channels_teardown_class")
+        self.run( "channels_sort_class.channels_teardown_class")

@@ -25,7 +25,7 @@ class TestCase(PyBase):
         创建机器人
         """
         log.info("---setup class---")
-        self.run(self, 'intents_sort_class.intents_setup_class')
+        self.run( 'intents_sort_class.intents_setup_class')
 
     @pytest.fixture(params=get_data())
     def create_data(self, request):
@@ -42,4 +42,4 @@ class TestCase(PyBase):
         删除app
         """
         log.info("---teardown_class---")
-        self.run(self, 'intents_sort_class.intents_teardown_class')
+        self.run( 'intents_sort_class.intents_teardown_class')
