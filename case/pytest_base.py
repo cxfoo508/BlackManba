@@ -77,3 +77,12 @@ class PyBase:
             except BaseException as e:
                 log.info(f'CODE ERROR:{e}')
                 assert 1 == 2, e
+
+# if __name__ == '__main__':
+#     import json
+#     a = {'a':{'bxx':1}}
+#     js = json.dumps(a)
+#     c = 'a["a"]["bxx"]'
+#     d =c[c.rindex('[')+2:c.rindex(']')-1]
+#     if d in js:
+#         print(1)

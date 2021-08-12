@@ -64,7 +64,7 @@ class node_base_class:
     @classmethod
     def node_update(cls, data):
         """
-        创建
+        更新
         """
         url = '/v1/node/update'
         con = cls.__node_base(url, data)
@@ -76,5 +76,41 @@ class node_base_class:
         删除节点
         """
         url = '/v1/node/del'
-        con = cls.__node_base(data)
+        con = cls.__node_base(url, data)
+        return con
+
+    @classmethod
+    def get_dialog_tree_root_node(cls, data):
+        """
+        获取跟节点
+        """
+        url = "/v1/rule/get_base_node_for_dialog_tree"
+        con = cls.__node_base(url, data)
+        return con
+
+    @classmethod
+    def update_dialog_tree_root_node(cls, data):
+        """
+        更新跟节点
+        """
+        url = '/v1/rule/update_trigger_node_with_skill'
+        con = cls.__node_base(url, data)
+        return con
+
+    @classmethod
+    def update_dialog_tree_complete_node(cls, data):
+        """
+        更新成功结束节点
+        """
+        url = '/v1/rule/update_complete_node_with_skill'
+        con = cls.__node_base(url, data)
+        return con
+
+    @classmethod
+    def update_dialog_tree_fallback_node(cls, data):
+        """
+        更新异常结束节点
+        """
+        url = '/v1/rule/update_fallback_node_with_skill'
+        con = cls.__node_base(url, data)
         return con

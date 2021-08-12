@@ -43,27 +43,31 @@ class skills_sort_class:
                    ]
     }
     skills_case_001_1 = {
-        # 对话树
+        # 对话树-root
         "sort": ["create_intent", "skills_base_class.skill_category_all",
-                 "skills_base_class.skill_create", "create_intent", "node_base_class.node_create",
-                 "skills_base_class.skill_change_status", "agent_train_publish_start",
-                 "ChatMessageCase.chat_get_response"
+                 "skills_base_class.skill_create", "node_base_class.get_dialog_tree_root_node",
+                 'node_base_class.update_dialog_tree_root_node', "skills_base_class.skill_change_status",
+                 "agent_train_publish_start", "ChatMessageCase.chat_get_response"
                  ],
         "params": ["node_data_class.param_007", "skills_data_class.params_case_002",
-                   "skills_data_class.params_case_001_1_1", "node_data_class.param_007_1",
-                   "node_data_class.param_004_1",
-                   "skills_data_class.params_case_003", "app_data_class.param_agent_start",
+                   "skills_data_class.params_case_001_1_1", "node_data_class.param_009",
+                   "node_data_class.param_010", "skills_data_class.params_case_003", "app_data_class.param_agent_start",
                    "skills_data_class.params_case_004_2"
-
                    ]
     }
     skills_case_001_2 = {
-        # 对话树
+        # 对话树-成功结束
         "sort": ["create_intent", "skills_base_class.skill_category_all",
-                 "skills_base_class.skill_create", "node_base_class.node_getnode"
+                 "skills_base_class.skill_create", "node_base_class.get_dialog_tree_root_node",
+                 'node_base_class.update_dialog_tree_root_node', 'node_base_class.update_dialog_tree_complete_node',
+                 "skills_base_class.skill_change_status",
+                 "agent_train_publish_start", "ChatMessageCase.chat_get_response"
                  ],
         "params": ["node_data_class.param_007", "skills_data_class.params_case_002",
-                   "skills_data_class.params_case_001_1_1","node_data_class.param_009"
+                   "skills_data_class.params_case_001_1_1", "node_data_class.param_009",
+                   "node_data_class.param_010", 'node_data_class.param_010_1', "skills_data_class.params_case_003",
+                   "app_data_class.param_agent_start",
+                   "skills_data_class.params_case_004_2"
                    ]
     }
 
@@ -231,6 +235,98 @@ class skills_sort_class:
     }
     # </editor-fold>
 
+    # <editor-fold desc = "删除技能">
+    skills_case_019 = {
+        # 训练生效后删除
+        "sort": ["create_intent", "skills_base_class.skill_category_all",
+                 "skills_base_class.skill_create",
+                 "skills_base_class.skill_change_status", "agent_train_publish_start",
+                 "skills_base_class.skill_delete", 'skills_base_class.skill_list'
+                 ],
+        "params": ["node_data_class.param_007", "skills_data_class.params_case_002",
+                   "skills_data_class.params_case_001", "skills_data_class.params_case_003",
+                   "app_data_class.param_agent_start", "skills_data_class.params_case_005",
+                   "skills_data_class.params_case_006"
+                   ]
+    }
+    skills_case_020 = {
+        # 为生效训练删除
+        "sort": ["create_intent", "skills_base_class.skill_category_all",
+                 "skills_base_class.skill_create",
+                 "skills_base_class.skill_delete", 'skills_base_class.skill_list'
+                 ],
+        "params": ["node_data_class.param_007", "skills_data_class.params_case_002",
+                   "skills_data_class.params_case_001",
+                   "skills_data_class.params_case_005",
+                   "skills_data_class.params_case_006"
+                   ]
+    }
+    skills_case_021 = {
+        # 必填项
+        "sort": ["create_intent", "skills_base_class.skill_category_all",
+                 "skills_base_class.skill_create",
+                 "skills_base_class.skill_delete",
+                 "skills_base_class.skill_delete",
+                 "skills_base_class.skill_delete",
+                 ],
+        "params": ["node_data_class.param_007", "skills_data_class.params_case_002",
+                   "skills_data_class.params_case_001",
+                   "skills_data_class.params_case_005_1",
+                   "skills_data_class.params_case_005_2",
+                   "skills_data_class.params_case_005_3",
+                   ]
+    }
+    # </editor-fold>
+
+    # <editor-fold desc = "获取技能列表">
+    skills_case_022 = {
+        "sort": ["create_intent", "skills_base_class.skill_category_all",
+                 "skills_base_class.skill_create", "skills_base_class.skill_create",
+                 "skills_base_class.skill_change_status", "skills_base_class.skill_list",
+                 "skills_base_class.skill_list",
+                 "skills_base_class.skill_list",
+                 "skills_base_class.skill_list",
+                 "skills_base_class.skill_list",
+                 "skills_base_class.skill_list",
+                 "skills_base_class.skill_list"
+                 ],
+        "params": ["node_data_class.param_007", "skills_data_class.params_case_002",
+                   "skills_data_class.params_case_001", "skills_data_class.params_case_001_1_1",
+                   "skills_data_class.params_case_003", "skills_data_class.params_case_006_1",
+                   "skills_data_class.params_case_006_2", "skills_data_class.params_case_006_3",
+                   "skills_data_class.params_case_006_4", "skills_data_class.params_case_006_5",
+                   "skills_data_class.params_case_006_7", "skills_data_class.params_case_006_8",
+                   ]
+    }
+    skills_case_023 = {
+        "sort": ["create_intent", "skills_base_class.skill_category_all",
+                 "skills_base_class.skill_create", "skills_base_class.skill_create",
+                 "skills_base_class.skill_create",
+                 "skills_base_class.skill_create", "skills_base_class.skill_create",
+                 "skills_base_class.skill_create", "skills_base_class.skill_create",
+                 "skills_base_class.skill_list", "skills_base_class.skill_list"
+
+                 ],
+        "params": ["node_data_class.param_007", "skills_data_class.params_case_002",
+                   "skills_data_class.params_case_001", "skills_data_class.params_case_001_1_1",
+                   "skills_data_class.params_case_001_1_1",
+                   "skills_data_class.params_case_001_1_1", "skills_data_class.params_case_001_1_1",
+                   "skills_data_class.params_case_001_1_1", "skills_data_class.params_case_001_1_1",
+                   "skills_data_class.params_case_006_9", "skills_data_class.params_case_006_10"
+
+                   ]
+    }
+    skills_case_024 = {
+        "sort": ["create_intent", "skills_base_class.skill_category_all",
+                 "skills_base_class.skill_create", "skills_base_class.skill_list"
+
+                 ],
+        "params": ["node_data_class.param_007", "skills_data_class.params_case_002",
+                   "skills_data_class.params_case_001","skills_data_class.params_case_006_11"
+
+                   ]
+    }
+    # </editor-fold>
     # 所有变量名称集合
     param_list = dir()
     print(param_list)
