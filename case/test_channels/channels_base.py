@@ -7,8 +7,7 @@
 from base_case import *
 from modules.logger import log
 from modules.request_base import *
-from request_base import request_data_channel
-
+from modules.request_base import request_data_channel
 class channels_base_class:
 
     @classmethod

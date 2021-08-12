@@ -2,7 +2,6 @@ import os
 
 from data_method import *
 
-
 class app_data_class:
     def __init__(self):
         """
