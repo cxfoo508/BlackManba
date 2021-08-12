@@ -11,14 +11,13 @@ from modules.request_base import *
 class channels_base_class:
 
     @classmethod
-    def __channels_base_token(cls, method, url, data):
+    def __channels_base_token(cls, method, url, data=None):
         """
         新渠道基础用例
         """
         if method == "get":
             log.info(f"send url:{url}")
-            log.info(f"send data:{data}")
-            res = rear_get(url, data)
+            res = rear_get(url)
             con = res.content.decode()
             return con
         elif method == "post":
@@ -37,7 +36,7 @@ class channels_base_class:
         """
         agent_id = data["agent_id"]
         res_data = data["res_data"]
-        url = f"/v1/agents/{agent_id}/channel:mutate"
+        url = f"/chatbot/v1alpha1/agents/{agent_id}/channel:mutate"
         res = cls.__channels_base_token("post", url, res_data)
         return res
 
@@ -48,9 +47,8 @@ class channels_base_class:
         """
         agent_id = data["agent_id"]
         id = data["id"]
-        res_data = data["res_data"]
-        url = f"/v1/agents/{agent_id}/channel/{id}"
-        res = cls.__channels_base_token("get", url, res_data)
+        url = f"/chatbot/v1alpha1/agents/{agent_id}/channel/{id}"
+        res = cls.__channels_base_token("get", url)
         return res
 
     @classmethod
@@ -59,7 +57,8 @@ class channels_base_class:
         获取渠道列表
         """
         agent_id = data["agent_id"]
-        res_data = data["res_data"]
-        url = f"/v1/agents/{agent_id}/channel/list"
-        res = cls.__channels_base_token("get", url, res_data)
+        page = data["page"]
+        pageSize = data["pageSize"]
+        url = f"/chatbot/v1alpha1/agents/{agent_id}/channel/list?page={page}&pageSize={pageSize}"
+        res = cls.__channels_base_token("get", url)
         return res

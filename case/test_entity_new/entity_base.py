@@ -12,14 +12,13 @@ from modules.request_base import *
 class entity_base_class:
 
     @classmethod
-    def __entity_base_token(cls, method, url, data):
+    def __entity_base_token(cls, method, url, data=None):
         """
         新实体基础用例
         """
         if method == "get":
             log.info(f"send url:{url}")
-            log.info(f"send data:{data}")
-            res = rear_get(url, data)
+            res = rear_get(url)
             con = res.content.decode()
             return con
         elif method == "post":
@@ -49,9 +48,12 @@ class entity_base_class:
         """
         agent_id = data["agent_id"]
         entity_type = data["entity_type"]
-        res_data = data["res_data"]
-        url = f"/chatbot/v1alpha1/agents/{agent_id}/entities/{entity_type}"
-        res = cls.__entity_base_token("get", url, res_data)
+        page = data["page"]
+        page_size = data["page_size"]
+        keywords = data["keywords"]
+        require_value = data["require_value"]
+        url = f"/chatbot/v1alpha1/agents/{agent_id}/entities?entityType={entity_type}&page={page}&pageSize={page_size}&keywords={keywords}&require_value={require_value}"
+        res = cls.__entity_base_token("get", url)
         return res
 
     @classmethod
@@ -61,9 +63,12 @@ class entity_base_class:
         """
         agent_id = data["agent_id"]
         entity_id = data["entity_id"]
-        res_data = data["res_data"]
-        url = f"/chatbot/v1alpha1/agents/{agent_id}/entities/{entity_id}/value"
-        res = cls.__entity_base_token("get", url, res_data)
+        page = data["page"]
+        page_size = data["page_size"]
+        is_tokenization = data["is_tokenization"]
+        keywords = data["keywords"]
+        url = f"/chatbot/v1alpha1/agents/{agent_id}/entities/{entity_id}/value?page={page}&pageSize={page_size}&isTokenization={is_tokenization}&keywords={keywords}"
+        res = cls.__entity_base_token("get", url)
         return res
 
     @classmethod
@@ -109,5 +114,17 @@ class entity_base_class:
         entity_id = data["entity_id"]
         res_data = data["res_data"]
         url = f"/chatbot/v1alpha1/agents/{agent_id}/entities/{entity_id}/value/import"
+        res = cls.__entity_base_token("post", url, res_data)
+        return res
+
+    @classmethod
+    def regex_test(cls, data):
+        """
+        正则表达式测试
+        """
+        agent_id = data["agent_id"]
+        entity_id = data["entity_id"]
+        res_data = data["res_data"]
+        url = f"/chatbot/v1alpha1/agents/{agent_id}/entities/{entity_id}/value/test"
         res = cls.__entity_base_token("post", url, res_data)
         return res

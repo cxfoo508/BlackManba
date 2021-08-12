@@ -41,7 +41,7 @@ class labelquery_data_class:
 
         # </editor-fold>
 
-        # <editor-fold desc="">
+        # <editor-fold desc="删除">
 
         # </editor-fold>
 
@@ -49,6 +49,6 @@ class labelquery_data_class:
 
         # </editor-fold>
 
-        # <editor-fold desc="">
+        # <editor-fold desc="查找">
 
         # </editor-fold>
