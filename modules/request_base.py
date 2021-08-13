@@ -39,7 +39,7 @@ def rear_post(url, data):
     log.info(f'res time: {res.elapsed.total_seconds()}')
     return res
 
-def rear_get(url, data):
+def rear_get(url, data=None):
     """
     后端請求
     """

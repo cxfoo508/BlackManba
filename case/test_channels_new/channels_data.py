@@ -2932,37 +2932,37 @@ class channels_data_class:
                                                {
                                                    "delete": " "
                                                }]}}, [], {}]
-        self.param_delete_channels_0010 = [{"agent_id": " ",
+        self.param_delete_channels_010 = [{"agent_id": " ",
                                            "data": {"mutate_operations": [
                                                {
                                                    "delete": os.environ.get("id")
                                                }]}}, [], {}]
-        self.param_delete_channels_0011 = [{"agent_id": get_str(4),
+        self.param_delete_channels_011 = [{"agent_id": get_str(4),
                                            "data": {"mutate_operations": [
                                                {
                                                    "delete": os.environ.get("id")
                                                }]}}, [], {}]
-        self.param_delete_channels_0012 = [{"agent_id": get_int(10),
+        self.param_delete_channels_012 = [{"agent_id": get_int(10),
                                            "data": {"mutate_operations": [
                                                {
                                                    "delete": os.environ.get("id")
                                                }]}}, [], {}]
-        self.param_delete_channels_0013 = [{"agent_id": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
+        self.param_delete_channels_013 = [{"agent_id": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
                                            "data": {"mutate_operations": [
                                                {
                                                    "delete": os.environ.get("id")
                                                }]}}, [], {}]
-        self.param_delete_channels_0014 = [{"agent_id": os.environ.get("agent_id"),
+        self.param_delete_channels_014 = [{"agent_id": os.environ.get("agent_id"),
                                            "data": {"mutate_operations": [
                                                {
                                                    "delete": get_str(4)
                                                }]}}, [], {}]
-        self.param_delete_channels_0015 = [{"agent_id": os.environ.get("agent_id"),
+        self.param_delete_channels_015 = [{"agent_id": os.environ.get("agent_id"),
                                            "data": {"mutate_operations": [
                                                {
                                                    "delete": get_int(10)
                                                }]}}, [], {}]
-        self.param_delete_channels_0016 = [{"agent_id": os.environ.get("agent_id"),
+        self.param_delete_channels_016 = [{"agent_id": os.environ.get("agent_id"),
                                            "data": {"mutate_operations": [
                                                {
                                                    "delete": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><"

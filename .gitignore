@@ -110,3 +110,4 @@ data/api_data.ini
 report/allure-html
 report/tmp/my_allure_results
 /data/~$*
+env/.env
