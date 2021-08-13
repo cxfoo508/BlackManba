@@ -11,7 +11,7 @@ from base_case import *
 from modules.logger import log
 from case.pytest_base import PyBase
 from case.test_intents.inrents_sort_data import intents_sort_class
-from data_method import *
+from data.data_method import *
 
 
 def get_data():
