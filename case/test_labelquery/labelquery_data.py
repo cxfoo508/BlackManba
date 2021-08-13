@@ -5,7 +5,7 @@
 # FILE : labelquery_data.py
 # DATE : 2021/8/6 18:31
 import os
-from data_method import *
+from data.data_method import *
 
 
 class labelquery_data_class:

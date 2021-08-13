@@ -1,6 +1,6 @@
 import os
 
-from data_method import *
+from data.data_method import *
 
 
 class app_data_class:

@@ -5,7 +5,7 @@
 # FILE : entity_data.py
 # DATE : 2021/8/5 19:18
 import os
-from data_method import *
+from data.data_method import *
 
 
 class entity_data_class:

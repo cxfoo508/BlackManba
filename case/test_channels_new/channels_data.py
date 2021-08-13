@@ -5,7 +5,7 @@
 # FILE : channels_data.py
 # DATE : 2021/8/6 18:29
 import os
-from data_method import *
+from data.data_method import *
 
 
 class channels_data_class:
@@ -33,8 +33,8 @@ class channels_data_class:
         # </editor-fold>
         # <editor-fold desc="新增渠道">
         self.param_create_channels_001 = [{"agent_id":None,
-                                           "data":{
-                                                  "mutate_operations": [
+                                        "data":{
+                                        "mutate_operations": [
                                                     {
                                                     "create": {
                                                         "id": None,

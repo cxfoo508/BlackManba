@@ -6,7 +6,7 @@
 # DATE : 2021/7/22 20:04
 
 import os
-from data_method import *
+from data.data_method import *
 
 
 class botreponse_data_class:

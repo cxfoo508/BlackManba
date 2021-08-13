@@ -17,7 +17,17 @@ from case.test_node.node_data import node_data_class
 from case.test_node.node_sort_data import node_sort_class
 from case.test_entity.entity_sort_data import entity_sort_class
 from case.test_entity.entity_data import entity_data_class
+from case.test_entity_new.entity_base import entity_base_class
+from case.test_entity_new.entity_data import entity_data_class
+from case.test_entity_new.entity_sort_data import entity_sort_class
+from case.test_channels_new.channels_base import channels_base_class
+from case.test_channels_new.channels_data import channels_data_class
+from case.test_channels_new.channels_sort_data import channels_sort_class
+from case.test_labelquery.labelquery_base import labelquery_base_class
+from case.test_labelquery.labelquery_data import labelquery_data_class
+from case.test_labelquery.labelquery_sort_data import labelquery_sort_class
 from base_case import *
+
 
 class PyBase:
 

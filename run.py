@@ -1,10 +1,10 @@
 # coding = utf-8
-import pytest
 import os
-import pytest
-from modules.helper import file_path
-from modules.get_control import test_case, process_num, project_name
 
+import pytest
+
+from modules.get_control import process_num, project_name, test_case
+from modules.helper import file_path
 
 TEMP_DIR = os.path.join(file_path(), "temp")
 
