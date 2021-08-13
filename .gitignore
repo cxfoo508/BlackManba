@@ -4,6 +4,7 @@
 *$py.class
 *.vscode
 *.pyc
+report/
 # C extensions
 *.so
 
