@@ -10,6 +10,7 @@ import pytest
 from case.pytest_base import PyBase
 from case.test_intents.inrents_sort_data import intents_sort_class
 from modules.logger import log
+from data.data_method import *
 
 
 def get_data():

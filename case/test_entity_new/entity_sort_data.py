@@ -5,7 +5,7 @@
 # FILE : entity_sort_data.py
 # DATE : 2021/8/5 19:17
 from base_case import *
-from request_base import *
+from modules.request_base import *
 
 class entity_sort_class:
 

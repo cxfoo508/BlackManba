@@ -6,7 +6,7 @@
 # DATE : 2021/7/19 15:17
 import os
 
-from data_method import *
+from data.data_method import *
 
 class intents_data_class:
 

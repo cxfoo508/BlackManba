@@ -35,7 +35,7 @@ class channels_base_class:
         新渠道操作公共接口
         """
         agent_id = data["agent_id"]
-        res_data = data["res_data"]
+        res_data = data["data"]
         url = f"/chatbot/v1alpha1/agents/{agent_id}/channel:mutate"
         res = cls.__channels_base_token("post", url, res_data)
         return res

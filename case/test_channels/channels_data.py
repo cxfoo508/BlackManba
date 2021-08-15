@@ -5,7 +5,7 @@
 # FILE : channels_data.py
 # DATE : 2021/7/27 13:58
 import os
-from data_method import *
+from data.data_method import *
 
 
 

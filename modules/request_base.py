@@ -23,12 +23,12 @@ def GetChars(length):
     return "".join(CHAR_LIST[0:length])
 
 
-def rear_post(url, data):
+def rear_post(url, data, url_ver=1):
     """
     后端请求
     """
     send_url = url
-    URL = os.environ.get('url')
+    URL = os.environ.get('url') if url_ver == 1 else os.environ.get("url_v2")
     token = os.environ.get("token")
     header = {
         "Content-Type": "application/json",
@@ -39,12 +39,12 @@ def rear_post(url, data):
     log.info(f'res time: {res.elapsed.total_seconds()}')
     return res
 
-def rear_get(url, data):
+def rear_get(url, data=None , url_ver=1):
     """
     后端請求
     """
     send_url = url
-    URL = os.environ.get('url')
+    URL = os.environ.get('url') if url_ver == 1 else os.environ.get("url_v2")
     token = os.environ.get("token")
     header = {
         "Content-Type": "application/json",

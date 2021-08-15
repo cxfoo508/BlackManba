@@ -2,7 +2,9 @@
 *.__pycache__/
 *.py[cod]
 *$py.class
-
+*.vscode
+*.pyc
+report/
 # C extensions
 *.so
 
@@ -108,3 +110,4 @@ data/api_data.ini
 report/
 /data/~$*
 result/
+env/.env

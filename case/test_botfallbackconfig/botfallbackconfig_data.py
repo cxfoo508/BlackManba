@@ -6,7 +6,7 @@
 # DATE : 2021/7/20 15:01
 import os
 
-from data_method import *
+from data.data_method import *
 
 class botfallbackconfig_data_class:
 
