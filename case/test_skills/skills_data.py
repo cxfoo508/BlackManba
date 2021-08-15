@@ -135,7 +135,7 @@ class skills_data_class:
             {'skill_one_id': 'res["data"]["skill_one_id"]',
              'resp_content': 'req["skill_content"]["faq_responses"][0]["resp_content"]',
              'skill_id': 'res["data"]["skill_id"]'
-             }, {"sleep_time":1}
+             }, {"sleep_time": 1}
         ]
 
         self.params_case_001_1 = [
@@ -472,12 +472,19 @@ class skills_data_class:
             {}]
         # </editor-fold>
 
-        # <editor-fold desc = "获取分类节点">
+        # <editor-fold desc = "获取机器人分类树全部节点">
         self.params_case_002 = [
             {
                 "agent_id": os.environ.get('agent_id')
             },
             ['res["code"]==0', 'res["data"][0]["category_id"]!=None'], {'category_id': 'res["data"][0]["category_id"]'}
+        ]
+        self.params_case_002_1 = [
+            {
+                "agent_id": os.environ.get('agent_id')
+            },
+            ['res["code"]==0', 'res["data"][0]["category_id"]!=None', 'len(res["data"])==21'],
+            {'category_id': 'res["data"][0]["category_id"]'}
         ]
         # </editor-fold>
 
@@ -586,7 +593,7 @@ class skills_data_class:
             {  # 筛选
                 "agent_id": os.environ.get('agent_id'),
                 "filters": {
-                   "skill_type": [1]
+                    "skill_type": [1]
                 },
                 "page_size": 20,
                 "page_num": 1
@@ -641,7 +648,7 @@ class skills_data_class:
             {  # 排序
                 "agent_id": os.environ.get('agent_id'),
                 "sort": {
-                   "update_time": "ascend",
+                    "update_time": "ascend",
                     "answer_count": None
                 },
                 "page_size": 20,
@@ -662,7 +669,8 @@ class skills_data_class:
                 'res["data"]["skills_list"][0]["skill_type"]==1'], {}
         ]
         self.params_case_006_9 = [
-            {# 分页
+            {
+                # 分页
                 "agent_id": os.environ.get('agent_id'),
                 "page_size": 5,
                 "page_num": 2
@@ -670,7 +678,8 @@ class skills_data_class:
             , ['res["code"]==0', 'len(res["data"]["skills_list"])==2'], {}
         ]
         self.params_case_006_10 = [
-            {# 分页
+            {
+                # 分页
                 "agent_id": os.environ.get('agent_id'),
                 "page_size": 5,
                 "page_num": 1
@@ -683,5 +692,64 @@ class skills_data_class:
                 "page_num": 1
             }
             , ['res["code"]==0', 'len(res["data"]["skills_list"])==5'], {}
+        ]
+        # </editor-fold>
+
+        # <editor-fold desc = "创建分类节点">
+        self.params_case_007 = [
+            {
+                "agent_id": os.environ.get('agent_id'),
+                "category_name": get_str(4),
+                "parent_id": os.environ.get('category_id')
+            }, ['res["code"]==0', 'res["msg"]=="创建分类成功"', 'res["data"]["category_id"]!=None'],
+            {}
+        ]
+        self.params_case_007_1 = [
+            {
+                "category_name": get_str(4),
+                "parent_id": os.environ.get('category_id')
+            }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="agent_id"',
+                'res["data"][0]["msg"]=="field required"'], {}
+        ]
+        self.params_case_007_2 = [
+            {
+                "agent_id": os.environ.get('agent_id'),
+                "parent_id": os.environ.get('category_id')
+            }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="category_name"',
+                'res["data"][0]["msg"]=="field required"'], {}
+        ]
+        self.params_case_007_3 = [
+            {
+                "agent_id": os.environ.get('agent_id'),
+                "category_name": get_str(4),
+            }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="parent_id"',
+                'res["data"][0]["msg"]=="field required"'], {}
+        ]
+        self.params_case_007_4 = [
+            {   # name
+                "agent_id": os.environ.get('agent_id'),
+                "category_name": get_str(128),
+                "parent_id": os.environ.get('category_id')
+            }, ['res["code"]==0', 'res["msg"]=="创建分类成功"', 'res["data"]["category_id"]!=None'],
+            {}
+        ]
+        self.params_case_007_5 = [
+            {  # name
+                "agent_id": os.environ.get('agent_id'),
+                "category_name": get_str(129),
+                "parent_id": os.environ.get('category_id')
+            }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"]["category_id"]!=None'],
+            {}
+        ]
+        # </editor-fold>
+
+        # <editor-fold desc = "更新分类节点">
+        self.params_case_008 = [
+            {
+                "agent_id": os.environ.get('agent_id'),
+                "parent_id": os.environ.get(''),
+                "category_id": 0,
+                "category_name": "string"
+            },[],{}
         ]
         # </editor-fold>

@@ -7,7 +7,7 @@ from modules.logger import log
 
 
 def get_data():
-    data_list = skills_sort_class.get_skills_data("skills_case_023")
+    data_list = skills_sort_class.get_skills_data("skills_case_030")
     return data_list
 
 

@@ -322,11 +322,77 @@ class skills_sort_class:
 
                  ],
         "params": ["node_data_class.param_007", "skills_data_class.params_case_002",
-                   "skills_data_class.params_case_001","skills_data_class.params_case_006_11"
+                   "skills_data_class.params_case_001", "skills_data_class.params_case_006_11"
 
                    ]
     }
     # </editor-fold>
+
+    # <editor-fold desc = "创建分类节点">
+    skills_case_025 = {
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_create', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_create', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_create', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_create', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_create', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_create', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_create', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_create', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_create', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_create',
+
+                 'skills_base_class.skill_category_all'
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007',
+                   'skills_data_class.params_case_007', 'skills_data_class.params_case_007',
+                   'skills_data_class.params_case_007', 'skills_data_class.params_case_007',
+                   'skills_data_class.params_case_007', 'skills_data_class.params_case_007',
+                   'skills_data_class.params_case_007', 'skills_data_class.params_case_007',
+                   'skills_data_class.params_case_007', 'skills_data_class.params_case_007',
+                   'skills_data_class.params_case_007', 'skills_data_class.params_case_007',
+                   'skills_data_class.params_case_007', 'skills_data_class.params_case_007',
+                   'skills_data_class.params_case_007', 'skills_data_class.params_case_007',
+                   'skills_data_class.params_case_007', 'skills_data_class.params_case_007',
+                   'skills_data_class.params_case_007',
+                   'skills_data_class.params_case_002_1'
+                   ]
+    }
+
+    skills_case_026 = {
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_1',
+                   ]
+    }
+    skills_case_027 = {
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_2',
+                   ]
+    }
+    skills_case_028 = {
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_3',
+                   ]
+    }
+    skills_case_029 = {
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_4',
+                   ]
+    }
+    skills_case_030 = {
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_5',
+                   ]
+    }
+
+
+    # </editor-fold>
+
     # 所有变量名称集合
     param_list = dir()
     print(param_list)
