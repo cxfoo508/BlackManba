@@ -17,13 +17,13 @@ class channels_base_class:
         """
         if method == "get":
             log.info(f"send url:{url}")
-            res = rear_get(url)
+            res = rear_get(url, url_ver=2)
             con = res.content.decode()
             return con
         elif method == "post":
             log.info(f"send url:{url}")
             log.info(f"send data:{data}")
-            res = rear_post(url, data)
+            res = rear_post(url, data, url_ver=2)
             con = res.content.decode()
             return con
         else:
