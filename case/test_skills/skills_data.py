@@ -1,5 +1,4 @@
 import os
-
 from data_method import *
 
 

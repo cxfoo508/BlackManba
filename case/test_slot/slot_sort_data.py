@@ -38,7 +38,7 @@ class slot_sort_class:
     # <editor-fold desc = "删除词槽">
     slot_case_004 = {
 
-        "sort": ['SlotCaseBase.slot_del','SlotCaseBase.slot_del'],
+        "sort": ['SlotCaseBase.slot_del', 'SlotCaseBase.slot_del'],
         "params": ['slot_data_class.params_case_004_1', 'slot_data_class.params_case_004_2'],
     }
     # </editor-fold>
