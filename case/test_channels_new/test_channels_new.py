@@ -8,14 +8,14 @@ import pytest
 
 from modules.logger import log
 from case.pytest_base import PyBase
-from case.test_channels_new.channels_sort_data import channels_sort_class
+from case.test_channels_new.channels_sort_data import channels_sort_new_class
 from data.data_method import *
 from modules.request_base import *
 from base_case import *
 
 
 def get_data():
-    data_list = channels_sort_class.get_channels_list()
+    data_list = channels_sort_new_class.get_channels_list()
     log.info(data_list)
     return data_list
 
@@ -26,7 +26,7 @@ class TestCase(PyBase):
         获取渠道鉴权token
         """
         log.info("---setup class---")
-        self.run(self, "channels_sort_class.channels_setup_class")
+        self.run(self, "channels_sort_new_class.channels_setup_class")
 
 
     @pytest.fixture(params=get_data())
@@ -44,4 +44,4 @@ class TestCase(PyBase):
         删除app
         """
         log.info("---teardown_class---")
-        self.run(self, "channels_sort_class.channels_teardown_class")
+        self.run(self, "channels_sort_new_class.channels_teardown_class")

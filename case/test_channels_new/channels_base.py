@@ -8,7 +8,7 @@ from base_case import *
 from modules.logger import log
 from modules.request_base import *
 
-class channels_base_class:
+class channels_base_new_class:
 
     @classmethod
     def __channels_base_token(cls, method, url, data=None):
@@ -17,14 +17,16 @@ class channels_base_class:
         """
         if method == "get":
             log.info(f"send url:{url}")
-            res = rear_get(url)
+            res = rear_get(url, url_ver=2)
             con = res.content.decode()
+            log.info(f"res:{con}")
             return con
         elif method == "post":
             log.info(f"send url:{url}")
             log.info(f"send data:{data}")
-            res = rear_post(url, data)
+            res = rear_post(url, data, url_ver=2)
             con = res.content.decode()
+            log.info(f"res:{con}")
             return con
         else:
             log.info("method is not allowed!")
