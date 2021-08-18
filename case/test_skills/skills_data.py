@@ -486,6 +486,28 @@ class skills_data_class:
             ['res["code"]==0', 'res["data"][0]["category_id"]!=None', 'len(res["data"])==21'],
             {'category_id': 'res["data"][0]["category_id"]'}
         ]
+        self.params_case_002_2 = [
+            {
+                "agent_id": os.environ.get('agent_id')
+            },
+            ['res["code"]==0', 'res["data"][0]["category_id"]!=None', 'len(res["data"])==2'],
+            {'category_id': 'res["data"][0]["category_id"]'}
+        ]
+        self.params_case_002_3 = [
+            {
+                "agent_id": os.environ.get('agent_id')
+            },
+            ['res["code"]==0', 'res["data"][0]["category_id"]!=None', 'len(res["data"])==2',
+             'res["data"][1]["category_name"]==os.environ.get("category_name_2")'],
+            {'category_id': 'res["data"][0]["category_id"]'}
+        ]
+        self.params_case_002_4 = [
+            {
+                "agent_id": os.environ.get('agent_id')
+            },
+            ['res["code"]==0', 'res["data"][0]["category_id"]!=None', 'len(res["data"])==1'],
+            {'category_id': 'res["data"][0]["category_id"]'}
+        ]
         # </editor-fold>
 
         # <editor-fold desc = "设置技能是否生效">
@@ -726,7 +748,7 @@ class skills_data_class:
                 'res["data"][0]["msg"]=="field required"'], {}
         ]
         self.params_case_007_4 = [
-            {   # name
+            {  # name
                 "agent_id": os.environ.get('agent_id'),
                 "category_name": get_str(128),
                 "parent_id": os.environ.get('category_id')
@@ -738,18 +760,141 @@ class skills_data_class:
                 "agent_id": os.environ.get('agent_id'),
                 "category_name": get_str(129),
                 "parent_id": os.environ.get('category_id')
-            }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"]["category_id"]!=None'],
+            }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="category_name"',
+                'res["data"][0]["msg"]=="ensure this value has at most 128 characters"'],
             {}
         ]
+        self.params_case_007_6 = [
+            {
+                "agent_id": os.environ.get('agent_id'),
+                "category_name": get_str(4),
+                "parent_id": os.environ.get('category_id')
+            }, ['res["code"]==0', 'res["msg"]=="创建分类成功"', 'res["data"]["category_id"]!=None'],
+            {'category_id': 'res["data"]["category_id"]', 'parent_id': 'res["data"]["parent_id"]',
+             'category_name_1': 'res["data"]["category_name"]'}
+        ]
+
         # </editor-fold>
 
         # <editor-fold desc = "更新分类节点">
         self.params_case_008 = [
+            {  # 更新名称
+                "agent_id": os.environ.get('agent_id'),
+                "parent_id": os.environ.get('parent_id'),
+                "category_id": os.environ.get('category_id'),
+                "category_name": get_str(5)
+            }, ['res["code"]==0'],
+            {'category_name_2': 'req["category_name"]'}
+        ]
+        self.params_case_008_1 = [
+            {  # 更新名称
+                "agent_id": os.environ.get('agent_id'),
+                "parent_id": os.environ.get('parent_id'),
+                "category_id": os.environ.get('category_id'),
+                "category_name": get_str(5) + '~!@#$%^&*  < > ?'
+            }, ['res["code"]==0'],
+            {'category_name_2': 'req["category_name"]'}
+        ]
+        self.params_case_008_2 = [
+            {  # 更新名称
+                "agent_id": os.environ.get('agent_id'),
+                "parent_id": os.environ.get('parent_id'),
+                "category_id": os.environ.get('category_id'),
+                "category_name": None
+            }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="category_name"',
+                'res["data"][0]["msg"]=="none is not an allowed value"'],
+            {'category_name_2': 'req["category_name"]'}
+        ]
+        self.params_case_008_3 = [
+            {  # 更新名称
+                "agent_id": os.environ.get('agent_id'),
+                "parent_id": os.environ.get('parent_id'),
+                "category_id": os.environ.get('category_id'),
+                "category_name": get_str(128)
+            }, ['res["code"]==0'],
+            {'category_name_2': 'req["category_name"]'}
+        ]
+        self.params_case_008_4 = [
+            {  # 更新名称
+                "agent_id": os.environ.get('agent_id'),
+                "parent_id": os.environ.get('parent_id'),
+                "category_id": os.environ.get('category_id'),
+                "category_name": get_str(129)
+            }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="category_name"',
+                'res["data"][0]["msg"]=="ensure this value has at most 128 characters"'],
+            {'category_name_2': 'req["category_name"]'}
+        ]
+        self.params_case_008_5 = [
+            {  # 必填项
+                "parent_id": os.environ.get('parent_id'),
+                "category_id": os.environ.get('category_id'),
+                "category_name": get_str(5)
+            }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="agent_id"',
+                'res["data"][0]["msg"]=="field required"'],
+            {'category_name_2': 'req["category_name"]'}
+        ]
+        self.params_case_008_6 = [
+            {  # 更新名称
+                "agent_id": os.environ.get('agent_id'),
+                "category_id": os.environ.get('category_id'),
+                "category_name": get_str(5)
+            }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="parent_id"',
+                'res["data"][0]["msg"]=="field required"'],
+            {'category_name_2': 'req["category_name"]'}
+        ]
+        self.params_case_008_7 = [
+            {  # 更新名称
+                "agent_id": os.environ.get('agent_id'),
+                "parent_id": os.environ.get('parent_id'),
+                "category_name": get_str(5)
+            }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="category_id"',
+                'res["data"][0]["msg"]=="field required"'],
+            {'category_name_2': 'req["category_name"]'}
+        ]
+        self.params_case_008_8 = [
+            {  # 更新名称
+                "agent_id": os.environ.get('agent_id'),
+                "parent_id": os.environ.get('parent_id'),
+                "category_id": os.environ.get('category_id'),
+            }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="category_name"',
+                'res["data"][0]["msg"]=="field required"'],
+            {}
+        ]
+
+        # </editor-fold>
+
+        # <editor-fold desc = "删除分类节点">
+        self.params_case_009 = [
             {
                 "agent_id": os.environ.get('agent_id'),
-                "parent_id": os.environ.get(''),
-                "category_id": 0,
-                "category_name": "string"
-            },[],{}
+                "parent_id": os.environ.get('parent_id'),
+                "category_id": os.environ.get('category_id')
+            }
+            , ['res["code"]==0'], {}
         ]
+        self.params_case_009_1 = [
+            {
+                "parent_id": os.environ.get('parent_id'),
+                "category_id": os.environ.get('category_id')
+            }
+            , ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="agent_id"',
+                'res["data"][0]["msg"]=="field required"'], {}
+        ]
+        self.params_case_009_2 = [
+            {
+                "agent_id": os.environ.get('agent_id'),
+                "category_id": os.environ.get('category_id')
+            }
+            ,  ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="parent_id"',
+                'res["data"][0]["msg"]=="field required"'], {}
+        ]
+        self.params_case_009_3 = [
+            {
+                "agent_id": os.environ.get('agent_id'),
+                "parent_id": os.environ.get('parent_id'),
+            }
+            ,  ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="category_id"',
+                'res["data"][0]["msg"]=="field required"'], {}
+        ]
+
         # </editor-fold>

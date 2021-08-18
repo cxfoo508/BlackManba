@@ -35,6 +35,9 @@ from case.test_entity_new.entity_sort_data import entity_sort_class
 from case.test_labelquery.labelquery_base import labelquery_base_class
 from case.test_labelquery.labelquery_data import labelquery_data_class
 from case.test_labelquery.labelquery_sort_data import labelquery_sort_class
+from case.test_slot.slot_base import SlotCaseBase
+from case.test_slot.slot_data import slot_data_class
+from case.test_slot.slot_sort_data import slot_sort_class
 from base_case import *
 # </editor-fold>
 
@@ -68,6 +71,12 @@ class PyBase:
                 # 执行func
                 res = eval(f'{func}({req})')
                 res = json.loads(res)
+
+                # res注入项
+                for k, v in param[2].items():
+                    os.environ[k] = str(eval(v))
+                    log.info(f"ENVIRON {k}={v}:{k}={eval(v)}")
+
                 # assert
                 for s in param[1]:
                     log.info(f'ASSERT:{s},ANSWER:{eval(s)}')
@@ -77,10 +86,7 @@ class PyBase:
                         assert eval(s), res
                     else:
                         pytest.assume(eval(s), res)
-                # res注入项
-                for k, v in param[2].items():
-                    os.environ[k] = str(eval(v))
-                    log.info(f"ENVIRON {k}={v}:{k}={eval(v)}")
+
                 # 执行功能
                 if len(param) == 4:
                     for k, v in param[3].items():

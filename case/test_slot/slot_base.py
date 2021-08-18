@@ -1,5 +1,5 @@
 from base_case import *
-
+from modules.logger import log
 
 class SlotCaseBase:
     @classmethod
@@ -7,10 +7,10 @@ class SlotCaseBase:
         """
         slot case
         """
-        print(f"send data: {data}")
+        log.info(f"send data: {data}")
         res = rear_post(url, data)
         con = res.content.decode()
-        print(f"res: {con}")
+        log.info(f"res: {con}")
         return con
 
     @classmethod
