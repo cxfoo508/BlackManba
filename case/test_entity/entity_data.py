@@ -1,5 +1,3 @@
-import os
-
 from data.data_method import *
 
 
