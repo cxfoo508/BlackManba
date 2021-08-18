@@ -1,5 +1,5 @@
 from data_method import *
-
+import os
 
 class slot_data_class:
     def __init__(self):
