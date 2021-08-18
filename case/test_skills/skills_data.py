@@ -778,6 +778,7 @@ class skills_data_class:
 
         # <editor-fold desc = "更新分类节点">
         self.params_case_008 = [
+            # <<<<<<< HEAD
             {  # 更新名称
                 "agent_id": os.environ.get('agent_id'),
                 "parent_id": os.environ.get('parent_id'),
@@ -878,23 +879,22 @@ class skills_data_class:
                 "category_id": os.environ.get('category_id')
             }
             , ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="agent_id"',
-                'res["data"][0]["msg"]=="field required"'], {}
+               'res["data"][0]["msg"]=="field required"'], {}
         ]
         self.params_case_009_2 = [
             {
                 "agent_id": os.environ.get('agent_id'),
                 "category_id": os.environ.get('category_id')
             }
-            ,  ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="parent_id"',
-                'res["data"][0]["msg"]=="field required"'], {}
+            , ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="parent_id"',
+               'res["data"][0]["msg"]=="field required"'], {}
         ]
         self.params_case_009_3 = [
             {
                 "agent_id": os.environ.get('agent_id'),
                 "parent_id": os.environ.get('parent_id'),
             }
-            ,  ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="category_id"',
-                'res["data"][0]["msg"]=="field required"'], {}
+            , ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="category_id"',
+               'res["data"][0]["msg"]=="field required"'], {}
         ]
-
         # </editor-fold>

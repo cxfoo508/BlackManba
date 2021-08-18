@@ -1,6 +1,5 @@
 # coding = utf-8
 import pytest
-
 from case.pytest_base import PyBase
 from case.test_skills.skills_sort_data import skills_sort_class
 from modules.logger import log

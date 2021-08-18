@@ -511,6 +511,7 @@ class skills_sort_class:
                    'skills_data_class.params_case_009_2', 'skills_data_class.params_case_009_3',
                    ]
     }
+
     # </editor-fold>
 
     # 所有变量名称集合
