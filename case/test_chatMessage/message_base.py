@@ -8,7 +8,7 @@ class ChatMessageCase:
         slot case
         """
         print(f"send data: {data}")
-        res = request_data(url, data)
+        res = rear_post(url, data)
         con = res.content.decode()
         print(f"res: {con}")
         return con

@@ -8,7 +8,7 @@ agent_id = []
 
 
 def get_py_data():
-    data_list = entity_sort_class.get_entity_list('entity_case_035')
+    data_list = entity_sort_class.get_entity_data_list('entity_case_077')
     return data_list
 
 

@@ -2,7 +2,6 @@ import os
 
 from data.data_method import *
 
-
 class app_data_class:
     def __init__(self):
         """
@@ -170,7 +169,8 @@ class app_data_class:
             "agent_name": "测试app",
             "agent_detail": "test",
             "lang": "zh-CN"
-        }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="agent_id"', 'res["data"][0]["msg"]=="field required"'], {}]
+        }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="agent_id"',
+            'res["data"][0]["msg"]=="field required"'], {}]
         self.up_parm_003 = [{
             "agent_id": os.environ.get('agent_id'),
             "agent_name": f"{get_str(3)}!@~#$%^& ,.;'",
@@ -198,7 +198,8 @@ class app_data_class:
             "agent_name": get_str(33),
             "agent_detail": "test",
             "lang": "zh-CN"
-        }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="agent_name"', 'res["data"][0]["msg"]=="ensure this value has at most 32 characters"'],
+        }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="agent_name"',
+            'res["data"][0]["msg"]=="ensure this value has at most 32 characters"'],
             {}]
         self.up_parm_007 = [{
             "agent_id": os.environ.get('agent_id'),
@@ -212,7 +213,8 @@ class app_data_class:
             "agent_name": get_str(5),
             "agent_detail": get_str(513),
             "lang": "zh-CN"
-        }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="agent_detail"', 'res["data"][0]["msg"]=="ensure this value has at most 512 characters"'],
+        }, ['res["code"]==10009', 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="agent_detail"',
+            'res["data"][0]["msg"]=="ensure this value has at most 512 characters"'],
             {}]
         self.up_parm_009 = [{
             "agent_id": os.environ.get('agent_id'),
@@ -306,4 +308,14 @@ class app_data_class:
             },
             [], {'token': 'res["data"]["jwt_token"]'}
         ]
+        # </editor-fold>
+
+        # <editor-fold desc="发布机器人">
+        self.param_agent_start = [
+            {
+                "agent_id": os.environ.get('agent_id')
+            }
+            , [], {}, {'sleep_time': 30}
+        ]
+
         # </editor-fold>

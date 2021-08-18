@@ -102,12 +102,12 @@ celerybeat-schedule
 
 # mypy
 .mypy_cache/
-report/TestReport.html
 data/api_data.ini
 .idea
 *.pem
-将删除 .env
-report/allure-html
-report/tmp/my_allure_results
+将删除 
+*.env
+report/
 /data/~$*
+result/
 env/.env

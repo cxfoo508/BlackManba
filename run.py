@@ -27,7 +27,9 @@ del_file(TEMP_DIR)
 case_info = (test_case()).split(' ')
 process = process_num()
 project = project_name()
-run_info = ['-s', "--html=report/" + project + ".html", "--self-contained-html",]
+run_info = [
+    '-s',
+    "--html=report/" + project + ".html", "--self-contained-html",]
 
 
 def pytest_run():

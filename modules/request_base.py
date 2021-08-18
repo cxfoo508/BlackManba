@@ -4,8 +4,6 @@ import os
 import random
 import string
 import time
-import zlib
-from urllib.parse import urlencode
 
 import requests
 
@@ -28,7 +26,7 @@ def rear_post(url, data, url_ver=1):
     后端请求
     """
     send_url = url
-    URL = os.environ.get('url') if url_ver == 1 else os.environ.get("url_v2")
+    URL = os.environ.get('url') if url_ver == 1 else os.environ.get('url_v2')
     token = os.environ.get("token")
     header = {
         "Content-Type": "application/json",
@@ -39,7 +37,8 @@ def rear_post(url, data, url_ver=1):
     log.info(f'res time: {res.elapsed.total_seconds()}')
     return res
 
-def rear_get(url, data=None , url_ver=1):
+
+def rear_get(url, data=None, url_ver=1):
     """
     后端請求
     """
@@ -51,9 +50,10 @@ def rear_get(url, data=None , url_ver=1):
         "Authorization": f"Bearer {token}"
     }
     log.info(f'send url: {URL}{send_url}')
-    res = requests.get(url=f"{URL}{send_url}",json=data, headers=header)
+    res = requests.get(url=f"{URL}{send_url}", json=data, headers=header)
     log.info(f'res time: {res.elapsed.total_seconds()}')
     return res
+
 
 def get_headers():
     """
@@ -122,9 +122,3 @@ def request_data_channel(url, data=None):
     request_channel = requests.post(url=f"{URL}{send_url}", json=data, headers=header)
     log.info(f'res time: {request_channel.elapsed.total_seconds()}')
     return request_channel
-
-
-
-
-
-
