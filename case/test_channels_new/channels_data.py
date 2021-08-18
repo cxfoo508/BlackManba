@@ -8,7 +8,7 @@ import os
 from data.data_method import *
 
 
-class channels_data_class:
+class channels_data_new_class:
 
     def __init__(self):
         # <editor-fold desc="初始化及收尾参数列表">
@@ -34,7 +34,7 @@ class channels_data_class:
         # <editor-fold desc="新增渠道">
         self.param_create_channels_001 = [{"agent_id":None,
                                         "data":{
-                                        "mutate_operations": [
+                                        "operations": [
                                                     {
                                                     "create": {
                                                         "id": None,
@@ -49,10 +49,10 @@ class channels_data_class:
                                                       }
                                                     }
                                                   ]
-                                                }}, [], {}]
+                                                }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_create_channels_002 = [{"agent_id": os.environ.get("agent_id"),
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -70,7 +70,7 @@ class channels_data_class:
                                            }}, [], {}]
         self.param_create_channels_003 = [{"agent_id": None,
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": 1,
@@ -85,10 +85,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_create_channels_004 = [{"agent_id": None,
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -103,10 +103,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"unknown field" in res["message"]'], {}]
         self.param_create_channels_005 = [{"agent_id": None,
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -121,10 +121,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_create_channels_006 = [{"agent_id": None,
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -139,10 +139,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_create_channels_007 = [{"agent_id": None,
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -157,10 +157,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_create_channels_008 = [{"agent_id": None,
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -175,10 +175,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_create_channels_009 = [{"agent_id": None,
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -193,10 +193,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_create_channels_010 = [{"agent_id": "",
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": "",
@@ -211,10 +211,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_create_channels_011 = [{"agent_id": os.environ.get("agent_id"),
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": "",
@@ -229,10 +229,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"proto:" in res["message"]', '"invalid value for int64 type" in res["message"]'], {}]
         self.param_create_channels_012 = [{"agent_id": "",
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": 1,
@@ -247,10 +247,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_create_channels_013 = [{"agent_id": "",
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": "",
@@ -265,10 +265,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_create_channels_014 = [{"agent_id": "",
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": "",
@@ -283,10 +283,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_create_channels_015 = [{"agent_id": "",
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": "",
@@ -301,10 +301,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_create_channels_016 = [{"agent_id": "",
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": "",
@@ -319,10 +319,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_create_channels_017 = [{"agent_id": "",
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": "",
@@ -337,10 +337,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_create_channels_018 = [{"agent_id": "",
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": "",
@@ -355,10 +355,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_create_channels_019 = [{"agent_id": " ",
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": " ",
@@ -373,10 +373,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_create_channels_020 = [{"agent_id": os.environ.get("agent_id"),
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": " ",
@@ -391,10 +391,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_create_channels_021 = [{"agent_id": " ",
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": 1,
@@ -409,10 +409,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for enum type" in res["message"]'], {}]
         self.param_create_channels_022 = [{"agent_id": " ",
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": " ",
@@ -427,10 +427,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_create_channels_023 = [{"agent_id": " ",
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": " ",
@@ -445,10 +445,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_create_channels_024 = [{"agent_id": " ",
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": " ",
@@ -463,10 +463,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_create_channels_025 = [{"agent_id": " ",
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": " ",
@@ -481,10 +481,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_create_channels_026 = [{"agent_id": " ",
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": " ",
@@ -499,10 +499,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_create_channels_027 = [{"agent_id": " ",
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": " ",
@@ -517,10 +517,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_create_channels_028 = [{"agent_id": os.environ.get("agent_id"),
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -535,10 +535,11 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["channel"]["id"] is not None', 'res["channel"]["channelType"] == "CUSTOM"'],
+                                          {'channels_id':'res["channel"]["id"]'}]
         self.param_create_channels_029 = [{"agent_id": os.environ.get("agent_id"),
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -556,7 +557,7 @@ class channels_data_class:
                                            }}, [], {}]
         self.param_create_channels_030 = [{"agent_id": os.environ.get("agent_id"),
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -571,10 +572,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["channel"]["id"] is not None', 'res["channel"]["channelType"] == "OPENAPI"'], {}]
         self.param_create_channels_031 = [{"agent_id": os.environ.get("agent_id"),
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -589,10 +590,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for enum type" in res["message"]'], {}]
         self.param_create_channels_032 = [{"agent_id": os.environ.get("agent_id"),
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -610,7 +611,7 @@ class channels_data_class:
                                            }}, [], {}]
         self.param_create_channels_033 = [{"agent_id": os.environ.get("agent_id"),
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -625,10 +626,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for enum type" in res["message"]'], {}]
         self.param_create_channels_034 = [{"agent_id": os.environ.get("agent_id"),
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -643,10 +644,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for enum type" in res["message"]'], {}]
         self.param_create_channels_035 = [{"agent_id": os.environ.get("agent_id"),
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -661,10 +662,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for enum type" in res["message"]'], {}]
         self.param_create_channels_036 = [{"agent_id": get_str(4),
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -679,10 +680,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_create_channels_037 = [{"agent_id": get_int(10),
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -697,10 +698,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["channel"]["id"] is not None', 'res["channel"]["channelType"] == "CUSTOM"'], {}]
         self.param_create_channels_038 = [{"agent_id": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -715,10 +716,10 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_create_channels_039 = [{"agent_id": "",
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -733,10 +734,10 @@ class channels_data_class:
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_create_channels_040 = [{"agent_id": " ",
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -751,10 +752,10 @@ class channels_data_class:
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_create_channels_041 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": get_str(4),
@@ -769,10 +770,10 @@ class channels_data_class:
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_create_channels_042 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": get_int(10),
@@ -787,10 +788,10 @@ class channels_data_class:
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["channel"]["id"] is not None', 'res["channel"]["channelType"] == "CUSTOM"'], {}]
         self.param_create_channels_043 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
@@ -805,10 +806,10 @@ class channels_data_class:
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_create_channels_044 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": "",
@@ -823,10 +824,10 @@ class channels_data_class:
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_create_channels_045 = [{"agent_id": os.environ.get("agent_id"),
                                            "data":{
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": " ",
@@ -841,14 +842,14 @@ class channels_data_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_create_channels_046 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
-                                                         "channel_name": get_int(64),
+                                                         "channel_name": get_str(64),
                                                          "channel_description": get_str(121),
                                                          "channel_type": "CUSTOM",
                                                          "open_api": {
@@ -859,14 +860,14 @@ class channels_data_class:
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["channel"]["id"] is not None', 'res["channel"]["channelType"] == "CUSTOM"'], {}]
         self.param_create_channels_047 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
-                                                         "channel_name": get_int(65),
+                                                         "channel_name": get_str(65),
                                                          "channel_description": get_str(121),
                                                          "channel_type": "CUSTOM",
                                                          "open_api": {
@@ -880,7 +881,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_048 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -895,10 +896,10 @@ class channels_data_class:
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["channel"]["id"] is not None', 'res["channel"]["channelType"] == "CUSTOM"'], {}]
         self.param_create_channels_049 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -916,7 +917,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_050 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -934,7 +935,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_051 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -952,7 +953,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_052 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -970,7 +971,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_053 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -988,7 +989,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_054 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1006,7 +1007,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_055 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1024,7 +1025,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_056 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1042,7 +1043,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_057 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1060,7 +1061,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_058 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1078,7 +1079,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_059 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1096,7 +1097,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_060 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1114,7 +1115,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_061 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1132,7 +1133,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_062 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1150,7 +1151,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_063 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1168,7 +1169,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_064 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1186,7 +1187,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_065 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1204,7 +1205,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_066 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1222,7 +1223,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_067 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1240,7 +1241,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_068 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1258,7 +1259,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_069 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1276,7 +1277,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_070 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1294,7 +1295,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_071 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1312,7 +1313,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_072 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "create": {
                                                          "id": None,
@@ -1330,7 +1331,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_create_channels_073 = [{"agent_id": os.environ.get("agent_id"),
                                            "data": {
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "create": {
                                                            "id": None,
@@ -1463,7 +1464,7 @@ class channels_data_class:
         # <editor-fold desc="更新渠道">
         self.param_update_channels_001 = [{"agent_id": None,
                                            "data": {
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "update": {
                                                            "id": None,
@@ -1481,7 +1482,7 @@ class channels_data_class:
                                            }}, [], {}]
         self.param_update_channels_002 = [{"agent_id": os.environ.get("agent_id"),
                                            "data": {
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "update": {
                                                            "id": None,
@@ -1499,7 +1500,7 @@ class channels_data_class:
                                            }}, [], {}]
         self.param_update_channels_003 = [{"agent_id": None,
                                            "data": {
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "update": {
                                                            "id": os.environ.get("id"),
@@ -1517,7 +1518,7 @@ class channels_data_class:
                                            }}, [], {}]
         self.param_update_channels_004 = [{"agent_id": None,
                                            "data": {
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "update": {
                                                            "id": None,
@@ -1535,7 +1536,7 @@ class channels_data_class:
                                            }}, [], {}]
         self.param_update_channels_005 = [{"agent_id": None,
                                            "data": {
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "update": {
                                                            "id": None,
@@ -1553,7 +1554,7 @@ class channels_data_class:
                                            }}, [], {}]
         self.param_update_channels_006 = [{"agent_id": None,
                                            "data": {
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "update": {
                                                            "id": None,
@@ -1571,7 +1572,7 @@ class channels_data_class:
                                            }}, [], {}]
         self.param_update_channels_007 = [{"agent_id": None,
                                            "data": {
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "update": {
                                                            "id": None,
@@ -1589,7 +1590,7 @@ class channels_data_class:
                                            }}, [], {}]
         self.param_update_channels_008 = [{"agent_id": None,
                                            "data": {
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "update": {
                                                            "id": None,
@@ -1607,7 +1608,7 @@ class channels_data_class:
                                            }}, [], {}]
         self.param_update_channels_009 = [{"agent_id": None,
                                            "data": {
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "update": {
                                                            "id": None,
@@ -1625,7 +1626,7 @@ class channels_data_class:
                                            }}, [], {}]
         self.param_update_channels_010 = [{"agent_id": "",
                                            "data": {
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "update": {
                                                            "id": "",
@@ -1643,7 +1644,7 @@ class channels_data_class:
                                            }}, [], {}]
         self.param_update_channels_011 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": "",
@@ -1661,7 +1662,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_012 = [{"agent_id": "",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -1679,7 +1680,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_013 = [{"agent_id": "",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": "",
@@ -1697,7 +1698,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_014 = [{"agent_id": "",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": "",
@@ -1715,7 +1716,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_015 = [{"agent_id": "",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": "",
@@ -1733,7 +1734,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_016 = [{"agent_id": "",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": "",
@@ -1751,7 +1752,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_017 = [{"agent_id": "",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": "",
@@ -1769,7 +1770,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_018 = [{"agent_id": "",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": "",
@@ -1787,7 +1788,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_019 = [{"agent_id": " ",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": " ",
@@ -1805,7 +1806,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_020 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": " ",
@@ -1823,7 +1824,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_021 = [{"agent_id": " ",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -1841,7 +1842,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_022 = [{"agent_id": " ",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": " ",
@@ -1859,7 +1860,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_023 = [{"agent_id": " ",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": " ",
@@ -1877,7 +1878,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_024 = [{"agent_id": " ",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": " ",
@@ -1895,7 +1896,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_025 = [{"agent_id": " ",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": " ",
@@ -1913,7 +1914,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_026 = [{"agent_id": " ",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": " ",
@@ -1931,7 +1932,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_027 = [{"agent_id": " ",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": " ",
@@ -1949,7 +1950,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_028 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -1967,7 +1968,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_029 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -1985,7 +1986,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_030 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2003,7 +2004,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_031 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2021,7 +2022,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_032 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2039,7 +2040,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_033 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2057,7 +2058,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_034 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2075,7 +2076,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_035 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2093,7 +2094,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_036 = [{"agent_id": get_str(4),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2111,7 +2112,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_037 = [{"agent_id": get_int(10),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2129,7 +2130,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_038 = [{"agent_id": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2147,7 +2148,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_039 = [{"agent_id": "",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2165,7 +2166,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_040 = [{"agent_id": " ",
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2183,7 +2184,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_041 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": get_str(4),
@@ -2201,7 +2202,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_042 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": get_int(10),
@@ -2219,7 +2220,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_043 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
@@ -2237,7 +2238,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_044 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": "",
@@ -2255,7 +2256,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_045 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": " ",
@@ -2273,7 +2274,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_046 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2291,7 +2292,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_047 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2309,7 +2310,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_048 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2327,7 +2328,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_049 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2345,7 +2346,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_050 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2363,7 +2364,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_051 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2381,7 +2382,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_052 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2399,7 +2400,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_053 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2417,7 +2418,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_054 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2435,7 +2436,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_055 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2453,7 +2454,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_056 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2471,7 +2472,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_057 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2489,7 +2490,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_058 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2507,7 +2508,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_059 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2525,7 +2526,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_060 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2543,7 +2544,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_061 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2561,7 +2562,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_062 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2579,7 +2580,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_063 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2597,7 +2598,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_064 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2615,7 +2616,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_065 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2633,7 +2634,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_066 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2651,7 +2652,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_067 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2669,7 +2670,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_068 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2687,7 +2688,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_069 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2705,7 +2706,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_070 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2723,7 +2724,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_071 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2741,7 +2742,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_072 = [{"agent_id": os.environ.get("agent_id"),
                                          "data": {
-                                             "mutate_operations": [
+                                             "operations": [
                                                  {
                                                      "update": {
                                                          "id": os.environ.get("id"),
@@ -2759,7 +2760,7 @@ class channels_data_class:
                                          }}, [], {}]
         self.param_update_channels_073 = [{"agent_id": os.environ.get("agent_id"),
                                            "data": {
-                                               "mutate_operations": [
+                                               "operations": [
                                                    {
                                                        "update": {
                                                            "id": os.environ.get("id"),
@@ -2888,82 +2889,82 @@ class channels_data_class:
 
         # <editor-fold desc="删除渠道">
         self.param_delete_channels_001 = [{"agent_id": None,
-                                           "data":{"mutate_operations": [
+                                           "data":{"operations": [
                                                 {
                                                     "delete": None
                                                 }]}}, [], {}]
         self.param_delete_channels_002 = [{"agent_id": os.environ.get("agent_id"),
-                                           "data": {"mutate_operations": [
+                                           "data": {"operations": [
                                                {
                                                    "delete": None
                                                }]}}, [], {}]
         self.param_delete_channels_003 = [{"agent_id": None,
-                                           "data": {"mutate_operations": [
+                                           "data": {"operations": [
                                                {
                                                    "delete": os.environ.get("id")
                                                }]}}, [], {}]
         self.param_delete_channels_004 = [{"agent_id": os.environ.get("agent_id"),
-                                           "data": {"mutate_operations": [
+                                           "data": {"operations": [
                                                {
                                                    "delete": os.environ.get("id")
                                                }]}}, [], {}]
         self.param_delete_channels_005 = [{"agent_id": "",
-                                           "data": {"mutate_operations": [
+                                           "data": {"operations": [
                                                {
                                                    "delete": ""
                                                }]}}, [], {}]
         self.param_delete_channels_006 = [{"agent_id": os.environ.get("agent_id"),
-                                           "data": {"mutate_operations": [
+                                           "data": {"operations": [
                                                {
                                                    "delete": ""
                                                }]}}, [], {}]
         self.param_delete_channels_007 = [{"agent_id": "",
-                                           "data": {"mutate_operations": [
+                                           "data": {"operations": [
                                                {
                                                    "delete": os.environ.get("id")
                                                }]}}, [], {}]
         self.param_delete_channels_008 = [{"agent_id": " ",
-                                           "data": {"mutate_operations": [
+                                           "data": {"operations": [
                                                {
                                                    "delete": " "
                                                }]}}, [], {}]
         self.param_delete_channels_009 = [{"agent_id": os.environ.get("agent_id"),
-                                           "data": {"mutate_operations": [
+                                           "data": {"operations": [
                                                {
                                                    "delete": " "
                                                }]}}, [], {}]
         self.param_delete_channels_010 = [{"agent_id": " ",
-                                           "data": {"mutate_operations": [
+                                           "data": {"operations": [
                                                {
                                                    "delete": os.environ.get("id")
                                                }]}}, [], {}]
         self.param_delete_channels_011 = [{"agent_id": get_str(4),
-                                           "data": {"mutate_operations": [
+                                           "data": {"operations": [
                                                {
                                                    "delete": os.environ.get("id")
                                                }]}}, [], {}]
         self.param_delete_channels_012 = [{"agent_id": get_int(10),
-                                           "data": {"mutate_operations": [
+                                           "data": {"operations": [
                                                {
                                                    "delete": os.environ.get("id")
                                                }]}}, [], {}]
         self.param_delete_channels_013 = [{"agent_id": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
-                                           "data": {"mutate_operations": [
+                                           "data": {"operations": [
                                                {
                                                    "delete": os.environ.get("id")
                                                }]}}, [], {}]
         self.param_delete_channels_014 = [{"agent_id": os.environ.get("agent_id"),
-                                           "data": {"mutate_operations": [
+                                           "data": {"operations": [
                                                {
                                                    "delete": get_str(4)
                                                }]}}, [], {}]
         self.param_delete_channels_015 = [{"agent_id": os.environ.get("agent_id"),
-                                           "data": {"mutate_operations": [
+                                           "data": {"operations": [
                                                {
                                                    "delete": get_int(10)
                                                }]}}, [], {}]
         self.param_delete_channels_016 = [{"agent_id": os.environ.get("agent_id"),
-                                           "data": {"mutate_operations": [
+                                           "data": {"operations": [
                                                {
                                                    "delete": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><"
                                                }]}}, [], {}]
