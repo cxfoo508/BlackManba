@@ -21,12 +21,14 @@ class labelquery_base_class:
             log.info(f"send data:{data}")
             res = rear_get(url, data, url_ver=2)
             con = res.content.decode()
+            log.info(f"res:{con}")
             return con
         elif method == "post":
             log.info(f"send url:{url}")
             log.info(f"send data:{data}")
             res = rear_post(url, data, url_ver=2)
             con = res.content.decode()
+            log.info(f"res:{con}")
             return con
         else:
             log.info("method is not allowed")
@@ -37,7 +39,7 @@ class labelquery_base_class:
         标签信息
         """
         agent_id = data["agent_id"]
-        res_data = data["res_data"]
+        res_data = data["data"]
         url = f"/chatbot/v1alpha1/agents/{agent_id}/labelQuery"
         res = cls.__labelquery_base_token("post", url, res_data)
         return res
@@ -48,7 +50,7 @@ class labelquery_base_class:
         标签操作
         """
         agent_id = data["agent_id"]
-        res_data = data["res_data"]
+        res_data = data["data"]
         url = f"/chatbot/v1alpha1/agents/{agent_id}/labelQueries/mutate"
         res = cls.__labelquery_base_token("post", url, res_data)
         return res
@@ -59,7 +61,7 @@ class labelquery_base_class:
         标签查询
         """
         agent_id = data["agent_id"]
-        res_data = data["res_data"]
+        res_data = data["data"]
         url = f"/chatbot/v1alpha1/agents/{agent_id}/labelQueries/search"
         res = cls.__labelquery_base_token("post", url, res_data)
         return res
