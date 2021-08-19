@@ -1384,7 +1384,7 @@ class intents_data_class:
                     "name": get_str(2)
                 }
             ]
-        }, ['res["code"]==0', 'res["msg"]=="创建意图成功"'], {}]
+        }, ['res["code"]==0', 'res["msg"]=="创建意图成功"'], {'intent_id': 'res["data"]["intent_id"]'}]
         self.param_create_010 = [{
             "agent_id": get_str(5),
             "intent_name": get_str(4),

@@ -4,10 +4,9 @@
 # SOFTWARE: PyCharm
 # FILE : channels_base.py
 # DATE : 2021/7/27 13:58
-from base_case import *
-from modules.logger import log
 from modules.request_base import *
 from modules.request_base import request_data_channel
+
 
 class channels_base_class:
 
@@ -74,4 +73,3 @@ class channels_base_class:
         url = "/v1/channels/msg/bot_response"
         res = cls.__channels_base_acctoken(url, data)
         return res
-

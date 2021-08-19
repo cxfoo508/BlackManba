@@ -14,7 +14,7 @@ from data_method import *
 
 
 def get_data():
-    data_list = botresponse_sort_class.get_botresponse_list()
+    data_list = botresponse_sort_class.get_botresponse_list("botresponse_case_001")
     log.info(data_list)
     return data_list
 
@@ -25,7 +25,7 @@ class TestCase(PyBase):
         创建机器人
         """
         log.info("---setup class---")
-        self.run(self, "botresponse_sort_class.botresponse_setup_class")
+        self.run("botresponse_sort_class.botresponse_setup_class")
 
 
 
@@ -44,4 +44,4 @@ class TestCase(PyBase):
         删除app
         """
         log.info("---teardown_class---")
-        self.run(self, "botresponse_sort_class.botresponse_teardown_class")
+        self.run("botresponse_sort_class.botresponse_teardown_class")

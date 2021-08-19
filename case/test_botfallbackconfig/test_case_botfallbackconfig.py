@@ -25,7 +25,7 @@ class TestCase(PyBase):
         创建机器人
         """
         log.info("---setup class---")
-        self.run(self, "botfallbackconfig_sort_class.botfallbackconfig_setup_class")
+        self.run( "botfallbackconfig_sort_class.botfallbackconfig_setup_class")
 
 
 
@@ -44,4 +44,4 @@ class TestCase(PyBase):
         删除app
         """
         log.info("---teardown_class---")
-        self.run(self, "botfallbackconfig_sort_class.botfallbackconfig_teardown_class")
+        self.run( "botfallbackconfig_sort_class.botfallbackconfig_teardown_class")

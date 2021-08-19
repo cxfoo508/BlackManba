@@ -7,10 +7,9 @@
 # import json
 import pytest
 
-from base_case import *
-from modules.logger import log
 from case.pytest_base import PyBase
 from case.test_intents.inrents_sort_data import intents_sort_class
+from modules.logger import log
 from data.data_method import *
 
 
@@ -19,6 +18,7 @@ def get_data():
     log.info(data_list)
     return data_list
 
+
 class TestCase(PyBase):
 
     def setup_class(self):
@@ -26,9 +26,7 @@ class TestCase(PyBase):
         创建机器人
         """
         log.info("---setup class---")
-        self.run(self, 'intents_sort_class.intents_setup_class')
-
-
+        self.run( 'intents_sort_class.intents_setup_class')
 
     @pytest.fixture(params=get_data())
     def create_data(self, request):
@@ -45,4 +43,4 @@ class TestCase(PyBase):
         删除app
         """
         log.info("---teardown_class---")
-        self.run(self, 'intents_sort_class.intents_teardown_class')
+        self.run( 'intents_sort_class.intents_teardown_class')

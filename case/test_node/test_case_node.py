@@ -8,7 +8,7 @@ from modules.logger import log
 
 
 def get_data():
-    data_list = node_sort_class.get_node_list("node_case")
+    data_list = node_sort_class.get_node_list("node_case_003")
     return data_list
 
 
@@ -19,7 +19,7 @@ class TestCase(PyBase):
         预制条件
         """
         log.info("---setup_class---")
-        self.run(self, 'node_sort_class.node_set_up')
+        self.run('node_sort_class.node_set_up')
 
     @pytest.fixture(params=get_data())
     def creat_data(self, request):
@@ -37,7 +37,7 @@ class TestCase(PyBase):
         释放预制条件
         """
         log.info("---teardown_class---")
-        self.run(self, 'node_sort_class.node_teardown')
+        self.run('node_sort_class.node_teardown')
 
 
 if __name__ == '__main__':

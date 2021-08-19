@@ -248,6 +248,42 @@ def get_entity_value_list(data=None):
     return res
 
 
+def entity_export(data=None):
+    """
+    导出实体
+    """
+    url = '/v1/entity/export'
+    res = __app_base(url, data)
+    return res
+
+
+def entity_import(data=None):
+    """
+    导入实体
+    """
+    url = '/v1/entity/import'
+    res = __app_base(url, data)
+    return res
+
+
+def entity_enum_template(data=None):
+    """
+    获取枚举实体模版
+    """
+    url = '/v1/entity/enum/template'
+    res = __app_base(url, data)
+    return res
+
+
+def entity_check(data=None):
+    """
+    导入导出实体进度检查
+    """
+    url = '/v1/entity/check'
+    res = __app_base(url, data)
+    return res
+
+
 # ###intent###
 def create_intent(data=None):
     """
@@ -436,6 +472,18 @@ def channel_get_response(data=None):
     print(f'data:{data}')
     url = '/v1/channels/msg/bot_response'
     res = request_data_channel(url, data)
+    con = res.content.decode()
+    print(f'res:{con}')
+    return con
+
+
+def agent_train_publish_start(data=None):
+    """
+    发布机器人
+    """
+    print(f'data:{data}')
+    url = '/v1/train_publish/start'
+    res = rear_post(url, data)
     con = res.content.decode()
     print(f'res:{con}')
     return con
