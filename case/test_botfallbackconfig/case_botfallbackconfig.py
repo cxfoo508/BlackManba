@@ -7,7 +7,7 @@
 import json
 import pytest
 from base_case import *
-from data_method import *
+from data.data_method import *
 
 class Testcase:
 

@@ -1,4 +1,4 @@
-from data_method import *
+from data.data_method import *
 import os
 
 class slot_data_class:

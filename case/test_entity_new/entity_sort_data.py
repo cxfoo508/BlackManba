@@ -347,9 +347,9 @@ class entity_sort_new_class:
     entity_case_148 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity"],
                        "params": ["entity_data_new_class.param_create_entity_040",
                                   "entity_data_new_class.param_delete_entity_001"]}
-    # entity_case_149 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity"],
-    #                    "params": ["entity_data_new_class.param_create_entity_040",
-    #                               "entity_data_new_class.param_delete_entity_002"]}
+    entity_case_149 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity"],
+                       "params": ["entity_data_new_class.param_create_entity_040",
+                                  "entity_data_new_class.param_delete_entity_002"]}
     entity_case_150 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity"],
                        "params": ["entity_data_new_class.param_create_entity_040",
                                   "entity_data_new_class.param_delete_entity_003"]}
@@ -482,9 +482,9 @@ class entity_sort_new_class:
     entity_case_193 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity"],
                        "params": ["entity_data_new_class.param_create_entity_017",
                                   "entity_data_new_class.param_create_entityvalue_026"]}
-    # entity_case_194 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity"],
-    #                    "params": ["entity_data_new_class.param_create_entity_017",
-    #                               "entity_data_new_class.param_create_entityvalue_027"]}
+    entity_case_194 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity"],
+                       "params": ["entity_data_new_class.param_create_entity_017",
+                                  "entity_data_new_class.param_create_entityvalue_027"]}
     entity_case_195 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity"],
                        "params": ["entity_data_new_class.param_create_entity_017",
                                   "entity_data_new_class.param_create_entityvalue_028"]}
@@ -512,9 +512,9 @@ class entity_sort_new_class:
     entity_case_203 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity"],
                        "params": ["entity_data_new_class.param_create_entity_040",
                                   "entity_data_new_class.param_create_entityvalue_036"]}
-    # entity_case_204 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity"],
-    #                    "params": ["entity_data_new_class.param_create_entity_040",
-    #                               "entity_data_new_class.param_create_entityvalue_037"]}
+    entity_case_204 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity"],
+                       "params": ["entity_data_new_class.param_create_entity_040",
+                                  "entity_data_new_class.param_create_entityvalue_037"]}
     entity_case_205 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity"],
                        "params": ["entity_data_new_class.param_create_entity_040",
                                   "entity_data_new_class.param_create_entityvalue_038"]}
@@ -725,11 +725,11 @@ class entity_sort_new_class:
                        "params": ["entity_data_new_class.param_create_entity_040",
                                   "entity_data_new_class.param_create_entityvalue_022",
                                   "entity_data_new_class.param_update_entityvalue_001"]}
-    # entity_case_293 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity",
-    #                             "entity_base_new_class.mutate_entity"],
-    #                    "params": ["entity_data_new_class.param_create_entity_040",
-    #                               "entity_data_new_class.param_create_entityvalue_022",
-    #                               "entity_data_new_class.param_update_entityvalue_002"]}
+    entity_case_293 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity",
+                                "entity_base_new_class.mutate_entity"],
+                       "params": ["entity_data_new_class.param_create_entity_040",
+                                  "entity_data_new_class.param_create_entityvalue_022",
+                                  "entity_data_new_class.param_update_entityvalue_002"]}
     entity_case_294 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity",
                                 "entity_base_new_class.mutate_entity"],
                        "params": ["entity_data_new_class.param_create_entity_040",
@@ -850,11 +850,11 @@ class entity_sort_new_class:
                        "params": ["entity_data_new_class.param_create_entity_017",
                                   "entity_data_new_class.param_create_entityvalue_023",
                                   "entity_data_new_class.param_update_entityvalue_026"]}
-    # entity_case_318 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity",
-    #                             "entity_base_new_class.mutate_entity"],
-    #                    "params": ["entity_data_new_class.param_create_entity_017",
-    #                               "entity_data_new_class.param_create_entityvalue_023",
-    #                               "entity_data_new_class.param_update_entityvalue_027"]}
+    entity_case_318 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity",
+                                "entity_base_new_class.mutate_entity"],
+                       "params": ["entity_data_new_class.param_create_entity_017",
+                                  "entity_data_new_class.param_create_entityvalue_023",
+                                  "entity_data_new_class.param_update_entityvalue_027"]}
     entity_case_319 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity",
                                 "entity_base_new_class.mutate_entity"],
                        "params": ["entity_data_new_class.param_create_entity_017",
@@ -900,11 +900,11 @@ class entity_sort_new_class:
                        "params": ["entity_data_new_class.param_create_entity_040",
                                   "entity_data_new_class.param_create_entityvalue_022",
                                   "entity_data_new_class.param_update_entityvalue_036"]}
-    # entity_case_328 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity",
-    #                             "entity_base_new_class.mutate_entity"],
-    #                    "params": ["entity_data_new_class.param_create_entity_040",
-    #                               "entity_data_new_class.param_create_entityvalue_022",
-    #                               "entity_data_new_class.param_update_entityvalue_037"]}
+    entity_case_328 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity",
+                                "entity_base_new_class.mutate_entity"],
+                       "params": ["entity_data_new_class.param_create_entity_040",
+                                  "entity_data_new_class.param_create_entityvalue_022",
+                                  "entity_data_new_class.param_update_entityvalue_037"]}
     entity_case_329 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity",
                                 "entity_base_new_class.mutate_entity"],
                        "params": ["entity_data_new_class.param_create_entity_040",
@@ -1065,11 +1065,11 @@ class entity_sort_new_class:
                        "params": ["entity_data_new_class.param_create_entity_040",
                                   "entity_data_new_class.param_create_entityvalue_022",
                                   "entity_data_new_class.param_delete_entityvalue_001"]}
-    # entity_case_361 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity",
-    #                             "entity_base_new_class.mutate_entity"],
-    #                    "params": ["entity_data_new_class.param_create_entity_040",
-    #                               "entity_data_new_class.param_create_entityvalue_022",
-    #                               "entity_data_new_class.param_delete_entityvalue_002"]}
+    entity_case_361 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity",
+                                "entity_base_new_class.mutate_entity"],
+                       "params": ["entity_data_new_class.param_create_entity_040",
+                                  "entity_data_new_class.param_create_entityvalue_022",
+                                  "entity_data_new_class.param_delete_entityvalue_002"]}
     entity_case_362 = {"sort": ["entity_base_new_class.mutate_entity", "entity_base_new_class.mutate_entity",
                                 "entity_base_new_class.mutate_entity"],
                        "params": ["entity_data_new_class.param_create_entity_040",
