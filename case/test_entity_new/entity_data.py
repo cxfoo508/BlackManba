@@ -2812,7 +2812,7 @@ class entity_data_new_class:
                                                             "enableTokenization": None
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_update_entityvalue_002 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -2840,7 +2840,7 @@ class entity_data_new_class:
                                                             "enableTokenization": None
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_update_entityvalue_004 = [{"agent_id": None,
                                             "data": {"mutateOperations": [
                                                 {
@@ -2854,7 +2854,7 @@ class entity_data_new_class:
                                                             "enableTokenization": None
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 3', '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_005 = [{"agent_id": None,
                                             "data": {"mutateOperations": [
                                                 {
@@ -2868,7 +2868,7 @@ class entity_data_new_class:
                                                             "enableTokenization": None
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_update_entityvalue_006 = [{"agent_id": None,
                                             "data": {"mutateOperations": [
                                                 {
@@ -2882,7 +2882,7 @@ class entity_data_new_class:
                                                             "enableTokenization": None
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_update_entityvalue_007 = [{"agent_id": None,
                                             "data": {"mutateOperations": [
                                                 {
@@ -2896,7 +2896,7 @@ class entity_data_new_class:
                                                             "enableTokenization": True
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_update_entityvalue_008 = [{"agent_id": "",
                                             "data": {"mutateOperations": [
                                                 {
@@ -2910,7 +2910,7 @@ class entity_data_new_class:
                                                             "enableTokenization": ""
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_update_entityvalue_009 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -2924,7 +2924,7 @@ class entity_data_new_class:
                                                             "enableTokenization": ""
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 3', '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_010 = [{"agent_id": "",
                                             "data": {
                                                 "entityValueOperation": {
@@ -2937,7 +2937,7 @@ class entity_data_new_class:
                                                         "enableTokenization": ""
                                                     }
                                                 }
-                                            }}, [], {}]
+                                            }}, ['res["code"] == 3', '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_011 = [{"agent_id": "",
                                             "data": {"mutateOperations": [
                                                 {
@@ -2951,7 +2951,7 @@ class entity_data_new_class:
                                                             "enableTokenization": ""
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_update_entityvalue_012 = [{"agent_id": "",
                                             "data": {"mutateOperations": [
                                                 {
@@ -2965,7 +2965,7 @@ class entity_data_new_class:
                                                             "enableTokenization": ""
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_update_entityvalue_013 = [{"agent_id": "",
                                             "data": {"mutateOperations": [
                                                 {
@@ -2979,7 +2979,7 @@ class entity_data_new_class:
                                                             "enableTokenization": ""
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_update_entityvalue_014 = [{"agent_id": "",
                                             "data": {"mutateOperations": [
                                                 {
@@ -2993,7 +2993,7 @@ class entity_data_new_class:
                                                             "enableTokenization": True
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_update_entityvalue_015 = [{"agent_id": " ",
                                             "data": {"mutateOperations": [
                                                 {
@@ -3007,7 +3007,7 @@ class entity_data_new_class:
                                                             "enableTokenization": " "
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_016 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3021,7 +3021,7 @@ class entity_data_new_class:
                                                             "enableTokenization": " "
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_017 = [{"agent_id": " ",
                                             "data": {"mutateOperations": [
                                                 {
@@ -3035,7 +3035,7 @@ class entity_data_new_class:
                                                             "enableTokenization": " "
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_018 = [{"agent_id": " ",
                                             "data": {"mutateOperations": [
                                                 {
@@ -3049,7 +3049,7 @@ class entity_data_new_class:
                                                             "enableTokenization": " "
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_019 = [{"agent_id": " ",
                                             "data": {"mutateOperations": [
                                                 {
@@ -3063,7 +3063,7 @@ class entity_data_new_class:
                                                             "enableTokenization": " "
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_020 = [{"agent_id": " ",
                                             "data": {"mutateOperations": [
                                                 {
@@ -3077,7 +3077,7 @@ class entity_data_new_class:
                                                             "enableTokenization": " "
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_021 = [{"agent_id": " ",
                                             "data": {"mutateOperations": [
                                                 {
@@ -3091,7 +3091,7 @@ class entity_data_new_class:
                                                             "enableTokenization": True
                                                         }
                                                     }
-                                                }]}}, [], {}]
+                                                }]}}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_022 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3108,7 +3108,8 @@ class entity_data_new_class:
                                                     }
                                                 }]
                                             }}
-            , [], {}]
+            , ['res["mutateOperationResponses"][0]["entityValue"]["id"] == os.environ.get("entity_value_id")',
+               'res["mutateOperationResponses"][0]["entityValue"]["entityId"] == os.environ.get("entityId")'], {}]
         self.param_update_entityvalue_023 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3124,7 +3125,8 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["mutateOperationResponses"][0]["entityValue"]["id"] == os.environ.get("enum_entity_value_id")',
+               'res["mutateOperationResponses"][0]["entityValue"]["entityId"] == os.environ.get("enum_entity_id")'], {}]
         self.param_update_entityvalue_024 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3140,7 +3142,9 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["mutateOperationResponses"][0]["entityValue"]["id"] == os.environ.get("enum_entity_value_id")',
+               'res["mutateOperationResponses"][0]["entityValue"]["entityId"] == os.environ.get("enum_entity_id")',
+               'res["mutateOperationResponses"][0]["entityValue"]["enableTokenization"] == False'], {}]
         self.param_update_entityvalue_025 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3157,7 +3161,9 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["mutateOperationResponses"][0]["entityValue"]["id"] == os.environ.get("enum_entity_value_id")',
+               'res["mutateOperationResponses"][0]["entityValue"]["entityId"] == os.environ.get("enum_entity_id")',
+               'len(res["mutateOperationResponses"][0]["entityValue"]["synonyms"]) == 4'], {}]
         self.param_update_entityvalue_026 = [{"agent_id": get_str(4),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3174,7 +3180,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_update_entityvalue_027 = [{"agent_id": get_int(10),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3208,7 +3214,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_update_entityvalue_029 = [{"agent_id": "",
                                             "data": {"mutateOperations": [
                                                 {
@@ -3225,7 +3231,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_update_entityvalue_030 = [{"agent_id": " ",
                                             "data": {"mutateOperations": [
                                                 {
@@ -3242,7 +3248,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_update_entityvalue_031 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3259,7 +3265,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_032 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3276,7 +3282,8 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["mutateOperationResponses"][0]["entityValue"]["id"] == os.environ.get("enum_entity_value_id")',
+               'len(res["mutateOperationResponses"][0]["entityValue"]["synonyms"]) == 4'], {}]
         self.param_update_entityvalue_033 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3293,7 +3300,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_034 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3310,7 +3317,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_035 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3327,7 +3334,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_036 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3344,7 +3351,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_037 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3378,7 +3385,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_039 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3395,7 +3402,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_040 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3412,7 +3419,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_update_entityvalue_041 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3429,7 +3436,8 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["mutateOperationResponses"][0]["entityValue"]["id"] == os.environ.get("enum_entity_value_id")',
+               'len(res["mutateOperationResponses"][0]["entityValue"]["synonyms"]) == 4'], {}]
         self.param_update_entityvalue_042 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3446,7 +3454,8 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["mutateOperationResponses"][0]["entityValue"]["id"] == os.environ.get("enum_entity_value_id")',
+               'len(res["mutateOperationResponses"][0]["entityValue"]["synonyms"]) == 4'], {}]
         self.param_update_entityvalue_043 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3463,7 +3472,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', 'res["message"] == "invalid entity value"'], {}]
         self.param_update_entityvalue_044 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3480,7 +3489,8 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["mutateOperationResponses"][0]["entityValue"]["id"] == os.environ.get("entity_value_id")',
+               'len(res["mutateOperationResponses"][0]["entityValue"]["synonyms"]) == 4'], {}]
         self.param_update_entityvalue_045 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3497,7 +3507,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', 'res["message"] == "invalid entity value"'], {}]
         self.param_update_entityvalue_046 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3514,7 +3524,8 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'
+], {}]
         self.param_update_entityvalue_047 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3531,7 +3542,8 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["mutateOperationResponses"][0]["entityValue"]["id"] == os.environ.get("entity_value_id")',
+               'len(res["mutateOperationResponses"][0]["entityValue"]["synonyms"]) == 4'], {}]
         self.param_update_entityvalue_048 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3548,7 +3560,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', 'res["message"] == "invalid entity value"'], {}]
         self.param_update_entityvalue_049 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3582,7 +3594,8 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["mutateOperationResponses"][0]["entityValue"]["id"] == os.environ.get("entity_value_id")',
+               'len(res["mutateOperationResponses"][0]["entityValue"]["synonyms"]) == 4'], {}]
         self.param_update_entityvalue_051 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3616,7 +3629,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for string type" in res["message"]'], {}]
         self.param_update_entityvalue_053 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3633,7 +3646,8 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["mutateOperationResponses"][0]["entityValue"]["id"] == os.environ.get("entity_value_id")',
+               'len(res["mutateOperationResponses"][0]["entityValue"]["synonyms"]) == 4'], {}]
         self.param_update_entityvalue_054 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3684,7 +3698,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for string type" in res["message"]'], {}]
         self.param_update_entityvalue_057 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3748,7 +3762,8 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["mutateOperationResponses"][0]["entityValue"]["id"] == os.environ.get("enum_entity_value_id")',
+               'len(res["mutateOperationResponses"][0]["entityValue"]["synonyms"]) == 1'], {}]
         self.param_update_entityvalue_061 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3764,7 +3779,8 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["mutateOperationResponses"][0]["entityValue"]["id"] == os.environ.get("enum_entity_value_id")',
+               'len(res["mutateOperationResponses"][0]["entityValue"]["synonyms"]) == 1'], {}]
         self.param_update_entityvalue_062 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3780,7 +3796,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for bool type" in res["message"]'], {}]
         self.param_update_entityvalue_063 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3796,7 +3812,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for bool type" in res["message"]'], {}]
         self.param_update_entityvalue_064 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3812,7 +3828,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for bool type" in res["message"]'], {}]
         self.param_update_entityvalue_065 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3828,7 +3844,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for bool type" in res["message"]'], {}]
         self.param_update_entityvalue_066 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3844,7 +3860,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for bool type" in res["message"]'], {}]
         self.param_update_entityvalue_067 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -3860,7 +3876,7 @@ class entity_data_new_class:
                                                     }
                                                 }]}
                                             }
-            , [], {}]
+            , ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for bool type" in res["message"]'], {}]
         self.param_update_entityvalue_068 = [{"agent_id": os.environ.get("agent_id"),
                                               "data": {"mutateOperations": [
                                                   {
@@ -3998,7 +4014,8 @@ class entity_data_new_class:
                                                         "delete": None
                                                     }
                                                     }]
-                                            }}, [], {}]
+                                            }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'
+], {}]
         self.param_delete_entityvalue_002 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -4014,7 +4031,7 @@ class entity_data_new_class:
                                                         "delete": get_int(10)
                                                     }
                                                 }]
-                                            }}, [], {}]
+                                            }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_delete_entityvalue_004 = [{"agent_id": "",
                                             "data": {"mutateOperations": [
                                                 {
@@ -4022,7 +4039,7 @@ class entity_data_new_class:
                                                         "delete": ""
                                                     }
                                                 }]
-                                            }}, [], {}]
+                                            }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_delete_entityvalue_005 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -4030,7 +4047,8 @@ class entity_data_new_class:
                                                         "delete": ""
                                                     }
                                                 }]
-                                            }}, [], {}]
+                                            }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'
+], {}]
         self.param_delete_entityvalue_006 = [{"agent_id": "",
                                             "data": {"mutateOperations": [
                                                 {
@@ -4038,7 +4056,7 @@ class entity_data_new_class:
                                                         "delete": get_int(10)
                                                     }
                                                 }]
-                                            }}, [], {}]
+                                            }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_delete_entityvalue_007 = [{"agent_id": " ",
                                             "data": {"mutateOperations": [
                                                 {
@@ -4046,7 +4064,7 @@ class entity_data_new_class:
                                                         "delete": " "
                                                     }
                                                 }]
-                                            }}, [], {}]
+                                            }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_delete_entityvalue_008 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -4054,7 +4072,7 @@ class entity_data_new_class:
                                                         "delete": " "
                                                     }
                                                 }]
-                                            }}, [], {}]
+                                            }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_delete_entityvalue_009 = [{"agent_id": " ",
                                             "data": {"mutateOperations": [
                                                 {
@@ -4062,7 +4080,7 @@ class entity_data_new_class:
                                                         "delete": get_int(10)
                                                     }
                                                 }]
-                                            }}, [], {}]
+                                            }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_delete_entityvalue_010 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -4070,7 +4088,8 @@ class entity_data_new_class:
                                                         "delete": os.environ.get("entity_value_id")
                                                     }
                                                 }]
-                                            }}, [], {}]
+                                            }}, ['res["mutateOperationResponses"][0]["entityValue"]["id"] == os.environ.get("entity_value_id")',
+                                                'len(res["mutateOperationResponses"][0]["entityValue"]["synonyms"]) == 0'], {}]
         self.param_delete_entityvalue_011 = [{"agent_id": get_int(10),
                                             "data": {"mutateOperations": [
                                                 {
@@ -4078,7 +4097,8 @@ class entity_data_new_class:
                                                         "delete": os.environ.get("entity_value_id")
                                                     }
                                                 }]
-                                            }}, [], {}]
+                                            }}, ['res["mutateOperationResponses"][0]["entityValue"]["id"] == os.environ.get("entity_value_id")',
+                                                'len(res["mutateOperationResponses"][0]["entityValue"]["synonyms"]) == 0'], {}]
         self.param_delete_entityvalue_012 = [{"agent_id": get_str(4),
                                             "data": {"mutateOperations": [
                                                 {
@@ -4086,7 +4106,7 @@ class entity_data_new_class:
                                                         "delete": os.environ.get("entity_value_id")
                                                     }
                                                 }]
-                                            }}, [], {}]
+                                            }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_delete_entityvalue_013 = [{"agent_id": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
                                             "data": {"mutateOperations": [
                                                 {
@@ -4094,7 +4114,8 @@ class entity_data_new_class:
                                                         "delete": os.environ.get("entity_value_id")
                                                     }
                                                 }]
-                                            }}, [], {}]
+                                            }}, ['res["code"] == 5', 'res["message"] == "Not Found"'
+], {}]
         self.param_delete_entityvalue_014 = [{"agent_id": "",
                                             "data": {"mutateOperations": [
                                                 {
@@ -4102,7 +4123,8 @@ class entity_data_new_class:
                                                         "delete": os.environ.get("entity_value_id")
                                                     }
                                                 }]
-                                            }}, [], {}]
+                                            }}, ['res["code"] == 5', 'res["message"] == "Not Found"'
+], {}]
         self.param_delete_entityvalue_015 = [{"agent_id": " ",
                                             "data": {"mutateOperations": [
                                                 {
@@ -4110,7 +4132,8 @@ class entity_data_new_class:
                                                         "delete": os.environ.get("entity_value_id")
                                                     }
                                                 }]
-                                            }}, [], {}]
+                                            }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'
+], {}]
         self.param_delete_entityvalue_016 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -4118,7 +4141,7 @@ class entity_data_new_class:
                                                         "delete": get_str(4)
                                                     }
                                                 }]
-                                            }}, [], {}]
+                                            }}, ['res["code"] == 3', '"invalid value for int64 type" in res["message"]'], {}]
         self.param_delete_entityvalue_017 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -4126,7 +4149,7 @@ class entity_data_new_class:
                                                         "delete": get_int(10)
                                                     }
                                                 }]
-                                            }}, [], {}]
+                                            }}, ['len(res["mutateOperationResponses"][0]["entityValue"]["synonyms"]) == 0'], {}]
         self.param_delete_entityvalue_018 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -4134,7 +4157,7 @@ class entity_data_new_class:
                                                         "delete": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><"
                                                     }
                                                 }]
-                                            }}, [], {}]
+                                            }}, ['res["code"] == 3', '"invalid value for int64 type" in res["message"]'], {}]
         self.param_delete_entityvalue_019 = [{"agent_id": os.environ.get("agent_id"),
                                             "data": {"mutateOperations": [
                                                 {
@@ -4142,7 +4165,7 @@ class entity_data_new_class:
                                                         "delete": ""
                                                     }
                                                 }]
-                                            }}, [], {}]
+                                            }}, ['res["code"] == 3', '"invalid value for int64 type" in res["message"]'], {}]
         self.param_delete_entityvalue_020 = [{"agent_id": os.environ.get("agent_id"),
                                               "data": {"mutateOperations": [
                                                   {
@@ -4150,7 +4173,7 @@ class entity_data_new_class:
                                                           "delete": " "
                                                       }
                                                   }]
-                                              }}, [], {}]
+                                              }}, ['res["code"] == 3', '"invalid value for int64 type" in res["message"]'], {}]
 
         # </editor-fold>
 
@@ -4986,7 +5009,7 @@ class entity_data_new_class:
                                       "regex": None
                                           }
                                                   ]
-                                          }}, [], {}]
+                                          }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_test_entityvalue_002 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": None,
                                           "data": {"text": None,
@@ -4996,7 +5019,7 @@ class entity_data_new_class:
                                                            "regex": None
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"type mismatch, parameter: entity_id, error:" in res["message"]'], {}]
         self.param_test_entityvalue_003 = [{"agent_id": None,
                                           "entity_id": os.environ.get("entity_id"),
                                           "data": {"text": None,
@@ -5006,7 +5029,7 @@ class entity_data_new_class:
                                                            "regex": None
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_test_entityvalue_004 = [{"agent_id": None,
                                           "entity_id": None,
                                           "data": {"text": get_str(4),
@@ -5016,7 +5039,7 @@ class entity_data_new_class:
                                                            "regex": None
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_test_entityvalue_005 = [{"agent_id": None,
                                           "entity_id": None,
                                           "data": {"text": None,
@@ -5026,7 +5049,7 @@ class entity_data_new_class:
                                                            "regex": None
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_test_entityvalue_006 = [{"agent_id": None,
                                           "entity_id": None,
                                           "data": {"text": None,
@@ -5036,7 +5059,8 @@ class entity_data_new_class:
                                                            "regex": get_int(4)
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for string type" in res["message"]'
+], {}]
         self.param_test_entityvalue_007 = [{"agent_id": "",
                                           "entity_id": "",
                                           "data": {"text": "",
@@ -5046,7 +5070,8 @@ class entity_data_new_class:
                                                            "regex": ""
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 5', 'res["message"] == "Not Found"'
+], {}]
         self.param_test_entityvalue_008 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": "",
                                           "data": {"text": "",
@@ -5056,7 +5081,8 @@ class entity_data_new_class:
                                                            "regex": ""
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 5', 'res["message"] == "Not Found"'
+], {}]
         self.param_test_entityvalue_009 = [{"agent_id": "",
                                           "entity_id": os.environ.get("entity_id"),
                                           "data": {"text": "",
@@ -5066,7 +5092,8 @@ class entity_data_new_class:
                                                            "regex": ""
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 5', 'res["message"] == "Not Found"'
+], {}]
         self.param_test_entityvalue_010 = [{"agent_id": "",
                                           "entity_id": "",
                                           "data": {"text": get_str(4),
@@ -5076,7 +5103,8 @@ class entity_data_new_class:
                                                            "regex": ""
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 5', 'res["message"] == "Not Found"'
+], {}]
         self.param_test_entityvalue_011 = [{"agent_id": "",
                                           "entity_id": "",
                                           "data": {"text": "",
@@ -5086,7 +5114,8 @@ class entity_data_new_class:
                                                            "regex": ""
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 5', 'res["message"] == "Not Found"'
+], {}]
         self.param_test_entityvalue_012 = [{"agent_id": "",
                                           "entity_id": "",
                                           "data": {"text": "",
@@ -5096,7 +5125,8 @@ class entity_data_new_class:
                                                            "regex": get_int(4)
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 5', 'res["message"] == "Not Found"'
+], {}]
         self.param_test_entityvalue_013 = [{"agent_id": " ",
                                           "entity_id": " ",
                                           "data": {"text": " ",
@@ -5106,7 +5136,7 @@ class entity_data_new_class:
                                                            "regex": " "
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_test_entityvalue_014 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": " ",
                                           "data": {"text": " ",
@@ -5116,7 +5146,7 @@ class entity_data_new_class:
                                                            "regex": " "
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_test_entityvalue_015 = [{"agent_id": " ",
                                           "entity_id": os.environ.get("entity_id"),
                                           "data": {"text": " ",
@@ -5126,7 +5156,7 @@ class entity_data_new_class:
                                                            "regex": " "
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_test_entityvalue_016 = [{"agent_id": " ",
                                           "entity_id": " ",
                                           "data": {"text": get_str(4),
@@ -5136,7 +5166,7 @@ class entity_data_new_class:
                                                            "regex": " "
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_test_entityvalue_017 = [{"agent_id": " ",
                                           "entity_id": " ",
                                           "data": {"text": " ",
@@ -5146,7 +5176,7 @@ class entity_data_new_class:
                                                            "regex": " "
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_test_entityvalue_018 = [{"agent_id": " ",
                                           "entity_id": " ",
                                           "data": {"text": " ",
@@ -5156,7 +5186,8 @@ class entity_data_new_class:
                                                            "regex": get_int(4)
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for string type" in res["message"]'
+], {}]
         self.param_test_entityvalue_019 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("entity_id"),
                                           "data": {"text": "121312412312312",
@@ -5166,7 +5197,8 @@ class entity_data_new_class:
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["results"][0]["origin"] == "121312412312312"'], {}]
+        # 枚举实体也能传test接口获取数据
         self.param_test_entityvalue_020 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("enum_entity_id"),
                                           "data": {"text": "121312412312312",
@@ -5176,7 +5208,7 @@ class entity_data_new_class:
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["results"][0]["origin"] == "121312412312312"'], {}]
         self.param_test_entityvalue_021 = [{"agent_id": get_str(4),
                                           "entity_id": os.environ.get("entity_id"),
                                           "data": {"text": "121312412312312",
@@ -5186,7 +5218,7 @@ class entity_data_new_class:
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_test_entityvalue_022 = [{"agent_id": get_int(4),
                                           "entity_id": os.environ.get("entity_id"),
                                           "data": {"text": "121312412312312",
@@ -5196,7 +5228,7 @@ class entity_data_new_class:
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["results"][0]["origin"] == "121312412312312"'], {}]
         self.param_test_entityvalue_023 = [{"agent_id": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
                                           "entity_id": os.environ.get("entity_id"),
                                           "data": {"text": "121312412312312",
@@ -5206,7 +5238,8 @@ class entity_data_new_class:
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 5', 'res["message"] == "Not Found"'
+], {}]
         self.param_test_entityvalue_024 = [{"agent_id": "",
                                           "entity_id": os.environ.get("entity_id"),
                                           "data": {"text": "121312412312312",
@@ -5216,7 +5249,8 @@ class entity_data_new_class:
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 5', 'res["message"] == "Not Found"'
+], {}]
         self.param_test_entityvalue_025 = [{"agent_id": " ",
                                           "entity_id": os.environ.get("entity_id"),
                                           "data": {"text": "121312412312312",
@@ -5226,7 +5260,7 @@ class entity_data_new_class:
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_test_entityvalue_026 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": get_str(4),
                                           "data": {"text": "121312412312312",
@@ -5236,7 +5270,7 @@ class entity_data_new_class:
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"type mismatch, parameter: entity_id, error:" in res["message"]'], {}]
         self.param_test_entityvalue_027 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": get_int(4),
                                           "data": {"text": "121312412312312",
@@ -5246,7 +5280,7 @@ class entity_data_new_class:
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["results"][0]["origin"] == "121312412312312"'], {}]
         self.param_test_entityvalue_028 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
                                           "data": {"text": "121312412312312",
@@ -5256,7 +5290,7 @@ class entity_data_new_class:
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_test_entityvalue_029 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
                                           "data": {"text": "121312412312312",
@@ -5266,7 +5300,7 @@ class entity_data_new_class:
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_test_entityvalue_030 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": "",
                                           "data": {"text": "121312412312312",
@@ -5276,7 +5310,7 @@ class entity_data_new_class:
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
         self.param_test_entityvalue_031 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": " ",
                                           "data": {"text": "121312412312312",
@@ -5286,7 +5320,7 @@ class entity_data_new_class:
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"type mismatch, parameter: entity_id, error:" in res["message"]'], {}]
         self.param_test_entityvalue_032 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("entity_id"),
                                           "data": {"text": get_str(4),
@@ -5296,7 +5330,7 @@ class entity_data_new_class:
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["results"] == None'], {}]
         self.param_test_entityvalue_033 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("entity_id"),
                                           "data": {"text": get_int(4),
@@ -5306,17 +5340,17 @@ class entity_data_new_class:
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"invalid value for string type" in res["message"]'], {}]
         self.param_test_entityvalue_034 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("entity_id"),
-                                          "data": {"text": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
+                                          "data": {"text": "121312412312312",
                                                    "regexes": [
                                                        {
                                                            "value": "数字",
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["results"] == "121312412312312"'], {}]
         self.param_test_entityvalue_035 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("entity_id"),
                                           "data": {"text": "",
@@ -5326,7 +5360,7 @@ class entity_data_new_class:
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["results"][0]["origin"] == ""'], {}]
         self.param_test_entityvalue_036 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("entity_id"),
                                           "data": {"text": " ",
@@ -5336,97 +5370,97 @@ class entity_data_new_class:
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["results"] == None'], {}]
         self.param_test_entityvalue_037 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("entity_id"),
-                                          "data": {"text": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
+                                          "data": {"text": "121312412312312",
                                                    "regexes": [
                                                        {
                                                            "value": get_str(128),
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["results"] == "121312412312312"'], {}]
         self.param_test_entityvalue_038 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("entity_id"),
-                                          "data": {"text": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
+                                          "data": {"text": "121312412312312",
                                                    "regexes": [
                                                        {
                                                            "value": get_str(129),
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["results"] == "121312412312312"'], {}]
         self.param_test_entityvalue_039 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("entity_id"),
-                                          "data": {"text": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
+                                          "data": {"text": "121312412312312",
                                                    "regexes": [
                                                        {
                                                            "value": get_int(128),
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for string type" in res["message"]'], {}]
         self.param_test_entityvalue_040 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("entity_id"),
-                                          "data": {"text": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
+                                          "data": {"text": "121312412312312",
                                                    "regexes": [
                                                        {
                                                            "value": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["results"] == "121312412312312"'], {}]
         self.param_test_entityvalue_041 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("entity_id"),
-                                          "data": {"text": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
+                                          "data": {"text": "121312412312312",
                                                    "regexes": [
                                                        {
                                                            "value": "",
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["results"] == "121312412312312"'], {}]
         self.param_test_entityvalue_042 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("entity_id"),
-                                          "data": {"text": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
+                                          "data": {"text": "121312412312312",
                                                    "regexes": [
                                                        {
                                                            "value": " ",
                                                            "regex": "^[0-9]*$"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["results"] == "121312412312312"'], {}]
         self.param_test_entityvalue_043 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("entity_id"),
-                                          "data": {"text": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
+                                          "data": {"text": "121312412312312",
                                                    "regexes": [
                                                        {
                                                            "value": "数字",
                                                            "regex": get_str(512)
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["results"] == None'], {}]
         self.param_test_entityvalue_044 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("entity_id"),
-                                          "data": {"text": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
+                                          "data": {"text": "121312412312312",
                                                    "regexes": [
                                                        {
                                                            "value": "数字",
                                                            "regex": get_int(513)
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for string type" in res["message"]'], {}]
         self.param_test_entityvalue_045 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("entity_id"),
-                                          "data": {"text": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
+                                          "data": {"text": "121312412312312",
                                                    "regexes": [
                                                        {
                                                            "value": "数字",
                                                            "regex": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><"
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["results"] == None'], {}]
         self.param_test_entityvalue_046 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("entity_id"),
                                           "data": {"text": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
@@ -5436,7 +5470,7 @@ class entity_data_new_class:
                                                            "regex": ""
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['len(res["results"][0]) == 38'], {}]
         self.param_test_entityvalue_047 = [{"agent_id": os.environ.get("agent_id"),
                                           "entity_id": os.environ.get("entity_id"),
                                           "data": {"text": "12367eqwwyeuiqwieasdj!@#$%^&*()_+:L><",
@@ -5446,7 +5480,7 @@ class entity_data_new_class:
                                                            "regex": " "
                                                        }
                                                    ]
-                                                   }}, [], {}]
+                                                   }}, ['res["results"] == None'], {}]
         self.param_test_entityvalue_048 = [{"agent_id": os.environ.get("agent_id"),
                                             "entity_id": os.environ.get("entity_id"),
                                             "data": {"text": "121312412312312",
@@ -5480,6 +5514,8 @@ class entity_data_new_class:
                                                              "regex": "^[A-Za-z0-9]+$"
                                                          }
                                                      ]
-                                                     }}, [], {}]
+                                                     }}, ['res["results"][0]["value"] == "数字1"', 'res["results"][1]["value"] == "数字3"'
+                                                        , 'res["results"][2]["value"] == "数字6"', 'res["results"][3]["value"] == "数字7"',
+                                                          'res["results"][4]["value"] == "英文和数字"'], {}]
 
         # </editor-fold>
