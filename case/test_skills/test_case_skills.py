@@ -1,13 +1,12 @@
 # coding = utf-8
 import pytest
-
 from case.pytest_base import PyBase
 from case.test_skills.skills_sort_data import skills_sort_class
 from modules.logger import log
 
 
 def get_data():
-    data_list = skills_sort_class.get_skills_data("skills_case_030")
+    data_list = skills_sort_class.get_skills_data("skills_case_042")
     return data_list
 
 

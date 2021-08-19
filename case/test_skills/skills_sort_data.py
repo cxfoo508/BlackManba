@@ -379,8 +379,10 @@ class skills_sort_class:
     }
     skills_case_029 = {
         "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_all'
                  ],
         "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_4',
+                   'skills_data_class.params_case_002_2'
                    ]
     }
     skills_case_030 = {
@@ -389,7 +391,126 @@ class skills_sort_class:
         "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_5',
                    ]
     }
+    # </editor-fold>
 
+    # <editor-fold desc = "更新分类节点">
+    skills_case_031 = {
+        # 更新
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_edit', 'skills_base_class.skill_category_all'
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_6',
+                   'skills_data_class.params_case_008', 'skills_data_class.params_case_002_3'
+                   ]
+    }
+    skills_case_032 = {
+        # 更新
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_edit', 'skills_base_class.skill_category_all'
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_6',
+                   'skills_data_class.params_case_008_1', 'skills_data_class.params_case_002_3'
+                   ]
+    }
+    skills_case_033 = {
+        # 更新
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_edit'
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_6',
+                   'skills_data_class.params_case_008_2'
+                   ]
+    }
+    skills_case_034 = {
+        # 更新
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_edit', 'skills_base_class.skill_category_all'
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_6',
+                   'skills_data_class.params_case_008_3', 'skills_data_class.params_case_002_3'
+                   ]
+    }
+    skills_case_035 = {
+        # 更新
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_edit'
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_6',
+                   'skills_data_class.params_case_008_4'
+                   ]
+    }
+    skills_case_036 = {
+        # none
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_edit'
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_6',
+                   'skills_data_class.params_case_008_5'
+                   ]
+    }
+    skills_case_037 = {
+        # none
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_edit'
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_6',
+                   'skills_data_class.params_case_008_6'
+                   ]
+    }
+    skills_case_038 = {
+        # none
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_edit'
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_6',
+                   'skills_data_class.params_case_008_7'
+                   ]
+    }
+    skills_case_039 = {
+        # none
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_edit'
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_6',
+                   'skills_data_class.params_case_008_8'
+                   ]
+    }
+
+    # </editor-fold>
+
+    # <editor-fold desc = "删除分类节点">
+    skills_case_040 = {
+        # 创建删除
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_delete', 'skills_base_class.skill_category_all'
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_6',
+                   'skills_data_class.params_case_009', 'skills_data_class.params_case_002_4'
+                   ]
+    }
+    skills_case_041 = {
+        # 创建更新删除
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_edit',
+                 'skills_base_class.skill_category_delete', 'skills_base_class.skill_category_all'
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_6',
+                   'skills_data_class.params_case_008',
+                   'skills_data_class.params_case_009', 'skills_data_class.params_case_002_4'
+                   ]
+    }
+    skills_case_042 = {
+        # None
+        "sort": ['skills_base_class.skill_category_all', 'skills_base_class.skill_category_create',
+                 'skills_base_class.skill_category_edit',
+                 'skills_base_class.skill_category_delete', 'skills_base_class.skill_category_delete',
+                 'skills_base_class.skill_category_delete'
+                 ],
+        "params": ['skills_data_class.params_case_002', 'skills_data_class.params_case_007_6',
+                   'skills_data_class.params_case_008', 'skills_data_class.params_case_009_1',
+                   'skills_data_class.params_case_009_2', 'skills_data_class.params_case_009_3',
+                   ]
+    }
 
     # </editor-fold>
 

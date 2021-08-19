@@ -4,8 +4,6 @@
 # SOFTWARE: PyCharm
 # FILE : entity_sort_data.py
 # DATE : 2021/8/5 19:17
-from base_case import *
-from modules.request_base import *
 
 class entity_sort_new_class:
     # 接口单元测试操作
@@ -1309,8 +1307,8 @@ class entity_sort_new_class:
                                   "entity_data_new_class.param_test_entityvalue_048"]}
 
     # 接口初始化操作
-    entity_setup_class = {"sort":["auth_login", "creat_app"],
-                            'params':['entity_data_new_class.setup_login', 'entity_data_new_class.setup_create_app']}
+    entity_setup_class = {"sort": ["auth_login", "creat_app"],
+                          'params': ['entity_data_new_class.setup_login', 'entity_data_new_class.setup_create_app']}
     # 接口收尾工作
     entity_teardown_class = {"sort": ["del_app"], 'params': ['entity_data_new_class.teardown_class']}
     # 场景化用例操作

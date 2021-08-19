@@ -29,12 +29,15 @@ from case.test_skills.skills_data import skills_data_class
 from case.test_skills.skills_sort_data import skills_sort_class
 from case.test_skills.case_base_skills import skills_base_class
 from case.test_chatMessage.message_base import ChatMessageCase
-from case.test_entity_new.entity_base import entity_base_class
-from case.test_entity_new.entity_data import entity_data_class
-from case.test_entity_new.entity_sort_data import entity_sort_class
+from case.test_entity_new.entity_base import entity_base_new_class
+from case.test_entity_new.entity_data import entity_data_new_class
+from case.test_entity_new.entity_sort_data import entity_sort_new_class
 from case.test_labelquery.labelquery_base import labelquery_base_class
 from case.test_labelquery.labelquery_data import labelquery_data_class
 from case.test_labelquery.labelquery_sort_data import labelquery_sort_class
+from case.test_slot.slot_base import SlotCaseBase
+from case.test_slot.slot_data import slot_data_class
+from case.test_slot.slot_sort_data import slot_sort_class
 from base_case import *
 # </editor-fold>
 
@@ -68,6 +71,12 @@ class PyBase:
                 # 执行func
                 res = eval(f'{func}({req})')
                 res = json.loads(res)
+
+                # res注入项
+                for k, v in param[2].items():
+                    os.environ[k] = str(eval(v))
+                    log.info(f"ENVIRON {k}={v}:{k}={eval(v)}")
+
                 # assert
                 for s in param[1]:
                     log.info(f'ASSERT:{s},ANSWER:{eval(s)}')
@@ -77,10 +86,7 @@ class PyBase:
                         assert eval(s), res
                     else:
                         pytest.assume(eval(s), res)
-                # res注入项
-                for k, v in param[2].items():
-                    os.environ[k] = str(eval(v))
-                    log.info(f"ENVIRON {k}={v}:{k}={eval(v)}")
+
                 # 执行功能
                 if len(param) == 4:
                     for k, v in param[3].items():
