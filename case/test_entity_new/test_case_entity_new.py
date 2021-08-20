@@ -9,8 +9,8 @@ import pytest
 from modules.logger import log
 from case.pytest_base import PyBase
 from case.test_entity_new.entity_sort_data import entity_sort_new_class
-from data_method import *
-from request_base import *
+from data.data_method import *
+from modules.request_base import *
 from base_case import *
 
 
@@ -26,7 +26,7 @@ class TestCase(PyBase):
         获取渠道鉴权token
         """
         log.info("---setup class---")
-        self.run(self, "entity_sort_new_class.entity_setup_class")
+        self.run("entity_sort_new_class.entity_setup_class")
 
 
     @pytest.fixture(params=get_data())
@@ -44,4 +44,4 @@ class TestCase(PyBase):
         删除app
         """
         log.info("---teardown_class---")
-        self.run(self, "entity_sort_new_class.entity_teardown_class")
+        self.run("entity_sort_new_class.entity_teardown_class")

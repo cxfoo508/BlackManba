@@ -37,7 +37,7 @@ def logger_init():
     )
     logger.add(sys.stderr, format=fmt, level="DEBUG")
     logger.add(
-        os.path.join(LOG_DIR) + file_fmt, format=fmt, level="DEBUG", retention="10 days"
+        os.path.join(LOG_DIR) + file_fmt, format=fmt, level="DEBUG", retention="10 days", encoding='utf-8'
     )
 
 

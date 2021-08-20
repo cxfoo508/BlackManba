@@ -9,8 +9,8 @@ import pytest
 from modules.logger import log
 from case.pytest_base import PyBase
 from case.test_channels.channels_sort_data import channels_sort_class
-from data_method import *
-from request_base import *
+from data.data_method import *
+from modules.request_base import *
 from base_case import *
 
 

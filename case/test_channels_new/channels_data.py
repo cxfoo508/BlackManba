@@ -67,7 +67,8 @@ class channels_data_new_class:
                                                        }
                                                    }
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 10', 'res["message"] == "缺少渠道名称"'
+], {}]
         self.param_create_channels_003 = [{"agent_id": None,
                                            "data":{
                                                "operations": [
@@ -103,7 +104,7 @@ class channels_data_new_class:
                                                        }
                                                    }
                                                ]
-                                           }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"unknown field" in res["message"]'], {}]
+                                           }}, ['res["code"] == 3', '"type mismatch, parameter: agent_id, error:" in res["message"]'], {}]
         self.param_create_channels_005 = [{"agent_id": None,
                                            "data":{
                                                "operations": [
@@ -373,7 +374,7 @@ class channels_data_new_class:
                                                        }
                                                    }
                                                ]
-                                           }}, ['res["code"] == 5', 'res["message"] == "Not Found"'], {}]
+                                           }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for int64 type" in res["message"]'], {}]
         self.param_create_channels_020 = [{"agent_id": os.environ.get("agent_id"),
                                            "data":{
                                                "operations": [
@@ -867,7 +868,7 @@ class channels_data_new_class:
                                                  {
                                                      "create": {
                                                          "id": None,
-                                                         "channel_name": get_str(65),
+                                                         "channel_name": get_str(121),
                                                          "channel_description": get_str(121),
                                                          "channel_type": "CUSTOM",
                                                          "open_api": {
@@ -878,7 +879,8 @@ class channels_data_new_class:
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["code"] == 10', 'res["message"] == "渠道名称超过64字符！"'
+], {}]
         self.param_create_channels_048 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
                                              "operations": [
@@ -914,7 +916,7 @@ class channels_data_new_class:
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["code"] == 5', 'res["message"] == "缺少渠道名称"'], {}]
         self.param_create_channels_050 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
                                              "operations": [
@@ -932,7 +934,7 @@ class channels_data_new_class:
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["code"] == 5', 'res["message"] == "缺少渠道名称"'], {}]
         self.param_create_channels_051 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
                                              "operations": [
@@ -940,7 +942,7 @@ class channels_data_new_class:
                                                      "create": {
                                                          "id": None,
                                                          "channel_name": get_str(4),
-                                                         "channel_description": get_str(512),
+                                                         "channel_description": get_str(256),
                                                          "channel_type": "CUSTOM",
                                                          "open_api": {
                                                              "send_webhook": "www.baidu.com",
@@ -958,7 +960,7 @@ class channels_data_new_class:
                                                      "create": {
                                                          "id": None,
                                                          "channel_name": get_str(4),
-                                                         "channel_description": get_int(513),
+                                                         "channel_description": str(get_int(257)),
                                                          "channel_type": "CUSTOM",
                                                          "open_api": {
                                                              "send_webhook": "www.baidu.com",
@@ -968,7 +970,7 @@ class channels_data_new_class:
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for string type" in res["message"]'], {}]
         self.param_create_channels_053 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
                                              "operations": [
@@ -986,7 +988,7 @@ class channels_data_new_class:
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["operations"] is not None', 'res["operations"][0]["channel_type"] == "CUSTOM"'], {}]
         self.param_create_channels_054 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
                                              "operations": [
@@ -1004,7 +1006,7 @@ class channels_data_new_class:
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["operations"] is not None', 'res["operations"][0]["channel_description"] == ""'], {}]
         self.param_create_channels_055 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
                                              "operations": [
@@ -1022,7 +1024,7 @@ class channels_data_new_class:
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["operations"] is not None', 'res["operations"][0]["channel_description"] == ""'], {}]
         self.param_create_channels_056 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
                                              "operations": [
@@ -1058,7 +1060,7 @@ class channels_data_new_class:
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for string type" in res["message"]'], {}]
         self.param_create_channels_058 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
                                              "operations": [
@@ -1105,14 +1107,14 @@ class channels_data_new_class:
                                                          "channel_description": get_str(121),
                                                          "channel_type": "CUSTOM",
                                                          "open_api": {
-                                                             "send_webhook": get_int(256),
+                                                             "send_webhook": get_str(256),
                                                              "pre_webhook": "www.baidu.com",
                                                              "post_webhook": "www.baidu.com"
                                                          }
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for string type" in res["message"]'], {}]
         self.param_create_channels_061 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
                                              "operations": [
@@ -1214,13 +1216,13 @@ class channels_data_new_class:
                                                          "channel_type": "CUSTOM",
                                                          "open_api": {
                                                              "send_webhook": "www.baidu.com",
-                                                             "pre_webhook": get_int(256),
+                                                             "pre_webhook": get_str(256),
                                                              "post_webhook": "www.baidu.com"
                                                          }
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for string type" in res["message"]'], {}]
         self.param_create_channels_067 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
                                              "operations": [
@@ -1256,7 +1258,7 @@ class channels_data_new_class:
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for string type" in res["message"]'], {}]
         self.param_create_channels_069 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
                                              "operations": [
@@ -1269,12 +1271,12 @@ class channels_data_new_class:
                                                          "open_api": {
                                                              "send_webhook": "www.baidu.com",
                                                              "pre_webhook": "www.baidu.com",
-                                                             "post_webhook": get_int(256)
+                                                             "post_webhook": get_str(256)
                                                          }
                                                      }
                                                  }
                                              ]
-                                         }}, [], {}]
+                                         }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for string type" in res["message"]'], {}]
         self.param_create_channels_070 = [{"agent_id": os.environ.get("agent_id"),
                                          "data":{
                                              "operations": [
@@ -1455,7 +1457,7 @@ class channels_data_new_class:
                                                    }
 
                                                ]
-                                           }}, [], {}]
+                                           }}, ['res["code"] == 3', '"proto:" in res["message"]',  '"invalid value for string type" in res["message"]'], {}]
 
 
 
@@ -2351,7 +2353,7 @@ class channels_data_new_class:
                                                      "update": {
                                                          "id": os.environ.get("id"),
                                                          "channel_name": " ",
-                                                         "channel_description": get_str(121),
+                                                         "channel_description": get_str(256),
                                                          "channel_type": "CUSTOM",
                                                          "open_api": {
                                                              "send_webhook": "www.baidu.com_new",
@@ -2369,7 +2371,7 @@ class channels_data_new_class:
                                                      "update": {
                                                          "id": os.environ.get("id"),
                                                          "channel_name": get_str(4),
-                                                         "channel_description": get_str(512),
+                                                         "channel_description": get_str(256),
                                                          "channel_type": "CUSTOM",
                                                          "open_api": {
                                                              "send_webhook": "www.baidu.com_new",
@@ -2387,7 +2389,7 @@ class channels_data_new_class:
                                                      "update": {
                                                          "id": os.environ.get("id"),
                                                          "channel_name": get_str(4),
-                                                         "channel_description": get_int(513),
+                                                         "channel_description": str(get_int(257)),
                                                          "channel_type": "CUSTOM",
                                                          "open_api": {
                                                              "send_webhook": "www.baidu.com_new",

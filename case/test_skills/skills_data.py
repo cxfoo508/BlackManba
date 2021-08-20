@@ -1,5 +1,5 @@
 import os
-from data_method import *
+from data.data_method import *
 
 
 class skills_data_class:
