@@ -4,8 +4,6 @@
 # SOFTWARE: PyCharm
 # FILE : entity_base.py
 # DATE : 2021/8/5 19:18
-from base_case import *
-from modules.logger import log
 from modules.request_base import *
 
 

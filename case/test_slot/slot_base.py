@@ -1,6 +1,7 @@
 from base_case import *
 from modules.logger import log
 
+
 class SlotCaseBase:
     @classmethod
     def __slot_base(cls, url, data):

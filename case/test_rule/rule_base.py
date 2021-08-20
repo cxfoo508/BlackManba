@@ -1,16 +1,18 @@
-from base_case import *
+from modules.logger import log
+from modules.request_base import rear_post
 
 
 class SlotCaseBase:
+
     @classmethod
     def __node_base(cls, url, data):
         """
         slot case
         """
-        print(f"send data: {data}")
-        res = request_data(url, data)
+        log.info(f"send data: {data}")
+        res = rear_post(url, data)
         con = res.content.decode()
-        print(f"res: {con}")
+        log.info(f"res: {con}")
         return con
 
     @classmethod
@@ -41,11 +43,10 @@ class SlotCaseBase:
         return con
 
     @classmethod
-    def xxx(cls,data):
+    def xxx(cls, data):
         """
         更新异常结束node
         """
         url = '/v1/rule/update_fallback_node_with_skill'
         con = cls.__node_base(url, data)
         return con
-
