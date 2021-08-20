@@ -1,7 +1,9 @@
-from data.data_method import *
 import os
 
-class node_data_class:
+from data.data_method import *
+
+
+class rule_data_class:
     def __init__(self):
         """
         节点参数
@@ -76,7 +78,6 @@ class node_data_class:
             'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="number_per_page"',
             'res["data"][0]["msg"]=="field required"'],
             {}]
-
 
         # </editor-fold>
 
@@ -551,11 +552,11 @@ class node_data_class:
 
         # <editor-fold desc = "获取指定节点">
         self.param_012 = [
-            {   # 获取指定节点
+            {  # 获取指定节点
                 "agent_id": os.environ.get('agent_id'),
                 "skill_one_id": os.environ.get('skill_one_id'),
                 "node_id": os.environ.get('node_id')
-            }, ['res["code"]==0','res["data"]!=None'], {}
+            }, ['res["code"]==0', 'res["data"]!=None'], {}
         ]
         self.param_012_1 = [
             {
@@ -563,7 +564,7 @@ class node_data_class:
                 "agent_id": os.environ.get('agent_id'),
                 "skill_one_id": os.environ.get('skill_one_id'),
 
-            }, ['res["code"]==0','res["data"]!=None'], {}
+            }, ['res["code"]==0', 'res["data"]!=None'], {}
         ]
         self.param_012_2 = [
             {

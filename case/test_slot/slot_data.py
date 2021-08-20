@@ -1,5 +1,5 @@
 from data_method import *
-
+import os
 
 class slot_data_class:
     def __init__(self):
@@ -102,6 +102,84 @@ class slot_data_class:
 
         ]
 
+        self.params_case_002_6 = [
+            {
+                # None
+                "agent_id": None,
+                "slot_name": get_str(4),
+                "is_from_text": 0,
+                "is_list": 0,
+                "is_compound": 0
+            }, ['res["code"]==0', 'res["data"]["slot_id"]!=None'], {'slot_id': 'res["data"]["slot_id"]'}
+
+        ]
+        self.params_case_002_7 = [
+            {
+                # None
+                "agent_id": os.environ.get('agent_id'),
+                "slot_name": None,
+                "is_from_text": 0,
+                "is_list": 0,
+                "is_compound": 0
+            }, ['res["code"]==0', 'res["data"]["slot_id"]!=None'], {'slot_id': 'res["data"]["slot_id"]'}
+
+        ]
+        self.params_case_002_8 = [
+            {
+                # None
+                "agent_id": os.environ.get('agent_id'),
+                "slot_name": get_str(4),
+                "is_from_text": None,
+                "is_list": 0,
+                "is_compound": 0
+            }, ['res["code"]==0', 'res["data"]["slot_id"]!=None'], {'slot_id': 'res["data"]["slot_id"]'}
+
+        ]
+        self.params_case_002_9 = [
+            {
+                # None
+                "agent_id": os.environ.get('agent_id'),
+                "slot_name": get_str(4),
+                "is_from_text": 0,
+                "is_list": None,
+                "is_compound": 0
+            }, ['res["code"]==0', 'res["data"]["slot_id"]!=None'], {'slot_id': 'res["data"]["slot_id"]'}
+
+        ]
+        self.params_case_002_10 = [
+            {
+                # None
+                "agent_id": os.environ.get('agent_id'),
+                "slot_name": get_str(4),
+                "is_from_text": 0,
+                "is_list": 0,
+                "is_compound": None
+            }, ['res["code"]==0', 'res["data"]["slot_id"]!=None'], {'slot_id': 'res["data"]["slot_id"]'}
+
+        ]
+        self.params_case_002_11 = [
+            {
+                # 空字段
+                "agent_id": '',
+                "slot_name": get_str(4),
+                "is_from_text": 0,
+                "is_list": 0,
+                "is_compound": 0
+            }, ['res["code"]==0', 'res["data"]["slot_id"]!=None'], {'slot_id': 'res["data"]["slot_id"]'}
+
+        ]
+        self.params_case_002_12 = [
+            {
+                # 空字段
+                "agent_id": os.environ.get('agent_id'),
+                "slot_name": '',
+                "is_from_text": 0,
+                "is_list": 0,
+                "is_compound": 0
+            }, ['res["code"]==0', 'res["data"]["slot_id"]!=None'], {'slot_id': 'res["data"]["slot_id"]'}
+
+        ]
+
         # </editor-fold>
 
         # <editor-fold desc = "更新词槽">
@@ -192,6 +270,90 @@ class slot_data_class:
             }, ['res["code"]==10009',
                 'res["msg"]=="接口参数验证出错"', 'res["data"][0]["loc"][1]=="is_compound"',
                 'res["data"][0]["msg"]=="field required"'], {}
+
+        ]
+        self.params_case_003_7 = [
+            {
+                # None
+                "slot_id": os.environ.get('slot_id'),
+                "agent_id": os.environ.get('agent_id'),
+                "slot_name": get_str(4),
+                "is_from_text": 0,
+                "is_list": 0,
+                "is_compound": 0
+            }, ['res["code"]==0'], {}
+
+        ]
+        self.params_case_003_8 = [
+            {
+                # None
+                "slot_id": None,
+                "agent_id": os.environ.get('agent_id'),
+                "slot_name": get_str(4),
+                "is_from_text": 0,
+                "is_list": 0,
+                "is_compound": 0
+            }, ['res["code"]==0'], {}
+
+        ]
+        self.params_case_003_9 = [
+            {
+                # None
+                "slot_id": os.environ.get('slot_id'),
+                "agent_id": None,
+                "slot_name": get_str(4),
+                "is_from_text": 0,
+                "is_list": 0,
+                "is_compound": 0
+            }, ['res["code"]==0'], {}
+
+        ]
+        self.params_case_003_10 = [
+            {
+                # None
+                "slot_id": os.environ.get('slot_id'),
+                "agent_id": os.environ.get('agent_id'),
+                "slot_name": None,
+                "is_from_text": 0,
+                "is_list": 0,
+                "is_compound": 0
+            }, ['res["code"]==0'], {}
+
+        ]
+        self.params_case_003_11 = [
+            {
+                # None
+                "slot_id": os.environ.get('slot_id'),
+                "agent_id": os.environ.get('agent_id'),
+                "slot_name": get_str(4),
+                "is_from_text": None,
+                "is_list": 0,
+                "is_compound": 0
+            }, ['res["code"]==0'], {}
+
+        ]
+        self.params_case_003_12 = [
+            {
+                # None
+                "slot_id": os.environ.get('slot_id'),
+                "agent_id": os.environ.get('agent_id'),
+                "slot_name": get_str(4),
+                "is_from_text": 0,
+                "is_list": None,
+                "is_compound": 0
+            }, ['res["code"]==0'], {}
+
+        ]
+        self.params_case_003_13 = [
+            {
+                # None
+                "slot_id": os.environ.get('slot_id'),
+                "agent_id": os.environ.get('agent_id'),
+                "slot_name": get_str(4),
+                "is_from_text": 0,
+                "is_list": 0,
+                "is_compound": None
+            }, ['res["code"]==0'], {}
 
         ]
         # </editor-fold>

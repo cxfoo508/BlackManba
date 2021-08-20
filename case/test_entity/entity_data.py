@@ -1,3 +1,5 @@
+import os
+
 from data.data_method import *
 
 
@@ -227,6 +229,7 @@ class entity_data_class:
         ]
 
         # </editor-fold>
+
         # <editor-fold desc = "获取实体类型列表">
 
         self.parm_entity_005 = [
